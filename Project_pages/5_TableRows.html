@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Strašák - Mechatronik</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="../images/icon.jpg" />
-  </head>
+  <head></head>
+  <script src="../loadHead_ProjectPages.js"></script>
   <body>
     <header class="headercontainer"></header>
     <script src="../loadHeader_ProjectPages.js"></script>
@@ -24,6 +13,12 @@
         height="30%"
       />
       <div>
+        <a
+          style="color: #ea1f4b"
+          href="https://github.com/davidstrasak/VBA_AddTableRows"
+          target="_blank"
+          ><h2 style="color: #ea1f4b">Code here</h2></a
+        >
         <h2>Lessons learned:</h2>
         <ul style="width: 30%">
           <li>Working with a VBA project.</li>
@@ -63,37 +58,6 @@
           cells (which is added with the rows), so the cells have formulas, or
           are empty, where needed.
         </p>
-        <h2>Code:</h2>
-        <pre>
-Private Sub Worksheet_SelectionChange(ByVal Target As Range)
-  ''THIS ALWAYS ADDS A ROW AT THE END OF THE TABLE
-  If Not IsEmpty(Range("Table1").Resize(1, 1).Offset(Range("Table1").Rows.Count - 1).Value) Then
-    Application.ScreenUpdating = False 'this makes all of this faster
-    Application.Calculation = xlManual
-    Call AddRow
-    Sheet1.Calculate
-    Application.Calculation = xlAutomatic
-    Application.ScreenUpdating = True
-  End If
-End Sub
-
-Private Sub AddRow()
-'' Macro that adds lines to the Table1 table
-    Dim CountedRows As Integer, usedTable As String
-    usedTable = "Table1"
-          
-    CountedRows = Range(usedTable).Rows.Count
-
-    If Not IsEmpty(Range(usedTable).Resize(1, 1).Offset(CountedRows - 1).Value) Then
-    Range(usedTable).Resize(1).Offset(CountedRows).Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
-    Range(usedTable).Resize(1).Offset(CountedRows).Value = Range(usedTable).Resize(1).Value
-    Application.CutCopyMode = False
-    Range(usedTable).Resize(1, 2).Offset(CountedRows).ClearContents
-    Range(usedTable).Resize(1, 1).Offset(CountedRows, 2).FillDown
-End If
-End Sub
-
-        </pre>
       </div>
     </div>
   </body>

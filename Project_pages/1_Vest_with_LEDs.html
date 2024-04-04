@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>David Strašák - Mechatronik</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/x-icon" href="../images/icon.jpg" />
-  </head>
+  <head></head>
+  <script src="../loadHead_ProjectPages.js"></script>
   <body>
     <header class="headercontainer"></header>
     <script src="../loadHeader_ProjectPages.js"></script>
@@ -24,6 +13,13 @@
         height="30%"
       />
       <div>
+        <a
+          style="color: #ea1f4b"
+          href="https://github.com/davidstrasak/Cybertown_LEDs/"
+          target="_blank"
+          ><h2 style="color: #ea1f4b">Code here</h2></a
+        >
+
         <h2>Lessons learned:</h2>
         <ul>
           <li>Working with an arduino LED library.</li>
@@ -56,46 +52,6 @@
           would last longer. Arduino 9V battery lasted me until the evening of
           the event.
         </p>
-
-        <h2>Code:</h2>
-        <pre>
-#include "AlaLed.h"
-
-AlaLed led1;
-AlaLed led2;
-AlaLed led3;
-AlaLed led4;
-AlaLed led5;
-AlaLed led6;
-
-void setup() {
-  // initializing the LEDs and setting the animation.
-  
-  led1.initPWM(11);
-  led2.initPWM(10);
-  led3.initPWM(9);
-  led4.initPWM(6);
-  led5.initPWM(5);
-  led6.initPWM(3);
-
-  led1.setAnimation(ALA_FADEINOUT, 2000);
-  led2.setAnimation(ALA_FADEINOUT, 2000);
-  led3.setAnimation(ALA_FADEINOUT, 2000);
-  led4.setAnimation(ALA_FADEINOUT, 2000);
-  led5.setAnimation(ALA_FADEINOUT, 2000);
-  led6.setAnimation(ALA_FADEINOUT, 2000);
-}
-
-void loop() {
-  led1.runAnimation();
-  led2.runAnimation();
-  led3.runAnimation();
-  led4.runAnimation();
-  led5.runAnimation();
-  led6.runAnimation();
-
-}
-        </pre>
       </div>
     </div>
   </body>
