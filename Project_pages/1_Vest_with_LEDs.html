@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Strašák - Mechatronik</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg" />
+  </head>
+  <body>
+    <header class="headercontainer"></header>
+    <script src="../loadHeader_ProjectPages.js"></script>
+    <div class="main project">
+      <img
+        style="float: right"
+        src="../images/Vest_Gif.gif"
+        width="30%"
+        height="30%"
+      />
+      <div>
+        <h2>Lessons learned:</h2>
+        <ul>
+          <li>Working with an arduino LED library.</li>
+          <li>My first big soldering project.</li>
+          <li>Using PWM pins to connect LEDs.</li>
+          <li>
+            Next time I will solder the cables to the arduino. Not superglue
+            them to the pins.
+          </li>
+        </ul>
+
+        <h2>Description</h2>
+        <p>
+          I've created this vest for the Cybertown event to look like a
+          cyberpunk.
+        </p>
+        <p>
+          I had no idea what I was doing - first time setting up LEDs to
+          something like this or painting the vest. One thing about being an
+          engineer though, is you realise you can figure stuff out if you think
+          about the process.
+        </p>
+        <p>
+          The code itself is pretty simple - just initialise the LED pins, set
+          up the animation and run it.
+        </p>
+        <p>
+          Arduino wasn't the best platform for this, because if I had just
+          bought a LED strip on aliexpress, it would be easier to do and it
+          would last longer. Arduino 9V battery lasted me until the evening of
+          the event.
+        </p>
+
+        <h2>Code:</h2>
+        <pre>
+#include "AlaLed.h"
+
+AlaLed led1;
+AlaLed led2;
+AlaLed led3;
+AlaLed led4;
+AlaLed led5;
+AlaLed led6;
+
+void setup() {
+  // initializing the LEDs and setting the animation.
+  
+  led1.initPWM(11);
+  led2.initPWM(10);
+  led3.initPWM(9);
+  led4.initPWM(6);
+  led5.initPWM(5);
+  led6.initPWM(3);
+
+  led1.setAnimation(ALA_FADEINOUT, 2000);
+  led2.setAnimation(ALA_FADEINOUT, 2000);
+  led3.setAnimation(ALA_FADEINOUT, 2000);
+  led4.setAnimation(ALA_FADEINOUT, 2000);
+  led5.setAnimation(ALA_FADEINOUT, 2000);
+  led6.setAnimation(ALA_FADEINOUT, 2000);
+}
+
+void loop() {
+  led1.runAnimation();
+  led2.runAnimation();
+  led3.runAnimation();
+  led4.runAnimation();
+  led5.runAnimation();
+  led6.runAnimation();
+
+}
+        </pre>
+      </div>
+    </div>
+  </body>
+  <script src="../any.js"></script>
+</html>

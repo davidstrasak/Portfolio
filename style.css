@@ -1,0 +1,225 @@
+* {
+  color: greenyellow;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0px;
+  font-size: 16.5pt;
+  text-align: justify;
+}
+
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+html {
+  background-color: black;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+.main > p {
+  display: inline;
+}
+.secondh2 {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.smaller {
+  font-size: 1em;
+}
+.invisible {
+  visibility: hidden;
+}
+.weeklylog p {
+  font-size: 1em;
+  font-weight: 100;
+}
+.weeklylog li {
+  font-size: 1em;
+  font-weight: 100;
+}
+.weeklylog h2 {
+  font-size: 1.2em;
+  font-weight: 800;
+  padding-top: 20px;
+}
+.setwhite {
+  color: white;
+  display: inline;
+}
+.main img.cv {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: auto;
+  padding: 16px;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  border: 10px solid greenyellow;
+  z-index: -1;
+}
+
+.headergrid {
+  display: grid;
+  grid-template-columns: 310px auto 150px 100px 140px;
+  text-align: center;
+  grid-template-rows: auto;
+  gap: 0px;
+}
+
+.header {
+  position: static;
+  width: 100%;
+  max-width: 1140px;
+  height: 60px;
+  padding: 20px 16px;
+  border: 0px;
+  position: fixed;
+  background-color: black;
+  z-index: 10;
+}
+
+.header a {
+  z-index: 10;
+  font-size: 1.2em;
+}
+
+.header p {
+  text-align: center;
+}
+
+.headercontainer {
+  position: static;
+  width: 100%;
+  max-width: 1140px;
+  height: 60px;
+  background-color: black;
+  padding: 0px 0px 36px;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  transition: all 0.5s;
+  z-index: 10;
+}
+
+.interestblock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  border: 5px solid greenyellow;
+  padding: 0px;
+  gap: 5px;
+  background-color: greenyellow;
+}
+.interestblock ul li {
+  text-align: left;
+}
+
+.y {
+  color: yellow;
+}
+ul.r li {
+  color: #ea1f4b;
+}
+.r {
+  color: #ea1f4b;
+}
+.b {
+  color: #00a6a6;
+}
+ul.b li {
+  color: #00a6a6;
+}
+
+.interestblock ul {
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.interestblock p {
+  background-color: black;
+  padding: 10px;
+}
+
+.projectsflex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.projectsflex h2 {
+  color: #ea1f4b;
+}
+
+.fleximage {
+  flex-basis: auto;
+  margin: 50px;
+}
+
+.flextext {
+  border: 5px solid greenyellow;
+  margin: 5%;
+  margin-left: 4%;
+  margin-right: 0px;
+  flex: 50%;
+}
+
+.flextext h2 {
+  margin: 40px 20px 30px 20px;
+  text-align: center;
+}
+
+.flextext strong {
+  margin: 0px;
+  text-align: center;
+  color: #ffb100;
+  font-size: 1em;
+}
+
+.flextext p {
+  margin: 20px;
+}
+
+.flextext a {
+  display: block;
+  text-align: center;
+}
+
+.project p {
+  padding: 0px;
+  padding-bottom: 30px;
+  width: 60%;
+}
+.project ul {
+  padding: 0px;
+  width: 60%;
+}
+.project hr {
+  margin-top: 30px;
+}
+.project h2 {
+  color: #ffb100;
+  padding-top: 30px;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>David Strašák - Mechatronik</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/icon.jpg" />
+  </head>
+  <body>
+    <header class="headercontainer"></header>
+    <script src="../loadHeader_ProjectPages.js"></script>
+    <div class="main project">
+      <img
+        src="../images/Showcase_Stock_analysis.jpg"
+        width="100%"
+        height="30%"
+      />
+
+      <h2>Lessons learned:</h2>
+      <ul>
+        <li>Pulling data from the web into excel using VBA.</li>
+        <li>Correcting numbers to their correct decimals.</li>
+        <li>Figuring out how to work with 1000 lines of excel data.</li>
+        <li>Some python data pulling, which went on unused.</li>
+      </ul>
+      <h2>Description:</h2>
+      <p style="display: block; width: 100%">
+        This was my summer 2023 project that involved taking lots of table data
+        from a
+        <a target="_blank" href="https://www.stockanalysis.com"
+          >Stock analysis website</a
+        >, importing the data into excel and then converting the numbers so the
+        digits are correct.
+      </p>
+      <p style="display: block; width: 100%">
+        The main struggle was 1) getting correct data and 2) converting the data
+        into correct numbers, which involved writing complicated IF formulas to
+        check if the number has a comma, or dot inside it (dot is used for
+        thousands, comma is used for decimals).
+      </p>
+      <p style="display: block; width: 100%">
+        The economics themselves aren't that complicated, because they just take
+        known formulas and calculate the intrinsic stock value, which is then
+        compared with the actual stock value.
+      </p>
+    </div>
+  </body>
+  <script src="../any.js"></script>
+</html>
