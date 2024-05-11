@@ -1,16 +1,28 @@
-<script>
+<script lang="ts">
 	import '../app.css';
 	import { base } from '$app/paths';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
+	// Scroll button listener
 	let scrollY = 0;
-
 	onMount(() => {
 		const updateScroll = () => {
 			scrollY = window.scrollY;
 		};
 		window.addEventListener('scroll', updateScroll);
 		return () => window.removeEventListener('scroll', updateScroll);
+	});
+
+	// Enter key press listener
+	onMount(() => {
+		const enterPressed = (event: any) => {
+			if (event.key === 'Enter') {
+				goto(`${base}/projects`);
+			}
+		};
+		window.addEventListener('keydown', enterPressed);
+		return () => window.removeEventListener('keydown', enterPressed);
 	});
 </script>
 
