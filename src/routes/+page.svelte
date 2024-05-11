@@ -2,6 +2,7 @@
 
 <script>
 	import { base } from '$app/paths';
+	console.log(base);
 </script>
 
 <h1 class="text-4xl font-bold underlin text-secondary">Welcome to SvelteKit</h1>

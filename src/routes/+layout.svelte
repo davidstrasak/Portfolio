@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import { base } from '$app/paths';
+	console.log(base);
 </script>
 
 <div class="container mx-auto w-4/5 lg:w-3/5 text-3xl font-cyberpunk">
