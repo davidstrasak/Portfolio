@@ -4,7 +4,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<div class="">
+<div class="whitespace-normal h-fit">
 	<h1 class="text-5xl font-bold mb-5">Hello, I am DAVID.</h1>
 	<h2 class="text-secondary font-bold">Dabbling Around (in) Various Interesting Disciplines.</h2>
 	<br />
