@@ -9,7 +9,7 @@
 		<div class="flex flex-col md:flex-row justify-between items-left">
 			<!-- Name -->
 			<div>
-				<a href="{base}/" class="p-2">
+				<a href={base} class="p-2">
 					<button class="btn btn-ghost btn-lg text-3xl"> Bc. David Strašák </button>
 				</a>
 			</div>
