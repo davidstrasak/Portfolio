@@ -2,15 +2,8 @@
 
 <script>
 	import { base } from '$app/paths';
-	console.log(base);
 </script>
 
-<h1 class="text-4xl font-bold underlin text-secondary">Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<a href="{base}/about">About me</a>
-
-<button class="btn btn-ghost">Button something something</button>
 <div class="">
 	<h1 class="text-5xl font-bold mb-5">Hello, I am DAVID.</h1>
 	<h2 class="text-secondary font-bold">Dabbling Around (in) Various Interesting Disciplines.</h2>
