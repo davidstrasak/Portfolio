@@ -2,6 +2,7 @@
 
 <script>
 	import { base } from '$app/paths';
+	import Item from '$lib/Item.svelte';
 </script>
 
 <div class="whitespace-normal h-fit">
@@ -19,4 +20,5 @@
 	<br />
 	<br />
 	<p class="invisible md:visible">press ENTER to load the projects:</p>
+	<Item showContent={false} />
 </div>
