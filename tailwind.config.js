@@ -4,7 +4,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				cyberpunk: ['"Kode Mono"', 'cursive']
+				cyberpunk: ['"Kode Mono"', 'monospace']
 			},
 			textColor: {
 				greenyellow: '#ADFF2F',
