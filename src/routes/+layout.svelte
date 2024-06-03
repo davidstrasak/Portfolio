@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { base } from '$app/paths';
-	import { onMount } from 'svelte';
+	import { afterUpdate, onMount, onDestroy } from 'svelte';
 	import { goto } from '$app/navigation';
 
 	// Scroll button listener
@@ -27,56 +27,89 @@
 
 	// Getting current year
 	const year = new Date().getFullYear();
+
+	//Setting the height of the entire website so that the footer is in the proper place
+	let wallOfText: any;
+	let headerObject: any;
+	let footerObject: any;
+	let entireHeight: string;
+	let headerHeight: string;
+
+	function setBoundaries() {
+		entireHeight =
+			wallOfText.clientHeight + headerObject.clientHeight + footerObject.clientHeight + 10 + 'px';
+		headerHeight = headerObject.clientHeight + 'px';
+	}
+	onMount(() => {
+		addEventListener('resize', setBoundaries);
+		return () => {
+			window.removeEventListener('resize', setBoundaries);
+		};
+	});
+	afterUpdate(() => {
+		if (wallOfText) {
+			setBoundaries();
+		}
+	});
 </script>
 
 <div
 	class="flex flex-col min-h-screen container mx-auto w-4/5 lg:w-3/5 text-3xl font-cyberpunk selection:bg-secondary selection:text-black"
+	style="height: {entireHeight};"
 >
-	<div class="flex-grow">
-		<header class="fixed md:pt-10 pb-5 w-4/5 lg:w-3/5 bg-base-100 z-10 font-bold">
-			<div class="flex flex-col md:flex-row justify-between items-left">
-				<!-- Name -->
-				<div>
-					<a href={`${base}`} class="p-2">
-						<button class="btn btn-ghost btn-lg text-3xl"> DAVID </button>
-					</a>
-				</div>
-
-				<!-- Rest of the navbar -->
-				<nav class="md:items-left">
-					<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
-						<li>
-							<a href={`${base}/projects`} class="p-2">
-								<button class="btn btn-ghost btn-lg text-3xl">Projects</button>
-							</a>
-						</li>
-						<li>
-							<a href={`${base}/CV`} class="p-2">
-								<button class="btn btn-ghost btn-lg text-3xl">CV</button>
-							</a>
-						</li>
-						<li>
-							<a href={`${base}/about`} class="p-2">
-								<button class="btn btn-ghost btn-lg text-3xl">About me</button>
-							</a>
-						</li>
-					</ul>
-				</nav>
+	<!-- <div class="flex-grow"> -->
+	<header
+		class="fixed md:pt-10 pb-5 w-full md:w-4/5 lg:w-3/5 bg-base-100 z-10 font-bold"
+		bind:this={headerObject}
+	>
+		<div class="flex flex-col md:flex-row justify-between items-left">
+			<!-- Name -->
+			<div>
+				<a href={`${base}`} class="p-2">
+					<button class="btn btn-ghost btn-lg text-3xl"> DAVID </button>
+				</a>
 			</div>
-		</header>
-		<div class="relative top-72 lg:top-48 h-auto">
-			<slot />
+
+			<!-- Rest of the navbar -->
+			<nav class="md:items-left">
+				<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
+					<li>
+						<a href={`${base}/projects`} class="p-2">
+							<button class="btn btn-ghost btn-lg text-3xl">Projects</button>
+						</a>
+					</li>
+					<li>
+						<a href={`${base}/CV`} class="p-2">
+							<button class="btn btn-ghost btn-lg text-3xl">CV</button>
+						</a>
+					</li>
+					<li>
+						<a href={`${base}/about`} class="p-2">
+							<button class="btn btn-ghost btn-lg text-3xl">About me</button>
+						</a>
+					</li>
+				</ul>
+			</nav>
 		</div>
-		<button
-			class="fixed bottom-20 md:bottom-10 right-10 btn btn-primary btn-md z-0"
-			class:invisible={scrollY === 0}
-			on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-		>
-			Scroll to Top
-		</button>
+	</header>
+	<div class="relative" bind:this={wallOfText} style="top: {headerHeight};">
+		<slot />
 	</div>
 
-	<footer class="order-1 footer items-center p-4 text-primary bg-base flex mt-60 z-10">
+	<button
+		class="fixed bottom-20 md:bottom-10 right-10 btn btn-primary btn-md z-0 hidden md:block"
+		class:invisible={scrollY === 0}
+		on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+	>
+		Scroll to Top
+	</button>
+	<!-- </div> -->
+
+	<footer
+		class="mt-auto order-1 footer items-center p-4 text-primary bg-base flex z-10"
+		bind:this={footerObject}
+	>
+		<!-- mt-60 -->
 		<aside class="items-center justify-start grid-flow-col flex-grow">
 			<svg
 				width="36"
