@@ -160,3 +160,16 @@
 		</nav>
 	</footer>
 </div>
+
+<style>
+	@media (max-width: 768px) {
+		header {
+			left: 0;
+		}
+	}
+	@media (max-width: 824px) {
+		header {
+			width: 100%;
+		}
+	}
+</style>
