@@ -34,7 +34,6 @@
 	let footerObject: any;
 	let entireHeight: string;
 	let headerHeight: string;
-
 	function setBoundaries() {
 		entireHeight =
 			wallOfText.clientHeight + headerObject.clientHeight + footerObject.clientHeight + 10 + 'px';
