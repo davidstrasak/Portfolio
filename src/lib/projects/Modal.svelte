@@ -1,12 +1,13 @@
 <script>
-	export let modal;
+	export let modal = "0";
+	export let id = 0;
 </script>
 
 <!-- The button to open modal -->
-<label for="my_modal_7" class="btn">open modal</label>
+<label for="my_modal_{id}" class="btn">open modal</label>
 
 <!-- Put this part before </body> tag -->
-<input type="checkbox" id="my_modal_7" class="modal-toggle" />
+<input type="checkbox" id="my_modal_{id}" class="modal-toggle" />
 <div class="modal" role="dialog">
 	<div class="modal-box">
 		<h3 class="text-lg font-bold">Hello!</h3>
@@ -15,5 +16,5 @@
 			{@html modal}
 		</p>
 	</div>
-	<label class="modal-backdrop" for="my_modal_7">Close</label>
+	<label class="modal-backdrop" for="my_modal_{id}">Close</label>
 </div>
