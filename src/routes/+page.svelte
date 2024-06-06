@@ -1,7 +1,8 @@
 <!-- This is the landing page -->
 
-<script>
-	import { base } from '$app/paths';
+<script lang="ts">
+	import { base } from "$app/paths";
+	import info from "./projects/info";
 </script>
 
 <div class="whitespace-normal h-fit">
@@ -20,3 +21,12 @@
 	<br />
 	<p class="invisible md:visible">press ENTER to load the projects:</p>
 </div>
+
+{#each Object.values(info) as proj}
+	<link rel="preload" href={proj.image} as="image" />
+{/each}
+<link rel="preload" href="{base}/CV_David_Strasak.jpg" as="image" />
+<link rel="prerender" href="{base}/" />
+<link rel="prerender" href="{base}/projects" />
+<link rel="prerender" href="{base}/CV" />
+<link rel="prerender" href="{base}/about" />

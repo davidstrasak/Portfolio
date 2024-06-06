@@ -1,8 +1,8 @@
 <script lang="ts">
-	import '../app.css';
-	import { base } from '$app/paths';
-	import { afterUpdate, onMount } from 'svelte';
-	import { goto } from '$app/navigation';
+	import "../app.css";
+	import { base } from "$app/paths";
+	import { afterUpdate, onMount } from "svelte";
+	import { goto } from "$app/navigation";
 
 	// Scroll button listener
 	let scrollY = 0;
@@ -10,19 +10,19 @@
 		const updateScroll = () => {
 			scrollY = window.scrollY;
 		};
-		window.addEventListener('scroll', updateScroll);
-		return () => window.removeEventListener('scroll', updateScroll);
+		window.addEventListener("scroll", updateScroll);
+		return () => window.removeEventListener("scroll", updateScroll);
 	});
 
 	// Enter key press listener
 	onMount(() => {
 		const enterPressed = (event: any) => {
-			if (event.key === 'Enter') {
+			if (event.key === "Enter") {
 				goto(`${base}/projects`);
 			}
 		};
-		window.addEventListener('keydown', enterPressed);
-		return () => window.removeEventListener('keydown', enterPressed);
+		window.addEventListener("keydown", enterPressed);
+		return () => window.removeEventListener("keydown", enterPressed);
 	});
 
 	// Getting current year
@@ -36,13 +36,13 @@
 	let headerHeight: string;
 	function setBoundaries() {
 		entireHeight =
-			wallOfText.clientHeight + headerObject.clientHeight + footerObject.clientHeight + 10 + 'px';
-		headerHeight = headerObject.clientHeight + 'px';
+			wallOfText.clientHeight + headerObject.clientHeight + footerObject.clientHeight + 10 + "px";
+		headerHeight = headerObject.clientHeight + "px";
 	}
 	onMount(() => {
-		addEventListener('resize', setBoundaries);
+		addEventListener("resize", setBoundaries);
 		return () => {
-			window.removeEventListener('resize', setBoundaries);
+			window.removeEventListener("resize", setBoundaries);
 		};
 	});
 	afterUpdate(() => {
@@ -64,12 +64,14 @@
 			<!-- Name -->
 			<div>
 				<a href={`${base}`} class="p-2">
-					<button class="btn btn-ghost btn-lg text-3xl"> SYSTEMANCER </button>
+					<button class="btn btn-ghost btn-lg text-3xl">
+						<div class="typewriter">SYSTEMANCER</div></button
+					>
 				</a>
 			</div>
 
 			<!-- Rest of the navbar -->
-			<nav class="md:items-left">
+			<nav class="md:items-left fade-in">
 				<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
 					<li>
 						<a href={`${base}/projects`} class="p-2">
@@ -91,20 +93,20 @@
 		</div>
 	</header>
 
-	<div class="relative" bind:this={wallOfText} style="top: {headerHeight};">
+	<div class="relative fade-in" bind:this={wallOfText} style="top: {headerHeight};">
 		<slot />
 	</div>
 
 	<button
-		class="fixed bottom-20 md:bottom-10 right-10 btn btn-primary btn-md z-0 hidden md:block"
+		class="fixed bottom-20 md:bottom-10 right-10 btn btn-primary btn-md z-0 hidden md:block fade-in"
 		class:invisible={scrollY === 0}
-		on:click={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+		on:click={() => window.scrollTo({ top: 0, behavior: "smooth" })}
 	>
 		Scroll to Top
 	</button>
 
 	<footer
-		class="mt-auto order-1 footer items-center p-4 text-primary bg-base flex z-10"
+		class="mt-auto order-1 footer items-center p-4 text-primary bg-base flex z-10 fade-in"
 		bind:this={footerObject}
 	>
 		<!-- mt-60 -->

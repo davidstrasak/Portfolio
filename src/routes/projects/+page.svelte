@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Project from "$lib/projects/Project.svelte";
-	import info from "./info.js";
+	import info from "./info.ts";
 </script>
 
 <h1 class="text-5xl font-bold mb-5 text-center">

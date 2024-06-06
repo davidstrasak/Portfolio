@@ -22,3 +22,48 @@
 ::-webkit-scrollbar-thumb:hover {
 	background: #fff000;
 }
+
+@layer components {
+	.typewriter {
+		overflow: hidden;
+		border-right: 0.15em solid greenyellow;
+		white-space: nowrap;
+		margin: 0 auto;
+		letter-spacing: 0.15em;
+		animation: typing 1s steps(40, end);
+	}
+
+	@keyframes typing {
+		from {
+			width: 0;
+		}
+		to {
+			width: 100%;
+		}
+	}
+
+	@keyframes blink-caret {
+		from,
+		to {
+			border-color: transparent;
+		}
+		50% {
+			border-color: greenyellow;
+		}
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fade-in {
+	opacity: 0;
+	animation: fadeIn 1s ease-in;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}

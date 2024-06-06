@@ -1,7 +1,15 @@
 import { base } from "$app/paths";
 let id = 1;
 
-let arduinoVest = {
+interface proj{
+	id: number;
+	title: string;
+	description: string;
+	modal: string;
+	image: string;
+}
+
+let arduinoVest:proj = {
 	id: id++,
 	title: "Arduino - Vest with LEDs",
 	description: `It included six LEDs soldered to cables running into one Arduino
@@ -10,7 +18,7 @@ let arduinoVest = {
 	image: `${base}/images/Vest_with_LEDs.jpg`
 };
 
-let automaticWindow = {
+let automaticWindow:proj = {
 	id: id++,
 	title: "Arduino - Automatic window",
 	description: `This window prototype adjusts its opening and closing based on
@@ -20,7 +28,7 @@ let automaticWindow = {
 	image: `${base}/images/Automatic_Window.jpeg`
 };
 
-let PICvariety = {
+let PICvariety:proj = {
 	id: id++,
 	title: "C - Various PIC projects",
 	description:
@@ -29,7 +37,7 @@ let PICvariety = {
 	image: `${base}/images/Embedded_System.jpeg`
 };
 
-let thisWebsite = {
+let thisWebsite:proj = {
 	id: id++,
 	title: "Sveltekit - This website",
 	description: `It was created by using some knowledge from a full-stack development
@@ -38,7 +46,7 @@ let thisWebsite = {
 	image: `${base}/images/This_Website.jpg`
 };
 
-let tableRows = {
+let tableRows:proj = {
 	id: id++,
 	title: "Excel VBA  - Function that adds rows to a table",
 	description: `I've used this fucntion multiple times to create spreadsheets that fell fluent to use. 
@@ -47,7 +55,7 @@ let tableRows = {
 	image: `${base}/images/TableRows.jpg`
 };
 
-let stockSS = {
+let stockSS:proj = {
 	id: id++,
 	title: "Excel - Stock spreadsheet",
 	description: `This spreadsheet imports 8 tables of financial data about a given
