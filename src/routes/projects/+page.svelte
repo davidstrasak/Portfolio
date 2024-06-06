@@ -1,5 +1,6 @@
 <script>
-	import Project from '$lib/projects/Project.svelte';
+	import Project from "$lib/projects/Project.svelte";
+	import info from "./info.js";
 </script>
 
 <h1 class="text-5xl font-bold mb-5 text-center">
@@ -9,7 +10,7 @@
 
 <!-- Row one of items -->
 <div class="flex gap-10 flex-col md:flex-row justify-between items-center">
-	<Project />
+	<Project project={info.arduinoVest} />
 	<Project />
 	<Project />
 </div>
