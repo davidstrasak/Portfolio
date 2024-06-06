@@ -1,6 +1,8 @@
-<script>
+<script lang="ts">
 	import Project from "$lib/projects/Project.svelte";
 	import info from "./info.js";
+
+	let my_modal_5: any;
 </script>
 
 <h1 class="text-5xl font-bold mb-5 text-center">
