@@ -6,7 +6,7 @@
 <!-- Put this part before </body> tag -->
 <input type="checkbox" id="my_modal_{id}" class="modal-toggle" />
 <div class="modal modal-bottom sm:modal-middle" role="dialog">
-	<div class="modal-box">
+	<div class="modal-box" style="width: 1500px;">
 		<h3 class="text-lg font-bold">Hello!</h3>
 		<p class="py-4">This modal works with a hidden checkbox!</p>
 		<p>
@@ -17,7 +17,4 @@
 </div>
 
 <!-- The button to open modal -->
-<label for="my_modal_{id}" class="btn">
-	<slot />
-	open modal
-</label>
+<label for="my_modal_{id}" class="btn"> Read more </label>

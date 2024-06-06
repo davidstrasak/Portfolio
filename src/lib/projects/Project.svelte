@@ -1,5 +1,6 @@
 <script>
 	import Modal from "./Modal.svelte";
+	import Label from "./Label.svelte";
 	export let project = {
 		id: 0,
 		title: "0",
@@ -13,11 +14,15 @@
 
 <div class="card w-96 bg-base-100 shadow-xl">
 	<figure>
-		<img src={image} alt="Shoes" />
+		<Label {id}>
+			<img src={image} alt={image} height="0px" width="400px" />
+		</Label>
 	</figure>
-	<div class="card-body">
-		<h2 class="card-title text-3xl">{title}</h2>
-		<p class="text-2xl">{@html description}</p>
-		<div class="card-actions justify-end"><Modal {modal} {id}></Modal></div>
+	<div class="card-body p-0 text-center">
+		<Label {id}><h2 class="card-title text-3xl text-secondary">{title}</h2></Label>
+		<Label {id}>
+			<p class="text-2xl">{@html description}</p>
+		</Label>
+		<div class="card-actions justify-center"><Modal {modal} {id}></Modal></div>
 	</div>
 </div>
