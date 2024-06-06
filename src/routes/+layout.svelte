@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import { base } from '$app/paths';
-	import { afterUpdate, onMount, onDestroy } from 'svelte';
+	import { afterUpdate, onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 
 	// Scroll button listener
@@ -56,7 +56,6 @@
 	class="flex flex-col min-h-screen container mx-auto w-4/5 lg:w-3/5 text-3xl font-cyberpunk selection:bg-secondary selection:text-black"
 	style="height: {entireHeight};"
 >
-	<!-- <div class="flex-grow"> -->
 	<header
 		class="fixed md:pt-10 pb-5 w-full md:w-4/5 lg:w-3/5 bg-base-100 z-10 font-bold"
 		bind:this={headerObject}
@@ -91,6 +90,7 @@
 			</nav>
 		</div>
 	</header>
+
 	<div class="relative" bind:this={wallOfText} style="top: {headerHeight};">
 		<slot />
 	</div>
@@ -102,7 +102,6 @@
 	>
 		Scroll to Top
 	</button>
-	<!-- </div> -->
 
 	<footer
 		class="mt-auto order-1 footer items-center p-4 text-primary bg-base flex z-10"
