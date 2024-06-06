@@ -11,15 +11,15 @@
 </h1>
 
 <!-- Row one of items -->
-<div class="flex gap-10 flex-col md:flex-row justify-between items-center">
+<div class="flex gap-10 flex-col md:flex-row justify-between items-top">
 	<Project project={info.arduinoVest} />
-	<Project />
-	<Project />
+	<Project project={info.automaticWindow} />
+	<Project project={info.PICvariety} />
 </div>
 
 <!-- Row two of items -->
-<div class="flex gap-10 flex-col md:flex-row justify-between items-center">
-	<Project />
-	<Project />
-	<Project />
+<div class="flex gap-10 flex-col md:flex-row justify-between items-top">
+	<Project project={info.thisWebsite} />
+	<Project project={info.tableRows} />
+	<Project project={info.stockSS} />
 </div>
