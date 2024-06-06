@@ -3,6 +3,7 @@
 	import { base } from "$app/paths";
 	import { afterUpdate, onMount } from "svelte";
 	import { goto } from "$app/navigation";
+	import info from "./projects/info";
 
 	// Scroll button listener
 	let scrollY = 0;
@@ -159,6 +160,15 @@
 			</a>
 		</nav>
 	</footer>
+
+	{#each Object.values(info) as proj}
+		<link rel="preload" href={proj.image} as="image" />
+	{/each}
+	<link rel="preload" href="{base}/CV_David_Strasak.jpg" as="image" />
+	<link rel="prerender" href="{base}/" />
+	<link rel="prerender" href="{base}/projects" />
+	<link rel="prerender" href="{base}/CV" />
+	<link rel="prerender" href="{base}/about" />
 </div>
 
 <style>

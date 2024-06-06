@@ -1,10 +1,5 @@
 <!-- This is the landing page -->
 
-<script lang="ts">
-	import { base } from "$app/paths";
-	import info from "./projects/info";
-</script>
-
 <div class="whitespace-normal h-fit">
 	<h1 class="text-5xl font-bold mb-5">Hello, I am DAVID.</h1>
 	<h2 class="text-secondary font-bold">Dabbling Around (in) Various Interesting Disciplines.</h2>
@@ -21,12 +16,3 @@
 	<br />
 	<p class="invisible md:visible">press ENTER to load the projects:</p>
 </div>
-
-{#each Object.values(info) as proj}
-	<link rel="preload" href={proj.image} as="image" />
-{/each}
-<link rel="preload" href="{base}/CV_David_Strasak.jpg" as="image" />
-<link rel="prerender" href="{base}/" />
-<link rel="prerender" href="{base}/projects" />
-<link rel="prerender" href="{base}/CV" />
-<link rel="prerender" href="{base}/about" />
