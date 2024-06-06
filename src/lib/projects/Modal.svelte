@@ -12,7 +12,7 @@
 		<h3 class="text-lg font-bold">Hello!</h3>
 		<p class="py-4">This modal works with a hidden checkbox!</p>
 		<p>
-			{modal}
+			{@html modal}
 		</p>
 	</div>
 	<label class="modal-backdrop" for="my_modal_7">Close</label>

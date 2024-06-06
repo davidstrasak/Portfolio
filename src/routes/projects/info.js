@@ -1,7 +1,7 @@
 let arduinoVest = {
 	title: "Arduino vest",
 	description: "A vest that lights up when you move",
-	modal: "arduinoVestModal"
+	modal: '<span class="text-secondary">arduinoVestModal</span>'
 };
 
 let info = {
