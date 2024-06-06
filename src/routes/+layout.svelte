@@ -64,7 +64,7 @@
 			<!-- Name -->
 			<div>
 				<a href={`${base}`} class="p-2">
-					<button class="btn btn-ghost btn-lg text-3xl"> DAVID </button>
+					<button class="btn btn-ghost btn-lg text-3xl"> SYSTEMANCER </button>
 				</a>
 			</div>
 
