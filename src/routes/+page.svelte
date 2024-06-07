@@ -5,7 +5,7 @@
 <noscript> Please enable JavaScript to view the this page. </noscript>
 
 <!-- This is the landing page -->
-<p class="text-secondary">I am an aspiring SYSTEMANCER</p>
+<p class="">I am an aspiring <span class="text-secondary">SYSTEMANCER</span>.</p>
 <br />
 <div class="whitespace-normal h-fit">
 	<div class="border-solid border-2 border-primary p-2">
@@ -26,8 +26,26 @@
 	</div>
 
 	<br />
-	<div class="w-full">
-		<p class="text-justify text-secondary">But you can call me David.</p>
+	<div class="w-full text-justify">
+		<p class="text-secondary">But you can call me David.</p>
+		<ol class="">
+			<li class="mt-4">
+				I'm an aspiring <span class="text-secondary">systems engineer</span>.
+			</li>
+			<li class="mt-4">
+				This webpage is a <span class="text-secondary">blog</span> and a
+				<span class="text-secondary">portfolio</span> website where I showcase my work and write about
+				interesting topics.
+			</li>
+			<li class="mt-4">
+				I left an accounting carreer for something more interesting: <span class="text-secondary"
+					>technology, electrical power and programming are my daily bread</span
+				>.
+			</li>
+			<li class="mt-4">
+				But most of all I like to work <span class="text-secondary">As effective as possible</span>.
+			</li>
+		</ol>
 	</div>
 
 	<!-- <h2 class="text-secondary font-bold">Dabbling Around (in) Various Interesting Disciplines.</h2>
@@ -44,3 +62,13 @@
 	<br />
 	<p class="invisible md:visible">press ENTER to load the projects:</p> -->
 </div>
+
+<style>
+	ol {
+		list-style-type: none; /* Remove default list styling */
+	}
+
+	ol li:before {
+		content: "- "; /* Add a dash before each list item */
+	}
+</style>
