@@ -18,15 +18,21 @@
 	</ol>
 
 	<h2 class="text-secondary font-bold">Description</h2>
-	<p>This project was a school project we've completed as a 4 person team.</p>
 	<p>
-		The concept is simple - the window opens or closes based on outside conditions. The conditions
-		are online weather information, room temperature, humidity and time (certain times a day the
-		window opens).
+		This project was a school project we've completed as a <span class="text-secondary"
+			>4 person team</span
+		>.
 	</p>
 	<p>
-		The whole project was programmed through MATLAB, so the processor itself just had the job of
-		opening and closing the window, while the computer was doing the logic behind it.
+		The concept is simple - the window opens or closes based on outside conditions. The conditions
+		are <span class="text-secondary"
+			>online weather information, room temperature, humidity and time
+		</span> (certain times a day the window opens).
+	</p>
+	<p>
+		The whole project was <span class="text-secondary">programmed through MATLAB</span>. The micro
+		controller unit was responsible for getting the data from sensors and opening and closing the
+		window, while the PC was getting the online data and sending it to the MCU.
 	</p>
 </div>
 

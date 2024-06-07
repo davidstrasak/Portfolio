@@ -15,30 +15,55 @@
 	>
 	<h2 class="text-secondary font-bold">Lessons learned:</h2>
 	<ol class="ml-10">
-		<li>How to program embedded systems.</li>
-		<li>Setting TRIS, PORT and LAT pins.</li>
-		<li>Getting to know timers, interrupts and UART.</li>
-		<li>And also it was my first experience programming in C.</li>
+		<li>Working with the datasheet of a microcontroller unit</li>
+		<li>Setting and initialising a ton of bits and pins.</li>
+		<li>
+			Getting to know timers, interrupts, UART, ADC, DAC, sleep modes and how microcontrollers work.
+		</li>
+		<li>And also it was my first experience properly programming in C.</li>
 	</ol>
 	<h2 class="text-secondary font-bold">Description:</h2>
 	<p>
 		I've been able to take a course on working with embedded systems at school. The main curriculum
-		is programming in the C language and programming the PIC18F46K22 processor by MicroChip.
+		is <span class="text-secondary"
+			>programming in the C language and programming the PIC18F46K22 processor
+		</span>by MicroChip.
 	</p>
 	<p>
 		The whole concept of low level programming is interesting to me and I will be doing some more
 		when possible.
 	</p>
 	<p>
-		This specific lesson is about using commands to set different functions, which control the LEDs
-		(On/Off, Blinking, Continuous, Blinking for certain times). The processor is communicating with
-		the UART module, which is communicating with the PC through USB.
+		The final project of this course was <span class="text-secondary font-bold"
+			>creating 5 tasks:</span
+		>
+	</p>
+	<ul class="ml-10">
+		<li>UART - the processor takes an input and sends it back reversed</li>
+		<li>PWM - increment the brightness of an LED</li>
+		<li>ADC - display the values of the two potentiometers</li>
+		<li>DAC - generate three signals that I can display on an osciloscope on the PC</li>
+		<li>
+			GAME - program a game where you try to match a random number with the potentiometer value
+		</li>
+		<li class="text-secondary">
+			Menu - program an interface and navigation so that I can switch through the tasks
+		</li>
+	</ul>
+
+	<p>
+		This was probably the biggest coding project I have done in regards to <span
+			class="text-secondary">tracking state inside a project</span
+		>. So if you want to see how I did it, you can check out the code on my GitHub.
 	</p>
 </div>
 
 <style>
 	ol {
 		list-style-type: decimal; /* Remove default list styling */
+	}
+	ul {
+		list-style-type: initial; /* Remove default list styling */
 	}
 	* {
 		margin-top: 10px;

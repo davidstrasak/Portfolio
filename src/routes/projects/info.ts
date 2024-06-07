@@ -33,7 +33,7 @@ let PICvariety:proj = {
 	image: `${base}/images/PICVariety.jpg`,
 	title: `<p><span class="text-accent">C</span> - Various PIC projects</p>`,
 	description:
-		`In this school project I was programming <span class="text-secondary">six projects and a menu</span> using the PIC18F46K22 microcontroller in C.`,
+		`In this school project I was programming <span class="text-secondary">five projects and a menu</span> using the PIC18F46K22 microcontroller in C.`,
 	modal: "PICvariety"
 };
 

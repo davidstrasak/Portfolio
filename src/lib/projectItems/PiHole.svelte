@@ -13,15 +13,22 @@
 		<h2 class="text-secondary font-bold">Lessons learned:</h2>
 		<ol class="ml-10">
 			<li>Lots of debugging and installing operating systems.</li>
-			<li>Learned in general about how the internet and websites work.</li>
+			<li>Learned some networking.</li>
 			<li>Installing and using Armbian.</li>
 		</ol>
 		<h2 class="text-secondary font-bold">Description:</h2>
-		<p>This was a summer 2023 project that involved setting up a Banana Pi to use PiHole on.</p>
 		<p>
-			<a class="underline text-accent" href="https://pi-hole.net/" target="_blank">PiHole</a> is an application
-			that monitors internet traffic and blocks trackers, advertisements or anything else you want blocked.
-			After installation it acts as a server and is online 24/7.
+			This was a summer 2023 project that involved setting up a <span class="text-secondary"
+				>Banana Pi to use PiHole on</span
+			>.
+		</p>
+		<p>
+			<a class="underline text-accent" href="https://pi-hole.net/" target="_blank">PiHole</a> is an
+			application that
+			<span class="text-secondary"
+				>monitors internet traffic and blocks trackers, advertisements or anything else you want
+				blocked</span
+			>. After installation it acts as a server and is online 24/7.
 		</p>
 	</div>
 </div>

@@ -35,4 +35,4 @@
 </div>
 
 <!-- The button to open modal -->
-<label for="my_modal_{id}" class="btn"> Read more </label>
+<label for="my_modal_{id}" class="btn btn-lg btn-outline"> Read more </label>

@@ -17,23 +17,26 @@
 	<ol class="ml-10">
 		<li>Creating a multi-page website.</li>
 		<li>Developing the frontend user experience.</li>
-		<li>HTML, CSS and JS languages.</li>
-		<li>Finally figuring out how asynchronous languages work.</li>
+		<li>HTML, CSS, JS, Node.js, Typescript, SvelteKit, Tailwind, DaisyUI and GitHub.</li>
+		<li>Figured out some advanced TS syntax and worked with a lot of objects and components.</li>
 	</ol>
 	<h2 class="text-secondary font-bold">Description:</h2>
 	<p>
-		I have taken a full stack development course, so I can be an intern responsible for mechanical
-		engineering related web application my team supports at Honeywell.
+		I have taken a <span class="text-secondary"
+			>full stack development and SvelteKit courses from Udemy</span
+		>, so I can develop mechanical engineering web applications at my job as an intern at Honeywell.
 	</p>
 	<p>
-		Thanks to this I've been able to learn enough of web development to build this website from
-		scratch. Not everything was included in the course, but once you know the basics, getting to
-		know more is just easy.
+		Thanks to this I've been able to learn enough of web development to <span class="text-secondary"
+			>build this website from scratch</span
+		>. Not everything was included in the course, but after some time spent googling I was able to
+		code everything I've wanted.
 	</p>
 	<p>
-		Because this website is hosted on GitHub, it can only be a static website. That means I have to
-		omit the whole backend process of creating a website - leaving the only tools at my disposal
-		here HTML, JS and CSS (Which are definetly enough).
+		Because this website is hosted on GitHub, it can only be a static website. <span
+			class="text-secondary"
+			>That means I have to omit the whole backend process of creating a website</span
+		>. Luckily I do create backends at my intership, so the knowledge is not completely lost on me.
 	</p>
 </div>
 

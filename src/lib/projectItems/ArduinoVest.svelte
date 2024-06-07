@@ -29,17 +29,20 @@
 	<h2 class="text-secondary font-bold">Description</h2>
 	<p>I've created this vest for the Cybertown event to look like a proper cyberpunk.</p>
 	<p>
-		I had no idea what I was doing - this was my first hardware project ever. One thing about being
-		an engineer though, is you realise you can figure stuff out if you think about the process.
+		I had no idea what I was doing - <span class="text-secondary"
+			>this was my first hardware project ever</span
+		>. One thing about being an engineer though, is you realise you can figure lots of stuff out if
+		you think hard.
 	</p>
 	<p>
 		The code itself is pretty simple - just initialise the LED pins, set up the animation and run
 		it.
 	</p>
 	<p>
-		Arduino wasn't the best platform for this, because if I had just bought a LED strip on
-		aliexpress, it would be easier to do and it would last longer. Arduino 9V battery lasted me
-		until the evening of the first day of the event.
+		Arduino wasn't the best platform for this, because <span class="text-secondary"
+			>if I had just bought a LED strip on aliexpress, it would be easier to do and it would last
+			longer</span
+		>. Arduino 9V battery lasted me until the evening of the first day of the event.
 	</p>
 </div>
 
