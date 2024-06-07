@@ -1,11 +1,15 @@
 <script lang="ts">
-	import Project from "$lib/projects/Project.svelte";
+	import Project from "$lib/projectStructure/Project.svelte";
 	import info from "./info";
+
+	console.log(info.arduinoVest.modal);
 </script>
 
-<h1 class="text-5xl font-bold mb-5 text-center">
-	<p class=" inline">My recent</p>
-	<strong class="inline text-secondary">projects</strong>
+<h1 class="text-5xl mb-5 text-center">
+	<p class="inline">
+		My recent <span class="text-secondary font-bold">projects</span>
+	</p>
+	<p class="text-xl">and the lessons learned from them.</p>
 </h1>
 
 <!-- Row one of items -->
@@ -17,7 +21,6 @@
 
 <!-- Row two of items -->
 <div class="flex gap-10 flex-col md:flex-row justify-between items-center md:items-start">
-	<Project project={info.tableRows} />
 	<Project project={info.stockSS} />
 	<Project project={info.arduinoVest} />
 </div>

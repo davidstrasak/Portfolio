@@ -34,7 +34,7 @@
 			</li>
 			<li class="mt-4">
 				This webpage is a <span class="text-secondary">blog</span> and a
-				<span class="text-secondary">portfolio</span> website where I showcase my work and write about
+				<span class="text-secondary">portfolio</span> website where I showcase my works and write about
 				interesting topics.
 			</li>
 			<li class="mt-4">

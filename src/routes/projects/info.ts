@@ -1,68 +1,59 @@
 import { base } from "$app/paths";
 let id = 1;
 
-interface proj{
+interface proj {
 	id: number;
+	image: string;
 	title: string;
 	description: string;
-	modal: string;
-	image: string;
+	modal: any;
 }
 
 let arduinoVest:proj = {
 	id: id++,
-	title: "Arduino - Vest with LEDs",
-	description: `It included six LEDs soldered to cables running into one Arduino
-            Uno, running on a 9V battery.`,
-	modal: '<span class="text-secondary">vest</span>',
-	image: `${base}/images/Vest_with_LEDs.jpg`
+	image: `${base}/images/Vest_with_LEDs.jpg`,
+	title: `<p><span class="text-accent">Arduino</span> - Vest with LEDs</p>`,
+	description: `My favourite hardware project. It included six LEDs soldered to cables connected to one Arduino
+            Uno, powered by a 9V battery.`,
+	modal: "ArduinoVest"
 };
 
 let automaticWindow:proj = {
 	id: id++,
-	title: "Arduino - Automatic window",
+	image: `${base}/images/Automatic_Window.jpeg`,
+	title: `<p><span class="text-accent">Arduino</span> - Automatic window</p>`,
 	description: `This window prototype adjusts its opening and closing based on
-            weather forecasts, temperature or if it is time to ventilate
-            your room.`,
-	modal: '<span class="text-secondary">window</span>',
-	image: `${base}/images/Automatic_Window.jpeg`
+			weather forecasts, temperature or if it is time to ventilate
+			your room.`,
+	modal: `<span class="text-secondary">window</span>`
 };
 
 let PICvariety:proj = {
 	id: id++,
-	title: "C - Various PIC projects",
+	image: `${base}/images/PICVariety.jpg`,
+	title: `<p><span class="text-accent">C</span> - Various PIC projects</p>`,
 	description:
-		"This was about creating one big project on a PIC18 development board for a school project",
-	modal: '<span class="text-secondary">pic</span>',
-	image: `${base}/images/PICVariety.jpg`
+		`This was about creating one big project on a PIC18 development board for a school project`,
+	modal: `<span class="text-secondary">pic</span>`
 };
 
 let thisWebsite:proj = {
 	id: id++,
-	title: "Sveltekit - This website",
+	image: `${base}/images/This_Website.jpg`,
+	title: `<p><span class="text-accent">SvelteKit</span> - This website</p>`,
 	description: `It was created by using some knowledge from a full-stack development
-            Udemy course and by taking bits of code from websites that I liked.`,
-	modal: '<span class="text-secondary">website</span>',
-	image: `${base}/images/This_Website.jpg`
-};
-
-let tableRows:proj = {
-	id: id++,
-	title: "Excel VBA  - Function that adds rows to a table",
-	description: `I've used this fucntion multiple times to create spreadsheets that fell fluent to use. 
-	It is a simple macro that makes sure there is an empty row at the end of the table every time.`,
-	modal: '<span class="text-secondary">table</span>',
-	image: `${base}/images/TableRows.jpg`
+			Udemy course and by taking bits of code from websites that I liked.`,
+	modal: `<span class="text-secondary">website</span>`
 };
 
 let stockSS:proj = {
 	id: id++,
-	title: "Excel - Stock spreadsheet",
+	image: `${base}/images/Stock_analysis.jpg`,
+	title: `<p><span class="text-accent">Excel VBA</span> - Stock spreadsheet</p>`,
 	description: `This spreadsheet imports 8 tables of financial data about a given
-            stock into one worksheet and uses functions to calculate value
-            investing criteria.`,
-	modal: '<span class="text-secondary">stockss</span>',
-	image: `${base}/images/Stock_analysis.jpg`
+			stock into one worksheet and uses functions to calculate value
+			investing criteria.`,
+	modal: `<span class="text-secondary">stockss</span>`
 };
 
 let info = {
@@ -70,7 +61,6 @@ let info = {
 	automaticWindow: automaticWindow,
 	PICvariety: PICvariety,
 	thisWebsite: thisWebsite,
-	tableRows: tableRows,
 	stockSS: stockSS
 };
 

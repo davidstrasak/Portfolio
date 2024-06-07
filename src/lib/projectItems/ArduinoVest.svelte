@@ -1,0 +1,54 @@
+<script>
+	import { base } from "$app/paths";
+</script>
+
+<img
+	style="float: right"
+	src="{base}/images/Vest_Gif.gif"
+	alt="a vest with LEDs powered by an arduino"
+	width="30%"
+	height="30%"
+/>
+<div>
+	<a class="text-accent" href="https://github.com/davidstrasak/Cybertown_LEDs/" target="_blank"
+		>Code here</a
+	>
+
+	<h2>Lessons learned:</h2>
+	<ul>
+		<li>Working with an arduino LED library.</li>
+		<li>My first big soldering project.</li>
+		<li>Using PWM pins to connect LEDs.</li>
+		<li>Next time I will solder the cables to the arduino. Not superglue them to the pins.</li>
+	</ul>
+
+	<h2>Description</h2>
+	<p>I've created this vest for the Cybertown event to look like a cyberpunk.</p>
+	<p>
+		I had no idea what I was doing - first time setting up LEDs to something like this or painting
+		the vest. One thing about being an engineer though, is you realise you can figure stuff out if
+		you think about the process.
+	</p>
+	<p>
+		The code itself is pretty simple - just initialise the LED pins, set up the animation and run
+		it.
+	</p>
+	<p>
+		Arduino wasn't the best platform for this, because if I had just bought a LED strip on
+		aliexpress, it would be easier to do and it would last longer. Arduino 9V battery lasted me
+		until the evening of the first day of the event.
+	</p>
+</div>
+
+<style>
+	ul {
+		list-style-type: none; /* Remove default list styling */
+	}
+
+	ul li:before {
+		content: "- "; /* Add a dash before each list item */
+	}
+	* {
+		margin-top: 10px;
+	}
+</style>
