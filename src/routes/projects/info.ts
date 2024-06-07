@@ -9,7 +9,7 @@ interface proj {
 	modal: any;
 }
 
-let arduinoVest:proj = {
+let ArduinoVest:proj = {
 	id: id++,
 	image: `${base}/images/Vest_with_LEDs.jpg`,
 	title: `<p><span class="text-accent">Arduino</span> - Vest with LEDs</p>`,
@@ -18,14 +18,14 @@ let arduinoVest:proj = {
 	modal: "ArduinoVest"
 };
 
-let automaticWindow:proj = {
+let AutomaticWindow:proj = {
 	id: id++,
 	image: `${base}/images/Automatic_Window.jpeg`,
 	title: `<p><span class="text-accent">Arduino</span> - Automatic window</p>`,
-	description: `This window prototype adjusts its opening and closing based on
+	description: `This window prototype <span class="text-secondary">opens and closes</span> based on
 			weather forecasts, temperature or if it is time to ventilate
 			your room.`,
-	modal: `<span class="text-secondary">window</span>`
+	modal: "AutomaticWindow"
 };
 
 let PICvariety:proj = {
@@ -33,35 +33,44 @@ let PICvariety:proj = {
 	image: `${base}/images/PICVariety.jpg`,
 	title: `<p><span class="text-accent">C</span> - Various PIC projects</p>`,
 	description:
-		`This was about creating one big project on a PIC18 development board for a school project`,
-	modal: `<span class="text-secondary">pic</span>`
+		`This school project was about programming <span class="text-secondary">five projects and a menu</span> using the PIC18F46K22 microcontroller in C.`,
+	modal: "PICvariety"
 };
 
-let thisWebsite:proj = {
+let ThisWebsite:proj = {
 	id: id++,
 	image: `${base}/images/This_Website.jpg`,
 	title: `<p><span class="text-accent">SvelteKit</span> - This website</p>`,
-	description: `It was created by using some knowledge from a full-stack development
-			Udemy course and by taking bits of code from websites that I liked.`,
-	modal: `<span class="text-secondary">website</span>`
+	description: `I wrote this website myself using sveltekit. It is a <span class="text-secondary">static single page application</span> that makes use of a lot of <span class="text-secondary">web-dev frameworks and github pages</span>.`,
+	modal: "ThisWebsite"
 };
 
-let stockSS:proj = {
+let StockSS:proj = {
 	id: id++,
 	image: `${base}/images/Stock_analysis.jpg`,
 	title: `<p><span class="text-accent">Excel VBA</span> - Stock spreadsheet</p>`,
 	description: `This spreadsheet imports 8 tables of financial data about a given
-			stock into one worksheet and uses functions to calculate value
-			investing criteria.`,
-	modal: `<span class="text-secondary">stockss</span>`
+			stock into one worksheet and <span class="text-secondary">uses functions to calculate value
+			investing criteria</span>.`,
+	modal: "StockSS"
+};
+
+let PiHole:proj = {
+	id: id++,
+	image: `${base}/images/PiHole.jpg`,
+	title: `<p><span class="text-accent">Linux</span> - PiHole application</p>`,
+	description: `This is a network-wide ad blocker that uses a Raspberry Pi clone to <span class="text-secondary">block ads and malicious links </span> on all devices connected to my home network.`,
+	modal: "PiHole"
 };
 
 let info = {
-	arduinoVest: arduinoVest,
-	automaticWindow: automaticWindow,
+	arduinoVest: ArduinoVest,
+	automaticWindow: AutomaticWindow,
 	PICvariety: PICvariety,
-	thisWebsite: thisWebsite,
-	stockSS: stockSS
+	thisWebsite: ThisWebsite,
+	stockSS: StockSS,
+	PiHole: PiHole
 };
+
 
 export default info;

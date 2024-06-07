@@ -1,8 +1,6 @@
 <script lang="ts">
 	import Project from "$lib/projectStructure/Project.svelte";
 	import info from "./info";
-
-	console.log(info.arduinoVest.modal);
 </script>
 
 <h1 class="text-5xl mb-5 text-center">
@@ -22,5 +20,6 @@
 <!-- Row two of items -->
 <div class="flex gap-10 flex-col md:flex-row justify-between items-center md:items-start">
 	<Project project={info.stockSS} />
+	<Project project={info.PiHole} />
 	<Project project={info.arduinoVest} />
 </div>

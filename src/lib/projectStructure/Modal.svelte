@@ -4,9 +4,19 @@
 	export let title: string = "Default";
 
 	import ArduinoVest from "$lib/projectItems/ArduinoVest.svelte";
+	import AutomaticWindow from "$lib/projectItems/AutomaticWindow.svelte";
+	import PICvariety from "$lib/projectItems/PICvariety.svelte";
+	import PiHole from "$lib/projectItems/PiHole.svelte";
+	import StockSS from "$lib/projectItems/StockSS.svelte";
+	import ThisWebsite from "$lib/projectItems/ThisWebsite.svelte";
 
 	let components: { [key: string]: typeof ArduinoVest } = {
-		ArduinoVest: ArduinoVest
+		ArduinoVest: ArduinoVest,
+		AutomaticWindow: AutomaticWindow,
+		PICvariety: PICvariety,
+		PiHole: PiHole,
+		StockSS: StockSS,
+		ThisWebsite: ThisWebsite
 	};
 </script>
 
