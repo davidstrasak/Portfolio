@@ -40,7 +40,13 @@
 	ol {
 		list-style-type: decimal; /* Remove default list styling */
 	}
-	* {
-		margin-top: 10px;
+	p {
+		margin-top: 7%;
+	}
+	h2 {
+		margin-top: 7%;
+	}
+	a {
+		margin-top: 7%;
 	}
 </style>

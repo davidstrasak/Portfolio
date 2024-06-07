@@ -21,9 +21,9 @@
 	background: #fff000;
 }
 
-/* Entrance animations */
+/* Initial animations */
 
-/* @layer components {
+@layer components {
 	.typewriter {
 		overflow: hidden;
 		border-right: 0.15em solid #00ff00;
@@ -63,7 +63,7 @@
 }
 .fade-in {
 	opacity: 0;
-	animation: fadeIn 1s ease-in;
+	animation: fadeIn 1s;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
-} */
+}

@@ -3,7 +3,6 @@
 </script>
 
 <img
-	style="float: right"
 	src="{base}/images/Embedded_System.jpeg"
 	width="100%"
 	height="100%"
@@ -65,7 +64,13 @@
 	ul {
 		list-style-type: initial; /* Remove default list styling */
 	}
-	* {
-		margin-top: 10px;
+	p {
+		margin-top: 7%;
+	}
+	h2 {
+		margin-top: 7%;
+	}
+	a {
+		margin-top: 7%;
 	}
 </style>
