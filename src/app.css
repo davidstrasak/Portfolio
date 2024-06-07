@@ -26,7 +26,7 @@
 @layer components {
 	.typewriter {
 		overflow: hidden;
-		border-right: 0.15em solid greenyellow;
+		border-right: 0.15em solid #00ff00;
 		white-space: nowrap;
 		margin: 0 auto;
 		letter-spacing: 0.15em;
@@ -48,7 +48,7 @@
 			border-color: transparent;
 		}
 		50% {
-			border-color: greenyellow;
+			border-color: #00ff00;
 		}
 	}
 }

@@ -34,7 +34,7 @@ let PICvariety:proj = {
 	description:
 		"This was about creating one big project on a PIC18 development board for a school project",
 	modal: '<span class="text-secondary">pic</span>',
-	image: `${base}/images/Embedded_System.jpeg`
+	image: `${base}/images/PICVariety.jpg`
 };
 
 let thisWebsite:proj = {

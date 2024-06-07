@@ -75,6 +75,11 @@
 			<nav class="md:items-left fade-in">
 				<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
 					<li>
+						<a href={`${base}/blog`} class="p-2">
+							<button class="btn btn-ghost btn-lg text-3xl">Blog</button>
+						</a>
+					</li>
+					<li>
 						<a href={`${base}/projects`} class="p-2">
 							<button class="btn btn-ghost btn-lg text-3xl">Projects</button>
 						</a>
@@ -82,11 +87,6 @@
 					<li>
 						<a href={`${base}/CV`} class="p-2">
 							<button class="btn btn-ghost btn-lg text-3xl">CV</button>
-						</a>
-					</li>
-					<li>
-						<a href={`${base}/about`} class="p-2">
-							<button class="btn btn-ghost btn-lg text-3xl">About me</button>
 						</a>
 					</li>
 				</ul>
