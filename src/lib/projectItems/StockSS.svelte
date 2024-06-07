@@ -5,18 +5,18 @@
 <img
 	src="{base}/images/Showcase_Stock_analysis.jpg"
 	width="100%"
-	height="30%"
+	height="100%"
 	alt="A spreadsheet with information about stocks"
 />
 
-<h2>Lessons learned:</h2>
-<ul>
+<h2 class="text-secondary font-bold">Lessons learned:</h2>
+<ol class="ml-10">
 	<li>Pulling data from the web into excel using VBA.</li>
 	<li>Correcting numbers to their correct decimals.</li>
 	<li>Figuring out how to work with 1000 lines of excel data.</li>
 	<li>Some python data pulling, which went on unused.</li>
-</ul>
-<h2>Description:</h2>
+</ol>
+<h2 class="text-secondary font-bold">Description:</h2>
 <p style="display: block; width: 100%">
 	This was my summer 2023 project that involved taking lots of table data from a
 	<a target="_blank" href="https://www.stockanalysis.com">Stock analysis website</a>, importing the
@@ -31,3 +31,12 @@
 	The economics themselves aren't that complicated, because they just take known formulas and
 	calculate the intrinsic stock value, which is then compared with the actual stock value.
 </p>
+
+<style>
+	ol {
+		list-style-type: decimal; /* Remove default list styling */
+	}
+	* {
+		margin-top: 10px;
+	}
+</style>
