@@ -43,24 +43,10 @@
 				>.
 			</li>
 			<li class="mt-4">
-				But most of all I like to work <span class="text-secondary">As effective as possible</span>.
+				But most of all I like to work <span class="text-secondary">as effective as possible</span>.
 			</li>
 		</ol>
 	</div>
-
-	<!-- <h2 class="text-secondary font-bold">Dabbling Around (in) Various Interesting Disciplines.</h2>
-	<br />
-	<p class="inline">Welcome to the</p>
-	<p class="inline text-accent">matrix of my making.</p>
-	<p class="inline">
-		Since my CV is just the compact version of my skills, I've rigged up this portfolio with the
-		other slick projects you did not see coming.
-	</p>
-	<p>So jack in and witness the cyber-wizardry beyond just random bullet points!</p>
-	<br />
-	<br />
-	<br />
-	<p class="invisible md:visible">press ENTER to load the projects:</p> -->
 </div>
 
 <style>

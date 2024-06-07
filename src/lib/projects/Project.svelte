@@ -15,14 +15,12 @@
 <div class="card w-96 bg-base-100 shadow-xl">
 	<figure>
 		<Label {id}>
-			<img src={image} alt={image} height="0px" width="400px" />
+			<img src={image} alt={image} height="0px" width="400px" class="mb-5" />
 		</Label>
 	</figure>
 	<div class="card-body p-0 text-center">
-		<Label {id}><h2 class="card-title text-3xl text-secondary">{title}</h2></Label>
-		<Label {id}>
-			<p class="text-2xl">{@html description}</p>
-		</Label>
-		<div class="card-actions justify-center"><Modal {modal} {id}></Modal></div>
+		<h2 class="card-title text-3xl text-secondary">{title}</h2>
+		<p class="text-2xl">{@html description}</p>
+		<div class="card-actions justify-center"><Modal {modal} {id} {title}></Modal></div>
 	</div>
 </div>

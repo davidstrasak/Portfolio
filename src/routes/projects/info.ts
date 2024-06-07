@@ -22,7 +22,7 @@ let automaticWindow:proj = {
 	id: id++,
 	title: "Arduino - Automatic window",
 	description: `This window prototype adjusts its opening and closing based on
-            weather forecasts, room temperature or if it is time to ventilate
+            weather forecasts, temperature or if it is time to ventilate
             your room.`,
 	modal: '<span class="text-secondary">window</span>',
 	image: `${base}/images/Automatic_Window.jpeg`

@@ -1,15 +1,16 @@
-<script>
-	export let modal = "0";
-	export let id = 0;
+<script lang="ts">
+	export let modal: string = "Default text";
+	export let id: number = 0;
+	export let title: string = "Default";
 </script>
 
 <!-- Put this part before </body> tag -->
 <input type="checkbox" id="my_modal_{id}" class="modal-toggle" />
 <div class="modal modal-bottom sm:modal-middle" role="dialog">
 	<div class="modal-box" style="width: 1500px;">
-		<h3 class="text-lg font-bold">Hello!</h3>
-		<p class="py-4">This modal works with a hidden checkbox!</p>
-		<p>
+		<h3 class="text-3xl font-bold">{title}</h3>
+
+		<p class="text-xl mt-4">
 			{@html modal}
 		</p>
 	</div>

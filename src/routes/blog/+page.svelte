@@ -1,1 +1,1 @@
-<p>This is the about page</p>
+<p>This is the blog page</p>

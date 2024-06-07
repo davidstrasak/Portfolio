@@ -2,28 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Scrollbar */
 /* width */
 ::-webkit-scrollbar {
 	width: 10px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
 	background: #0a100d;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
 	background: greenyellow;
 	border-radius: 5px;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
 	background: #fff000;
 }
 
-@layer components {
+/* Entrance animations */
+
+/* @layer components {
 	.typewriter {
 		overflow: hidden;
 		border-right: 0.15em solid #00ff00;
@@ -66,4 +66,4 @@
 	animation: fadeIn 1s ease-in;
 	animation-delay: 1s;
 	animation-fill-mode: forwards;
-}
+} */

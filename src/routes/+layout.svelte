@@ -168,7 +168,7 @@
 	<link rel="prerender" href="{base}/" />
 	<link rel="prerender" href="{base}/projects" />
 	<link rel="prerender" href="{base}/CV" />
-	<link rel="prerender" href="{base}/about" />
+	<link rel="prerender" href="{base}/blog" />
 </div>
 
 <style>
