@@ -54,9 +54,10 @@
 
 	// Making the dropdown of the navbar invisible
 	let setInvis: string;
-	let buttonInvis: string;
+	let buttonInvis: string = "invisible";
+
 	function toggleMenu() {
-		if (window.innerWidth < 824) {
+		if (window.innerWidth <= 824) {
 			toggleButtonVisibility();
 			if (setInvis === "") {
 				setInvis = "invisible";
@@ -72,7 +73,10 @@
 		}
 	}
 	function toggleButtonVisibility() {
-		if (window.innerWidth < 824) {
+		let buttonObject: any = headerObject.firstChild.firstChild.firstChild;
+		buttonObject.querySelector(".thisButton").classList.remove("fade-in");
+
+		if (window.innerWidth <= 824) {
 			buttonInvis = "";
 			if ((headerObject.firstChild.lastChild.style.height = "0px")) {
 				headerObject.firstChild.lastChild.style.height = "192px";
@@ -87,7 +91,10 @@
 	}
 	onMount(() => {
 		toggleMenu();
+
 		addEventListener("resize", toggleButtonVisibility);
+		window.scrollTo({ top: 0, behavior: "smooth" });
+
 		return () => {
 			window.removeEventListener("resize", toggleButtonVisibility);
 		};
@@ -112,7 +119,7 @@
 						>
 					</a>
 					<button
-						class="btn btn-lg btn-ghost inline {buttonInvis}"
+						class="btn btn-lg btn-ghost inline fade-in {buttonInvis} thisButton"
 						on:click={() => {
 							toggleMenu();
 						}}
