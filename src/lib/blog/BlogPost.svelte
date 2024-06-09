@@ -1,17 +1,18 @@
 <script>
-	import { base } from "$app/paths";
 	export let post;
 
 	const { date, title, description, image, href, tags } = post;
 </script>
 
-<div class="flex flex-row flex-nowrap mt-8 text-2xl">
+<div class="flex flex-row flex-nowrap mt-8 text-2xl items-center">
 	<div class=" m-12">
 		<img src={image} width="300px" height="300px" alt="text" />
 	</div>
-	<div class="flextext border-4 border-green-400 m-5 ml-4 flex-1 p-5">
+	<div class="flextext m-5 ml-4 flex-1 p-5">
 		<a {href} class="text-accent underline text-3xl font-bold">{title}</a>
-		{@html description}
+		<p class="mt-8">
+			{@html description}
+		</p>
 
 		<div class="mt-8 block">
 			<svg
