@@ -51,6 +51,47 @@
 			setBoundaries();
 		}
 	});
+
+	// Making the dropdown of the navbar invisible
+	let setInvis: string;
+	let buttonInvis: string;
+	function toggleMenu() {
+		if (window.innerWidth < 824) {
+			toggleButtonVisibility();
+			if (setInvis === "") {
+				setInvis = "invisible";
+				headerObject.firstChild.lastChild.style.height = "0px";
+			} else {
+				setInvis = "";
+				headerObject.firstChild.lastChild.style.height = "192px";
+			}
+		} else {
+			toggleButtonVisibility();
+			setInvis = "";
+			headerObject.firstChild.lastChild.style.height = "0px";
+		}
+	}
+	function toggleButtonVisibility() {
+		if (window.innerWidth < 824) {
+			buttonInvis = "";
+			if ((headerObject.firstChild.lastChild.style.height = "0px")) {
+				headerObject.firstChild.lastChild.style.height = "192px";
+			}
+		} else {
+			buttonInvis = "invisible";
+			setInvis = "";
+			if ((headerObject.firstChild.lastChild.style.height = "192px")) {
+				headerObject.firstChild.lastChild.style.height = "0px";
+			}
+		}
+	}
+	onMount(() => {
+		toggleMenu();
+		addEventListener("resize", toggleButtonVisibility);
+		return () => {
+			window.removeEventListener("resize", toggleButtonVisibility);
+		};
+	});
 </script>
 
 <div
@@ -58,21 +99,44 @@
 	style="height: {entireHeight};"
 >
 	<header
-		class="fixed md:pt-10 pb-5 w-full md:w-4/5 lg:w-3/5 bg-base-100 z-10 font-bold"
+		class="fixed md:pt-10 pb-5 w-full md:w-4/5 lg:w-3/5 z-10 font-bold md:bg-base-100"
 		bind:this={headerObject}
 	>
 		<div class="flex flex-col md:flex-row justify-between items-left">
 			<!-- Name -->
-			<div>
-				<a href={`${base}`} class="p-2">
-					<button class="btn btn-ghost btn-lg text-3xl">
-						<div class="typewriter">SYSTEMANCER</div></button
+			<div class="bg-base-100">
+				<div class="flex items-center flex-row pl-2">
+					<a href={`${base}`} class=" inline">
+						<button class="btn btn-ghost btn-lg text-3xl inline">
+							<div class="typewriter">SYSTEMANCER</div></button
+						>
+					</a>
+					<button
+						class="btn btn-lg btn-ghost inline {buttonInvis}"
+						on:click={() => {
+							toggleMenu();
+						}}
+						><svg
+							fill="#00ff00"
+							clip-rule="evenodd"
+							fill-rule="evenodd"
+							stroke-linejoin="round"
+							stroke-miterlimit="2"
+							viewBox="0 0 24 24"
+							xmlns="http://www.w3.org/2000/svg"
+							height="50"
+							width="50"
+							><path
+								d="m21 17.75c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75zm0-4c0-.414-.336-.75-.75-.75h-16.5c-.414 0-.75.336-.75.75s.336.75.75.75h16.5c.414 0 .75-.336.75-.75z"
+								fill-rule="nonzero"
+							/></svg
+						></button
 					>
-				</a>
+				</div>
 			</div>
 
 			<!-- Rest of the navbar -->
-			<nav class="md:items-left fade-in">
+			<nav class="md:items-left fade-in bg-base-100 {setInvis}">
 				<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
 					<li>
 						<a href={`${base}/blog`} class="p-2">
