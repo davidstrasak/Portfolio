@@ -110,7 +110,7 @@
 	typewriter = "typewriter";
 	onMount(() => {
 		setTimeout(() => {
-			typewriter = "";
+			typewriter = "vanillaTypewriter";
 		}, 1000);
 	});
 </script>

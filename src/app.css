@@ -53,6 +53,14 @@
 	}
 }
 
+.vanillaTypewriter {
+	overflow: hidden;
+	border-right: 0.15em solid #00ff00;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: 0.15em;
+}
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
