@@ -70,6 +70,7 @@
 	}
 	function toggleMenu() {
 		// This function is used when the navbar button is clicked
+
 		if (window.innerWidth <= 824) {
 			toggleButtonVisibility();
 			if (setInvis === "") {
@@ -87,7 +88,7 @@
 	}
 	onMount(() => {
 		backgroundObject = headerObject.firstChild.lastChild;
-
+		setInvis = "invisible";
 		toggleMenu();
 
 		addEventListener("resize", toggleButtonVisibility);
