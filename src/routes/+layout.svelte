@@ -3,6 +3,7 @@
 	import { base } from "$app/paths";
 	import { afterUpdate, onMount } from "svelte";
 	import info from "./projects/info";
+	import { page } from "$app/stores";
 
 	// BLOCK 1 - Scroll to top button listener
 	let scrollY = 0;
@@ -103,6 +104,8 @@
 			window.removeEventListener("resize", toggleButtonVisibility);
 		};
 	});
+
+	// BLOCK 5 - Re-rendering the header
 </script>
 
 <div
@@ -115,13 +118,16 @@
 	>
 		<div class="flex flex-col md:flex-row justify-between items-left">
 			<!-- Name -->
+
 			<div class="bg-base-100">
 				<div class="flex items-center flex-row pl-2">
-					<a href={`${base}`} class=" inline">
-						<button class="btn btn-ghost btn-lg text-3xl inline">
-							<div class="typewriter">SYSTEMANCER</div></button
-						>
-					</a>
+					{#key $page.url.pathname}
+						<a href={`${base}`} class=" inline">
+							<button class="btn btn-ghost btn-lg text-3xl inline">
+								<div class="typewriter">SYSTEMANCER</div></button
+							>
+						</a>
+					{/key}
 					<button
 						class="btn btn-lg btn-ghost inline {fadeIn} {buttonInvis}"
 						on:click={() => {
@@ -150,19 +156,25 @@
 			<nav class="md:items-left fade-in bg-base-100 {setInvis}">
 				<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
 					<li>
-						<a href={`${base}/blog`} class="p-2">
-							<button class="btn btn-ghost btn-lg text-3xl">Blog</button>
-						</a>
+						{#key $page.url.pathname}
+							<a href={`${base}/blog`} class="p-2">
+								<button class="btn btn-ghost btn-lg text-3xl">Blog</button>
+							</a>
+						{/key}
 					</li>
 					<li>
-						<a href={`${base}/projects`} class="p-2">
-							<button class="btn btn-ghost btn-lg text-3xl">Projects</button>
-						</a>
+						{#key $page.url.pathname}
+							<a href={`${base}/projects`} class="p-2">
+								<button class="btn btn-ghost btn-lg text-3xl">Projects</button>
+							</a>
+						{/key}
 					</li>
 					<li>
-						<a href={`${base}/CV`} class="p-2">
-							<button class="btn btn-ghost btn-lg text-3xl">CV</button>
-						</a>
+						{#key $page.url.pathname}
+							<a href={`${base}/CV`} class="p-2">
+								<button class="btn btn-ghost btn-lg text-3xl">CV</button>
+							</a>
+						{/key}
 					</li>
 				</ul>
 			</nav>
