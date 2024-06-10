@@ -55,6 +55,7 @@
 	// Making the dropdown of the navbar invisible
 	let setInvis: string;
 	let buttonInvis: string = "invisible";
+	let fadeIn: string = "fade-in";
 
 	function toggleMenu() {
 		if (window.innerWidth <= 824) {
@@ -73,9 +74,6 @@
 		}
 	}
 	function toggleButtonVisibility() {
-		let buttonObject: any = headerObject.firstChild.firstChild.firstChild;
-		buttonObject.querySelector(".thisButton").classList.remove("fade-in");
-
 		if (window.innerWidth <= 824) {
 			buttonInvis = "";
 			if (setInvis === "invisible") {
@@ -101,11 +99,9 @@
 		addEventListener("resize", toggleButtonVisibility);
 		window.scrollTo({ top: 0, behavior: "smooth" });
 
-		let buttonObject: any = headerObject.firstChild.firstChild.firstChild;
-
 		setTimeout(() => {
-			buttonObject.querySelector(".thisButton").classList.remove("fade-in");
-		}, 1000);
+			fadeIn = "";
+		}, 2000);
 
 		return () => {
 			window.removeEventListener("resize", toggleButtonVisibility);
@@ -131,7 +127,7 @@
 						>
 					</a>
 					<button
-						class="btn btn-lg btn-ghost inline fade-in {buttonInvis} thisButton"
+						class="btn btn-lg btn-ghost inline {fadeIn} {buttonInvis}"
 						on:click={() => {
 							toggleMenu();
 						}}
@@ -245,9 +241,9 @@
 	</footer>
 
 	{#each Object.values(info) as proj}
-		<link rel="preload" href={proj.image} as="image" />
+		<link rel="prefetch" href={proj.image} as="image" />
 	{/each}
-	<link rel="preload" href="{base}/CV_David_Strasak.jpg" as="image" />
+	<link rel="prefetch" href="{base}/CV_David_Strasak.jpg" as="image" />
 	<link rel="prerender" href="{base}/" />
 	<link rel="prerender" href="{base}/projects" />
 	<link rel="prerender" href="{base}/CV" />
