@@ -79,12 +79,12 @@
 		if (window.innerWidth <= 824) {
 			buttonInvis = "";
 			if (setInvis === "invisible") {
-				if ((headerObject.firstChild.lastChild.style.height = "0px")) {
-					headerObject.firstChild.lastChild.style.height = "192px";
-				}
-			} else {
 				if ((headerObject.firstChild.lastChild.style.height = "192px")) {
 					headerObject.firstChild.lastChild.style.height = "0px";
+				}
+			} else {
+				if ((headerObject.firstChild.lastChild.style.height = "0px")) {
+					headerObject.firstChild.lastChild.style.height = "192px";
 				}
 			}
 		} else {
