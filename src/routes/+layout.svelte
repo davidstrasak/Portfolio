@@ -20,9 +20,9 @@
 
 	// BLOCK 3 - Setting the height of the entire website so that the footer is always in the proper place
 	// These variables are bound to svelte HTML components
-	let wallOfText: any; // Variable that holds the contents of the page
-	let headerObject: any; // Variable that holds the header
-	let footerObject: any; // Variable that holds the footer
+	let wallOfText: HTMLElement; // Variable that holds the contents of the page
+	let headerObject: HTMLElement; // Variable that holds the header
+	let footerObject: HTMLElement; // Variable that holds the footer
 	let entireHeight: string; // This is set as the height of the website
 	let headerHeight: string; // This is set as the start of the page content, because the header has fixed positioning
 	function setBoundaries() {
@@ -47,7 +47,7 @@
 	let setInvis: string; // This holds the "invisible" class for the navbar
 	let buttonInvis: string = "invisible"; // This holds the "invisible" class for the toggle button
 	let fadeIn: string = "fade-in"; // This holds the "fade-in" class for the button
-	const backgroundObject = headerObject.firstChild.lastChild; // This holds the part of the navbar that has the black background
+	let backgroundObject: HTMLElement; // This holds the part of the navbar that has the black background
 
 	function toggleButtonVisibility() {
 		if (window.innerWidth <= 824) {
@@ -87,6 +87,8 @@
 		}
 	}
 	onMount(() => {
+		backgroundObject = headerObject.firstChild.lastChild;
+
 		toggleMenu();
 
 		addEventListener("resize", toggleButtonVisibility);
