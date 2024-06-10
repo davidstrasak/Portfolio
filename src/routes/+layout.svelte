@@ -105,7 +105,14 @@
 		};
 	});
 
-	// BLOCK 5 - Re-rendering the header
+	//BLOCK 5 - Typewriter effect for the name
+	let typewriter: string;
+	typewriter = "typewriter";
+	onMount(() => {
+		setTimeout(() => {
+			typewriter = "";
+		}, 1000);
+	});
 </script>
 
 <div
@@ -124,7 +131,7 @@
 					{#key $page.url.pathname}
 						<a href={`${base}`} class=" inline">
 							<button class="btn btn-ghost btn-lg text-3xl inline">
-								<div class="typewriter">SYSTEMANCER</div></button
+								<div class={typewriter}>SYSTEMANCER</div></button
 							>
 						</a>
 					{/key}
