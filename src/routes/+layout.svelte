@@ -101,6 +101,12 @@
 		addEventListener("resize", toggleButtonVisibility);
 		window.scrollTo({ top: 0, behavior: "smooth" });
 
+		let buttonObject: any = headerObject.firstChild.firstChild.firstChild;
+
+		setTimeout(() => {
+			buttonObject.querySelector(".thisButton").classList.remove("fade-in");
+		}, 1000);
+
 		return () => {
 			window.removeEventListener("resize", toggleButtonVisibility);
 		};
