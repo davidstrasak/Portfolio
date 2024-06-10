@@ -2,7 +2,6 @@
 	import "../app.css";
 	import { base } from "$app/paths";
 	import { afterUpdate, onMount } from "svelte";
-	import { goto } from "$app/navigation";
 	import info from "./projects/info";
 
 	// BLOCK 1 - Scroll to top button listener

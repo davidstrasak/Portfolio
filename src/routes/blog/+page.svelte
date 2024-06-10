@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { base } from "$app/paths";
 	import BlogPost from "$lib/blog/BlogPost.svelte";
 	import posts from "./posts";

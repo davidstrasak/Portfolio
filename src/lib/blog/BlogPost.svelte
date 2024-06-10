@@ -1,10 +1,12 @@
 <script>
+	import Project from "$lib/projectStructure/Project.svelte";
+
 	export let post;
 
 	const { date, title, description, image, href, tags } = post;
 </script>
 
-<div class="flex flex-row flex-nowrap mt-8 text-2xl items-center">
+<div class="flex md:flex-row flex-col flex-nowrap mt-8 text-2xl items-center">
 	<div class=" m-12">
 		<img src={image} width="300px" height="300px" alt="text" />
 	</div>
