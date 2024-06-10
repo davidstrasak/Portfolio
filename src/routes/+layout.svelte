@@ -5,7 +5,7 @@
 	import { goto } from "$app/navigation";
 	import info from "./projects/info";
 
-	// Scroll button listener
+	// BLOCK 1 - Scroll to top button listener
 	let scrollY = 0;
 	onMount(() => {
 		const updateScroll = () => {
@@ -15,26 +15,16 @@
 		return () => window.removeEventListener("scroll", updateScroll);
 	});
 
-	// Enter key press listener
-	onMount(() => {
-		const enterPressed = (event: any) => {
-			if (event.key === "Enter") {
-				goto(`${base}/projects`);
-			}
-		};
-		window.addEventListener("keydown", enterPressed);
-		return () => window.removeEventListener("keydown", enterPressed);
-	});
-
-	// Getting current year
+	// BLOCK 2 - Getting current year for the copyright
 	const year = new Date().getFullYear();
 
-	//Setting the height of the entire website so that the footer is in the proper place
-	let wallOfText: any;
-	let headerObject: any;
-	let footerObject: any;
-	let entireHeight: string;
-	let headerHeight: string;
+	// BLOCK 3 - Setting the height of the entire website so that the footer is always in the proper place
+	// These variables are bound to svelte HTML components
+	let wallOfText: any; // Variable that holds the contents of the page
+	let headerObject: any; // Variable that holds the header
+	let footerObject: any; // Variable that holds the footer
+	let entireHeight: string; // This is set as the height of the website
+	let headerHeight: string; // This is set as the start of the page content, because the header has fixed positioning
 	function setBoundaries() {
 		entireHeight =
 			wallOfText.clientHeight + headerObject.clientHeight + footerObject.clientHeight + 10 + "px";
@@ -43,7 +33,7 @@
 	onMount(() => {
 		addEventListener("resize", setBoundaries);
 		return () => {
-			window.removeEventListener("resize", setBoundaries);
+			window.removeEventListener("resize", setBoundaries); // cleanup
 		};
 	});
 	afterUpdate(() => {
@@ -52,45 +42,48 @@
 		}
 	});
 
-	// Making the dropdown of the navbar invisible
-	let setInvis: string;
-	let buttonInvis: string = "invisible";
-	let fadeIn: string = "fade-in";
+	// BLOCK 4 - Toggling the navbar
+	// Navbar should be toggleable on smaller screens and should be always visible on bigger screens
+	let setInvis: string; // This holds the "invisible" class for the navbar
+	let buttonInvis: string = "invisible"; // This holds the "invisible" class for the toggle button
+	let fadeIn: string = "fade-in"; // This holds the "fade-in" class for the button
+	const backgroundObject = headerObject.firstChild.lastChild; // This holds the part of the navbar that has the black background
 
-	function toggleMenu() {
-		if (window.innerWidth <= 824) {
-			toggleButtonVisibility();
-			if (setInvis === "") {
-				setInvis = "invisible";
-				headerObject.firstChild.lastChild.style.height = "0px";
-			} else {
-				setInvis = "";
-				headerObject.firstChild.lastChild.style.height = "192px";
-			}
-		} else {
-			toggleButtonVisibility();
-			setInvis = "";
-			headerObject.firstChild.lastChild.style.height = "0px";
-		}
-	}
 	function toggleButtonVisibility() {
 		if (window.innerWidth <= 824) {
 			buttonInvis = "";
 			if (setInvis === "invisible") {
-				if ((headerObject.firstChild.lastChild.style.height = "192px")) {
-					headerObject.firstChild.lastChild.style.height = "0px";
+				if ((backgroundObject.style.height = "192px")) {
+					backgroundObject.style.height = "0px";
 				}
-			} else {
-				if ((headerObject.firstChild.lastChild.style.height = "0px")) {
-					headerObject.firstChild.lastChild.style.height = "192px";
+			} else if (setInvis === "") {
+				if ((backgroundObject.style.height = "0px")) {
+					backgroundObject.style.height = "192px";
 				}
 			}
-		} else {
+		} else if (window.innerWidth > 824) {
 			buttonInvis = "invisible";
 			setInvis = "";
-			if ((headerObject.firstChild.lastChild.style.height = "192px")) {
-				headerObject.firstChild.lastChild.style.height = "0px";
+			if ((backgroundObject.style.height = "192px")) {
+				backgroundObject.style.height = "0px";
 			}
+		}
+	}
+	function toggleMenu() {
+		// This function is used when the navbar button is clicked
+		if (window.innerWidth <= 824) {
+			toggleButtonVisibility();
+			if (setInvis === "") {
+				setInvis = "invisible";
+				backgroundObject.style.height = "0px";
+			} else if (setInvis === "invisible") {
+				setInvis = "";
+				backgroundObject.style.height = "192px";
+			}
+		} else if (window.innerWidth > 824) {
+			toggleButtonVisibility();
+			setInvis = "";
+			backgroundObject.style.height = "0px";
 		}
 	}
 	onMount(() => {
@@ -100,6 +93,7 @@
 		window.scrollTo({ top: 0, behavior: "smooth" });
 
 		setTimeout(() => {
+			// This removes the fade-in class from the button after 2 seconds, because otherwise it would fade on click
 			fadeIn = "";
 		}, 2000);
 
