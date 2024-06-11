@@ -6,7 +6,7 @@
 		"git":"git add . && git commit && git push origin main && npm run host",
 		"host": "npm run predeploy && npx gh-pages -d build -t true",
 		"dev": "vite dev",
-		"build": "vite build && echo davidstrasak.eu > CNAME",
+		"build": "vite build && echo davidstrasak.eu > build/CNAME",
 		"predeploy": "npm run build",
 		"deploy": "npx gh-pages -d build -t true",
 		"preview": "vite preview",
