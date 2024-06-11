@@ -9,8 +9,8 @@
 	<tbody>
 		{#each posts as post}
 			<tr>
-				<td class="w-1/5">{post.date}</td>
-				<td> <span>-></span> <a class="underline" href={post.href}>{post.title}</a></td>
+				<td class="w-1/4">{post.date} -></td>
+				<td><a class="underline" href={post.href}>{post.title}</a></td>
 			</tr>
 		{/each}
 	</tbody>
