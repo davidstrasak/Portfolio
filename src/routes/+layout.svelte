@@ -131,7 +131,7 @@
 					<button class="btn btn-ghost btn-lg text-3xl inline">
 						{#key $page.url.pathname}
 							<a href={`${base}/`} class=" inline">
-								<span class={typewriter}>SYSTEMANCER</span>
+								<div class={typewriter}>SYSTEMANCER</div>
 							</a>
 						{/key}
 					</button>
