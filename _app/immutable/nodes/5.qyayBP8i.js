@@ -1,0 +1,1 @@
+import{s as n,n as o}from"../chunks/scheduler.Cewbzyqj.js";import{S as r,i as l,t as i,b as c,g as m,d as p}from"../chunks/index.CzmlST-r.js";function f(e){let t;return{c(){t=i("Hallooo Je to tahle stranka")},l(a){t=c(a,"Hallooo Je to tahle stranka")},m(a,s){m(a,t,s)},p:o,i:o,o,d(a){a&&p(t)}}}class h extends r{constructor(t){super(),l(this,t,null,f,n,{})}}export{h as component};
