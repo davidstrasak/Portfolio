@@ -10,7 +10,7 @@
 		{#each posts as post}
 			<tr>
 				<td class="w-1/5">{post.date}</td>
-				<td class="underline"><a href={post.href}>{post.title}</a></td>
+				<td> <span>-></span> <a class="underline" href={post.href}>{post.title}</a></td>
 			</tr>
 		{/each}
 	</tbody>

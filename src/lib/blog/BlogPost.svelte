@@ -1,6 +1,4 @@
 <script>
-	import Project from "$lib/projectStructure/Project.svelte";
-
 	export let post;
 
 	const { date, title, description, image, href, tags } = post;
