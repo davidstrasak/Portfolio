@@ -1,1 +1,1 @@
-Hallooo
+Hallooo Je to tahle stranka

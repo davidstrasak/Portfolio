@@ -130,8 +130,8 @@
 				<div class="flex items-center flex-row pl-2">
 					<button class="btn btn-ghost btn-lg text-3xl inline">
 						{#key $page.url.pathname}
-							<a href={`${base}`} class=" inline">
-								<div class={typewriter}>SYSTEMANCER</div>
+							<a href={`${base}/`} class=" inline">
+								<span class={typewriter}>SYSTEMANCER</span>
 							</a>
 						{/key}
 					</button>
