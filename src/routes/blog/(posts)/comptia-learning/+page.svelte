@@ -1,1 +1,1 @@
-Hallooo Je to tahle stranka
+Hallooo Je to tahle stranka update se stal
