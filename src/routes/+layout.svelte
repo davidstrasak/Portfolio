@@ -128,13 +128,13 @@
 
 			<div class="bg-base-100">
 				<div class="flex items-center flex-row pl-2">
-					{#key $page.url.pathname}
-						<a href={`${base}`} class=" inline">
-							<button class="btn btn-ghost btn-lg text-3xl inline">
-								<div class={typewriter}>SYSTEMANCER</div></button
-							>
-						</a>
-					{/key}
+					<button class="btn btn-ghost btn-lg text-3xl inline">
+						{#key $page.url.pathname}
+							<a href={`${base}`} class=" inline">
+								<div class={typewriter}>SYSTEMANCER</div>
+							</a>
+						{/key}
+					</button>
 					<button
 						class="btn btn-lg btn-ghost inline {fadeIn} {buttonInvis}"
 						on:click={() => {
@@ -163,25 +163,25 @@
 			<nav class="md:items-left fade-in bg-base-100 {setInvis}">
 				<ul class="flex flex-col md:flex-row space-x-0 md:space-x-10 md:space-y-0 items-left">
 					<li>
-						{#key $page.url.pathname}
-							<a href={`${base}/blog`} class="p-2">
-								<button class="btn btn-ghost btn-lg text-3xl">Blog</button>
-							</a>
-						{/key}
+						<button class="btn btn-ghost btn-lg text-3xl">
+							{#key $page.url.pathname}
+								<a href={`${base}/blog`} class="p-2"> Blog </a>
+							{/key}
+						</button>
 					</li>
 					<li>
-						{#key $page.url.pathname}
-							<a href={`${base}/projects`} class="p-2">
-								<button class="btn btn-ghost btn-lg text-3xl">Projects</button>
-							</a>
-						{/key}
+						<button class="btn btn-ghost btn-lg text-3xl">
+							{#key $page.url.pathname}
+								<a href={`${base}/projects`} class="p-2"> Projects </a>
+							{/key}
+						</button>
 					</li>
 					<li>
-						{#key $page.url.pathname}
-							<a href={`${base}/CV`} class="p-2">
-								<button class="btn btn-ghost btn-lg text-3xl">CV</button>
-							</a>
-						{/key}
+						<button class="btn btn-ghost btn-lg text-3xl no-animation">
+							{#key $page.url.pathname}
+								<a href={`${base}/CV`} class="p-2"> CV </a>
+							{/key}
+						</button>
 					</li>
 				</ul>
 			</nav>
