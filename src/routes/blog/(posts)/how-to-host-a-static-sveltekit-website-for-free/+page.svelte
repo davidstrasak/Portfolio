@@ -56,7 +56,7 @@
 		"`git`:`git add . && git commit && git push origin main && npm run host`",
 		"`host`: `npm run predeploy && npx gh-pages -d build -t true`,",
 		"`dev`: `vite dev`,",
-		"`build`: `vite build && echo davidstrasak.eu > build/CNAME`,",
+		"`build`: `vite build`,",
 		"`predeploy`: `npm run build`,",
 		"}"
 	];
@@ -67,7 +67,7 @@
 <div>
 	<img
 		src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1RzTzQFA_9h3qbValKOs0mjsATDkHwMOTA&s"
-		class="mb-4 float-right rounded-xl"
+		class="float-right rounded-xl m-4"
 		alt="SvelteKit logo"
 	/>
 	<h1 class="text-3xl mb-6 font-bold">
@@ -81,7 +81,7 @@
 		>.
 	</p>
 	<p>
-		For this tutorial you will need <span>Node.js and npm</span>. And also you will need a GitHub
+		For this tutorial you will need <span>Node.js and npm</span>. You will also need a GitHub
 		account, for the GitHub pages hosting service.
 		<span>You can host this static website for free over there</span>.
 	</p>
@@ -146,7 +146,8 @@
 	</p>
 	<p>
 		For example the default URL of this portfolio is <span>davidstrasak.github.io/Porfolio</span>.
-		Portfolio is something I had to set into a variable and use in every anchor tag on this website.
+		"/Portfolio" is something I had to set into a variable and use in every anchor tag on this
+		website.
 	</p>
 	<p>This is <span>how you set the svelte.config.js</span></p>
 	<div class="mockup-code text-info">
@@ -161,11 +162,11 @@
 		{/each}
 	</div>
 	<br />
-	<h2>Finally to make this site hosteable:</h2>
+	<h2>Final step to make this site hosteable:</h2>
 	<p>Just add a <span>.nojekyll </span>file into the static folder of your project.</p>
 	<p>
 		This file tells GitHub pages to not try to generate a static site from this repository. Because
-		the generation is handled by us.
+		generating is handled by us.
 	</p>
 
 	<br />
@@ -185,7 +186,7 @@
 			<pre data-prefix="$"><code>{c}</code></pre>
 		{/each}
 	</div>
-	<p>Now add these scripts into you <span>package.json</span> file.</p>
+	<p>Now add these scripts into your <span>package.json</span> file.</p>
 	<div class="mockup-code text-info">
 		{#each code7 as c}
 			<pre data-prefix="$"><code>{c}</code></pre>
@@ -200,7 +201,7 @@
 	<br />
 	<p>
 		Or if you want to <span
-			>add to git, push to a remote github repository, build AND host on github pages</span
+			>add to git, push to a remote github repository, build the website AND host on github pages</span
 		>, this is the code I run when I update my site.
 	</p>
 	<div class="mockup-code text-info">
@@ -221,9 +222,9 @@
 		<span>davidstrasak.eu</span>.
 	</p>
 	<p>
-		Now, I do not want to go into all the topics that go through adding a custom domain to a page
-		hosted on GitHub pages, but I want to show <span
-			>How can you automatically add the custom domain when using gh-pages</span
+		I do not want to go into all the topics that go through adding a custom domain to a page hosted
+		on GitHub pages, but I want to show <span
+			>how can you automatically add the custom domain when using gh-pages</span
 		>.
 	</p>
 	<p>
@@ -232,13 +233,13 @@
 	</p>
 	<p>
 		That is because the custom domain is stored inside a file in the build folder. <span
-			>This file is called CNAME.</span
+			>This file is called CNAME</span
 		>.
 	</p>
 	<p>
-		So I thought about automising this set, so I do not have to go into GitHub pages settings every
-		time I update the website, and I figured out to just <span
-			>create the file after the build process through npm</span
+		So I figured out that if I create this CNAME file inside the build folder every time after
+		building the page, the custom URL will be set automatically. <span
+			>That can be done through this line</span
 		>.
 	</p>
 	<div class="mockup-code text-info">
@@ -252,8 +253,8 @@
 	</p>
 	<br />
 	<h2>
-		Now go and create a website that you can call your own! Design it how you want and use all the
-		svelte frameworks you can find!
+		If you've read this so far, you can now go and create a website that you can call your own!
+		Design it how you want and use all the svelte frameworks you can find!
 	</h2>
-	<p class="mb-40">What could go wrong?</p>
+	<p class="mb-40">Because what could go wrong?</p>
 </div>
