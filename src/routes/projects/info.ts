@@ -12,7 +12,7 @@ interface proj {
 let ArduinoVest: proj = {
 	id: id++,
 	image: `${base}/images/Vest_with_LEDs.jpg`,
-	title: `<p><span class="text-accent">Arduino</span> - Vest with LEDs</p>`,
+	title: `<span><span class="text-accent">Arduino</span> - Vest with LEDs</span>`,
 	description: `My favourite hardware project. It included six LEDs soldered to cables connected to one Arduino
             Uno, powered by a 9V battery.`,
 	modal: "ArduinoVest"
