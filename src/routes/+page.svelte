@@ -5,7 +5,7 @@
 <noscript> Please enable JavaScript to view the this page. </noscript>
 
 <!-- This is the landing page -->
-<p class="">I am an aspiring <span class="text-secondary">SYSTEMANCER</span>.</p>
+<p class="text-3xl">I am an aspiring <span class="text-secondary">SYSTEMANCER</span>.</p>
 <br />
 <div class="whitespace-normal h-fit">
 	<div class="border-solid border-2 border-primary p-2">
@@ -17,17 +17,17 @@
 		/>
 		<strong>Systemancer</strong>
 		<p class="italic text-lg">/sis-tuh-man-ser/</p>
-		<br />
+
 		<p class="italic text-lg">noun</p>
-		<p class="text-2xl ml-8 mr-8 text-justify">
+		<p class="text-2xl mx-8 text-justify">
 			An aspiring "Systemancer" is a future master of technology, aiming to understand how intricate
 			technological systems work together to find the most effective solution.
 		</p>
 	</div>
 
 	<br />
-	<div class="w-full text-justify">
-		<p class="text-secondary">But you can call me David.</p>
+	<div class="w-full text-justify text-2xl">
+		<p class="text-secondary text-3xl">But you can call me David.</p>
 		<ol class="">
 			<li class="mt-4">
 				I'm an aspiring <span class="text-secondary">systems engineer</span>.

@@ -40,9 +40,9 @@
 		list-style-type: decimal; /* Remove default list styling */
 	}
 	p {
-		margin-top: 7%;
+		margin-top: 5%;
 	}
 	h2 {
-		margin-top: 7%;
+		margin-top: 5%;
 	}
 </style>

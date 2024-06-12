@@ -4,10 +4,10 @@
 </script>
 
 <h1 class="text-5xl mb-5 text-center">
-	<p class="inline">
+	<p class="inline text-5xl">
 		My recent <span class="text-secondary font-bold">projects</span>
 	</p>
-	<p class="text-xl">and the lessons learned from them.</p>
+	<p class="text-xl text-center">and the lessons learned from them.</p>
 </h1>
 
 <!-- Row one of items -->

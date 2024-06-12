@@ -26,10 +26,10 @@
 <Portal>
 	<input type="checkbox" id="my_modal_{id}" class="modal-toggle" />
 	<div class="modal modal-bottom sm:modal-middle" role="dialog">
-		<div class="modal-box font-cyberpunk" style="width: 1500px;">
+		<div class="modal-box font-cyberpunk" style="">
 			<h3 class="text-3xl font-bold text-secondary">{@html title}</h3>
 
-			<p class="text-xl mt-4 text-justify">
+			<p class="text-xl text-justify">
 				<!-- Importing the modal components had to be done so unintuitively, because otherwise it would throw me an SSR error. -->
 				<svelte:component this={components[modal]} />
 			</p>
