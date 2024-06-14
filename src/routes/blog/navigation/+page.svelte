@@ -2,9 +2,8 @@
 	import posts from "../posts";
 </script>
 
-<h1 class="text-5xl mb-10 text-center">
-	<p class="block text-secondary">Blog post navigation</p>
-</h1>
+<p class="block text-secondary text-5xl mb-10 text-center">Blog post navigation</p>
+
 <table class="w-full">
 	<tbody>
 		{#each posts as post}
