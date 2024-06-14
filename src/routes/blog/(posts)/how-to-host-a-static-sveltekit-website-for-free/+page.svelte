@@ -1,4 +1,6 @@
 <script>
+	import Code from "$lib/blog/Code.svelte";
+
 	const code1 = [
 		"npx create-vite@latest my-sveltekit-project",
 		"cd my-sveltekit-project",
@@ -105,21 +107,13 @@
 		<span>That will start a server that you can see inside your browser.</span>
 	</p>
 
-	<div class="mockup-code text-info">
-		{#each code1 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code1} />
 
 	<br />
 	<h2>Now install the static adaper for SvelteKit</h2>
 	<p>That can be done easily by using npm again.</p>
 
-	<div class="mockup-code text-info">
-		{#each code2 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code2} />
 	<p>
 		This package allows you to translate SvelteKit syntax to normal HTML, JS and CSS, which let's
 		you host this SvelteKit website on GitHub pages.
@@ -127,11 +121,7 @@
 	<br />
 	<h2>Now add it to svelte.config.js</h2>
 	<p>Just add the extra lines into the default <span>svelte.config.js.</span></p>
-	<div class="mockup-code text-info">
-		{#each code3 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code3} />
 	<p>Yay! Now you have a static website.</p>
 	<br />
 	<h2>Setting the base URL</h2>
@@ -150,17 +140,9 @@
 		website.
 	</p>
 	<p>This is <span>how you set the svelte.config.js</span></p>
-	<div class="mockup-code text-info">
-		{#each code4 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code4} />
 	<p>And this is how you use the <span>{"{base}"}</span> in every anchor tag.</p>
-	<div class="mockup-code text-info">
-		{#each code5 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code5} />
 	<br />
 	<h2>Final step to make this site hosteable:</h2>
 	<p>Just add a <span>.nojekyll </span>file into the static folder of your project.</p>
@@ -181,34 +163,18 @@
 		the hosting for us.
 	</p>
 	<p>First install the package.</p>
-	<div class="mockup-code text-info">
-		{#each code6 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code6} />
 	<p>Now add these scripts into your <span>package.json</span> file.</p>
-	<div class="mockup-code text-info">
-		{#each code7 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code7} />
 	<p>So now you can call these scripts through typing "npm run deploy".</p>
-	<div class="mockup-code text-info">
-		{#each code8 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code8} />
 	<br />
 	<p>
 		Or if you want to <span
 			>add to git, push to a remote github repository, build the website AND host on github pages</span
 		>, this is the code I run when I update my site.
 	</p>
-	<div class="mockup-code text-info">
-		{#each code9 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code9} />
 	<p>
 		The positive is that you need to <span
 			>write only one line - "npm run git" to do all the things</span
@@ -242,11 +208,7 @@
 			>That can be done through this line</span
 		>.
 	</p>
-	<div class="mockup-code text-info">
-		{#each code10 as c}
-			<pre data-prefix="$"><code>{c}</code></pre>
-		{/each}
-	</div>
+	<Code code={code10} />
 	<p>
 		This code is all you'll need to automate that last annoying step of adding the custom URL of the
 		website into GitHub pages.

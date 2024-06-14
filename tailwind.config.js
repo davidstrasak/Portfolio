@@ -5,6 +5,9 @@ export default {
 		extend: {
 			fontFamily: {
 				cyberpunk: ['"Kode Mono"', "monospace"]
+			},
+			margin: {
+				"10px": "10px"
 			}
 		}
 		// fontSize: {

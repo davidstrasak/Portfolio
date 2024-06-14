@@ -1,7 +1,6 @@
 <script>
 	import { base } from "$app/paths";
 	import { page } from "$app/stores";
-	import "./blog.css";
 </script>
 
 {#key $page.url.pathname}
