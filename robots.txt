@@ -1,3 +1,1 @@
-User-agent: *  
-Sitemap: https://www.davidstrasak.eu/sitemap.xml  
-Host: davidstrasak.eu 
+Sitemap: https://www.davidstrasak.eu/sitemap.xml 
