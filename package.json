@@ -8,7 +8,7 @@
 		"dev": "vite dev",
 		"build": "vite build && npm run build-CNAME && npm run build-robots",
 		"build-CNAME": "echo davidstrasak.eu > build/CNAME",
-		"build-robots": "echo User-agent: * > build/robots.txt && echo Sitemap: https://www.davidstrasak.eu/sitemap.xml >> build/robots.txt && echo Host: davidstrasak.eu >> build/robots.txt",
+		"build-robots": "echo Sitemap: https://www.davidstrasak.eu/sitemap.xml >> build/robots.txt",
 		"postbuild":"npx svelte-sitemap --domain https://davidstrasak.eu",
 		"predeploy": "npm run build",
 		"deploy": "npx gh-pages -d build -t true",
