@@ -89,7 +89,7 @@
 	}
 	onMount(() => {
 		backgroundObject = headerObject.firstChild.lastChild;
-		setInvis = "invisible";
+		setInvis = "";
 		toggleMenu();
 
 		addEventListener("resize", toggleButtonVisibility);
