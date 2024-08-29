@@ -226,7 +226,7 @@
 		</aside>
 		<nav class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
 			<p>Let's get in touch:</p>
-			<a href="https://www.github.com/davidstrasak/" target="_blank"
+			<a href="https://www.github.com/davidstrasak/" target="_blank" class="my-auto"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -239,7 +239,7 @@
 					/>
 				</svg>
 			</a>
-			<a href="https://www.linkedin.com/in/davidstrasak/" target="_blank"
+			<a href="https://www.linkedin.com/in/davidstrasak/" target="_blank" class="my-auto"
 				><svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
