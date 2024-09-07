@@ -9,7 +9,7 @@
 		"build": "vite build && npm run build-CNAME && npm run build-robots",
 		"build-CNAME": "echo davidstrasak.eu > build/CNAME",
 		"build-robots": "echo User-agent: * > build/robots.txt && echo Sitemap: https://www.davidstrasak.eu/sitemap.xml >> build/robots.txt && echo Host: davidstrasak.eu >> build/robots.txt",
-		"postbuild":"npx svelte-sitemap --domain https://davidstrasak.eu",
+		"postbuild": "npx svelte-sitemap --domain https://davidstrasak.eu",
 		"predeploy": "npm run build",
 		"deploy": "npx gh-pages -d build -t true",
 		"preview": "vite preview",
@@ -44,6 +44,7 @@
 	"type": "module",
 	"dependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",
-		"gh-pages": "^6.1.1"
+		"gh-pages": "^6.1.1",
+		"marked": "^14.1.1"
 	}
 }
