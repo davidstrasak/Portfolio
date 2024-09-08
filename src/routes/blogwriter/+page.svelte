@@ -1,6 +1,6 @@
 <script lang="ts">
 	let inputText =
-		"# Examples:\nThis is normal text\n## This is a second paragraph\n```\nThis is some code\n```";
+		"# Hello there\nSo you've stumbled on this page huh?\n## This is a page for the to write blogs on here.\n```\nyou can write code\n```\nOr other __important things__.";
 	let outputText = "";
 
 	function convertMDtoHTML() {
@@ -8,7 +8,7 @@
 		let splitText = inputText.split("\n");
 		let codeBlock = false;
 
-		splitText.forEach((line) => {
+		splitText.forEach((line, index) => {
 			let settings = "";
 			if (line.startsWith("# ")) {
 				settings = `<h1 class="text-4xl text-secondary mb-6 font-bold">`;
@@ -25,7 +25,7 @@
 			} else if (line.startsWith("```")) {
 				codeBlock = !codeBlock;
 				if (codeBlock) {
-					line = `<div class="mockup-code text-info">`;
+					line = `<div class="mockup-code text-info text-lg">`;
 				} else {
 					line = `</div>`;
 				}
@@ -37,6 +37,10 @@
 			} else {
 				let settings = `<p class="text-lg text-primary">`;
 				line = settings + line + "</p>";
+			}
+
+			if (index === splitText.length) {
+				line = `<div class="mb-40">` + line + `</div>`;
 			}
 
 			// Replace __underscores__ with <span> tags directly
@@ -61,5 +65,9 @@
 	bind:value={inputText}
 	on:change={convertMDtoHTML}
 ></textarea>
+
+<p>{@html outputText}</p>
+
+<hr />
 
 <p>{outputText}</p>
