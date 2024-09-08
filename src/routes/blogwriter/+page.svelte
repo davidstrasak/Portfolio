@@ -7,7 +7,6 @@
 		let htmlArray: string[] = [];
 		let splitText = inputText.split("\n");
 		let codeBlock = false;
-		console.log(splitText);
 
 		splitText.forEach((line) => {
 			let settings = "";
@@ -33,6 +32,8 @@
 			} else if (codeBlock) {
 				settings = `<pre data-prefix="$"><code>`;
 				line = settings + line + "</code></pre>";
+			} else if (line === "") {
+				line = `<br/>`;
 			} else {
 				let settings = `<p class="text-lg text-primary">`;
 				line = settings + line + "</p>";

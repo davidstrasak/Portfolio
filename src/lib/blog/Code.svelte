@@ -2,7 +2,8 @@
 	export let code;
 </script>
 
-<div class="mockup-code text-info">
+<!-- legacy module that I won't need to use anymore if I use the markdown to html converter -->
+<div class="mockup-code text-info text-lg">
 	{#each code as c}
 		<pre data-prefix="$"><code>{c}</code></pre>
 	{/each}

@@ -72,7 +72,7 @@
 		class="float-right rounded-xl m-4"
 		alt="SvelteKit logo"
 	/>
-	<h1 class="text-3xl mb-6 font-bold">
+	<h1 class="text-4xl mb-6 font-bold text-secondary">
 		Publish a static SvelteKit app to a custom domain on GitHub pages
 	</h1>
 	<p>As you might see, I've recently published a static SvelteKit website (this website).</p>
@@ -88,7 +88,7 @@
 		<span>You can host this static website for free over there</span>.
 	</p>
 	<br />
-	<h2>But first for the unitiated: What is SvelteKit?</h2>
+	<h2 class="text-secondary mt-4 text-3xl">But first for the unitiated: What is SvelteKit?</h2>
 	<p>
 		It's a web building framework. It allows you to follow a structure to have websites that are
 		reactive.
@@ -98,7 +98,7 @@
 		jump through. Things just make sense!
 	</p>
 	<br />
-	<h2>Alright. How to do it?</h2>
+	<h2 class="text-secondary mt-4 text-3xl">Alright. How to do it?</h2>
 	<p>
 		First of all we'll need to initialise a SvelteKit project. That can be done through <span
 			>Node.js and npm</span
@@ -110,7 +110,7 @@
 	<Code code={code1} />
 
 	<br />
-	<h2>Now install the static adaper for SvelteKit</h2>
+	<h2 class="text-secondary mt-4 text-3xl">Now install the static adaper for SvelteKit</h2>
 	<p>That can be done easily by using npm again.</p>
 
 	<Code code={code2} />
@@ -119,12 +119,12 @@
 		you host this SvelteKit website on GitHub pages.
 	</p>
 	<br />
-	<h2>Now add it to svelte.config.js</h2>
+	<h2 class="text-secondary mt-4 text-3xl">Now add it to svelte.config.js</h2>
 	<p>Just add the extra lines into the default <span>svelte.config.js.</span></p>
 	<Code code={code3} />
 	<p>Yay! Now you have a static website.</p>
 	<br />
-	<h2>Setting the base URL</h2>
+	<h2 class="text-secondary mt-4 text-3xl">Setting the base URL</h2>
 	<p>
 		Now that you have a static website, you can host it on GitHub pages. <span>But beware</span>,
 		GitHub pages multi page websites do not work as the normal ones.
@@ -144,7 +144,7 @@
 	<p>And this is how you use the <span>{"{base}"}</span> in every anchor tag.</p>
 	<Code code={code5} />
 	<br />
-	<h2>Final step to make this site hosteable:</h2>
+	<h2 class="text-secondary mt-4 text-3xl">Final step to make this site hosteable:</h2>
 	<p>Just add a <span>.nojekyll </span>file into the static folder of your project.</p>
 	<p>
 		This file tells GitHub pages to not try to generate a static site from this repository. Because
@@ -152,7 +152,9 @@
 	</p>
 
 	<br />
-	<h2><span class="text-accent">Life hack 1: </span>Hosting on GitHub pages automatically</h2>
+	<h2 class="text-secondary mt-4 text-3xl">
+		<span class="text-accent">Life hack 1: </span>Hosting on GitHub pages automatically
+	</h2>
 	<p>
 		The page that we have now would have to be manually built (translated from svelte to HTML, JS
 		and CSS) and uploaded to github pages.
@@ -182,7 +184,9 @@
 		I would want to do every time. That's like <span>saving three lines of code every time</span>!
 	</p>
 	<br />
-	<h2><span class="text-accent">Life hack 2: </span>Add this site to a custom domain</h2>
+	<h2 class="text-secondary mt-4 text-3xl">
+		<span class="text-accent">Life hack 2: </span>Add this site to a custom domain
+	</h2>
 	<p>
 		My website's domain is not <span>davidstrasak.github.io/Porfolio</span>, but rather
 		<span>davidstrasak.eu</span>.
@@ -214,7 +218,7 @@
 		website into GitHub pages.
 	</p>
 	<br />
-	<h2>
+	<h2 class="text-secondary mt-4 text-3xl">
 		If you've read this so far, you can now go and create a website that you can call your own!
 		Design it how you want and use all the svelte frameworks you can find!
 	</h2>
