@@ -25,9 +25,4 @@
 	on:change={convertMDtoHTML}
 ></textarea>
 
-<p>{outputText}</p>
-
-<p>Now this</p>
-<h1>this is something I like</h1>
-<h2>Now I can write in MD and convert it into HTML</h2>
-<h3>and this will be converted forever</h3>
+<p>{@html outputText}</p>
