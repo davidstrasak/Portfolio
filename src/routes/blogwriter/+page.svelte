@@ -1,6 +1,6 @@
 <script lang="ts">
 	let inputText =
-		"# Hello there\nSo you've stumbled on this page huh?\n## This is a page for the to write blogs on here.\n```\nyou can write code\n```\nOr other __important things__.";
+		"# Hello there\nSo you've stumbled on this page huh?\n## This is a page where I write my blogs.\n### Created mainly because I'd rather write in Markdown than HTML\n```\nyou can write code\n```\nOr other ==important things==.\nAnd this is the output to ==paste into the page:==";
 	let outputText = "";
 
 	function convertMDtoHTML() {
@@ -39,12 +39,12 @@
 				line = settings + line + "</p>";
 			}
 
-			if (index === splitText.length) {
+			if (index === splitText.length - 1) {
 				line = `<div class="mb-40">` + line + `</div>`;
 			}
 
 			// Replace __underscores__ with <span> tags directly
-			line = line.replace(/__(.*?)__/g, '<span class="text-secondary">$1</span>');
+			line = line.replace(/==(.*?)==/g, '<span class="text-secondary">$1</span>');
 
 			htmlArray.push(line);
 		});
