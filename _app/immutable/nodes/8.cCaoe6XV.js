@@ -1,0 +1,10 @@
+import{s as E,n as T,r as A}from"../chunks/scheduler.Cewbzyqj.js";import{S as M,i as W,e as _,s as y,H as $,t as k,c as x,a as v,d as p,f as b,p as P,b as S,n as j,g as f,q as w,h as q,r as H,j as C}from"../chunks/index.Wsxy2lSA.js";function I(l){let a,c,r,i,n,m,u,o,h,d,t;return{c(){a=_("textarea"),c=y(),r=_("p"),i=new $(!1),n=y(),m=_("hr"),u=y(),o=_("p"),h=k(l[1]),this.h()},l(e){a=x(e,"TEXTAREA",{class:!0}),v(a).forEach(p),c=b(e),r=x(e,"P",{});var s=v(r);i=P(s,!1),s.forEach(p),n=b(e),m=x(e,"HR",{}),u=b(e),o=x(e,"P",{});var g=v(o);h=S(g,l[1]),g.forEach(p),this.h()},h(){j(a,"class","w-full h-64 border rounded-md p-2"),i.a=null},m(e,s){f(e,a,s),w(a,l[0]),f(e,c,s),f(e,r,s),i.m(l[1],r),f(e,n,s),f(e,m,s),f(e,u,s),f(e,o,s),q(o,h),d||(t=[H(a,"input",l[3]),H(a,"change",l[2])],d=!0)},p(e,[s]){s&1&&w(a,e[0]),s&2&&i.p(e[1]),s&2&&C(h,e[1])},i:T,o:T,d(e){e&&(p(a),p(c),p(r),p(n),p(m),p(u),p(o)),d=!1,A(t)}}}function L(l,a,c){let r=`# Hello there
+So you've stumbled on this page huh?
+## This is a page where I write my blogs.
+### Created mainly because I'd rather write in Markdown than HTML
+\`\`\`
+you can write code
+\`\`\`
+Or other ==important things==.
+And this is the output to ==paste into the page:==`,i="";function n(){let u=[],o=r.split(`
+`),h=!1;return o.forEach((t,e)=>{let s="";t.startsWith("# ")?(s='<h1 class="text-4xl text-secondary mb-6 font-bold">',t=t.replace("# ",s),t=t+"</h1>"):t.startsWith("## ")?(s='<h2 class="text-secondary text-3xl mt-4">',t=t.replace("## ",s),t=t+"</h2>"):t.startsWith("### ")?(s='<h3 class="text-secondary text-2xl mt-3">',t=t.replace("### ",s),t=t+"</h3>"):t.startsWith("```")?(h=!h,h?t='<div class="mockup-code text-info text-lg">':t="</div>"):h?(s='<pre data-prefix="$"><code>',t=s+t+"</code></pre>"):t===""?t="<br/>":t='<p class="text-lg text-primary">'+t+"</p>",e===o.length-1&&(t='<div class="mb-40">'+t+"</div>"),t=t.replace(/==(.*?)==/g,'<span class="text-secondary">$1</span>'),u.push(t)}),u.join("")}function m(){r=this.value,c(0,r)}return l.$$.update=()=>{l.$$.dirty&1&&c(1,i=n())},[r,i,n,m]}class D extends M{constructor(a){super(),W(this,a,L,I,E,{})}}export{D as component};
