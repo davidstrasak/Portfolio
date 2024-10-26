@@ -89,7 +89,7 @@
 	}
 	onMount(() => {
 		backgroundObject = headerObject.firstChild.lastChild;
-		setInvis = "";
+		setInvis = ""; // This is the first state of the navbar on mobile. It will be inverted
 		toggleMenu();
 
 		addEventListener("resize", toggleButtonVisibility);
@@ -135,6 +135,7 @@
 							</a>
 						{/key}
 					</button>
+					<!-- <input type="checkbox" value="breeze" class="toggle theme-controller" /> -->
 					<button
 						class="btn btn-lg btn-ghost inline {fadeIn} {buttonInvis}"
 						on:click={() => {

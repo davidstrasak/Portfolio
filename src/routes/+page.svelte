@@ -5,7 +5,6 @@
 <noscript> Please enable JavaScript to view the this page. </noscript>
 
 <!-- This is the landing page -->
-<p class="text-3xl">I am an aspiring <span class="text-secondary">SYSTEMANCER</span>.</p>
 <br />
 <div class="whitespace-normal h-fit">
 	<div class="border-solid border-2 border-primary p-2">
@@ -19,42 +18,11 @@
 		<p class="italic text-lg">/sis-tuh-man-ser/</p>
 
 		<p class="italic text-lg">noun</p>
-		<p class="text-2xl mx-8 text-justify">
-			An aspiring "Systemancer" is a future master of technology, aiming to understand how intricate
-			technological systems work together to find the most effective solution.
+		<p class="text-2xl mx-8 text-left md:text-justify">
+			A determined and passionate electrical engineer who likes to solve problems to help people
+			around. Sometimes in <span class="text-secondary">progressive or alternative ways</span>, but
+			all the times <span class="font-bold">effective</span>.
 		</p>
-	</div>
-
-	<br />
-	<div class="w-full text-justify text-2xl">
-		<p class="text-secondary text-3xl">But you can call me David.</p>
-		<ol class="">
-			<li class="mt-4">
-				I'm an aspiring <span class="text-secondary">systems engineer</span>.
-			</li>
-			<li class="mt-4">
-				This webpage is a <span class="text-secondary">blog</span> and a
-				<span class="text-secondary">portfolio</span> website where I showcase my works and write about
-				interesting topics.
-			</li>
-			<li class="mt-4">
-				I left an accounting carreer for something more interesting: <span class="text-secondary"
-					>technology, electrical power and programming are my daily bread</span
-				>.
-			</li>
-			<li class="mt-4">
-				But most of all I like to work <span class="text-secondary">as effective as possible</span>.
-			</li>
-		</ol>
+		<br />
 	</div>
 </div>
-
-<style>
-	ol {
-		list-style-type: none; /* Remove default list styling */
-	}
-
-	ol li:before {
-		content: "- "; /* Add a dash before each list item */
-	}
-</style>

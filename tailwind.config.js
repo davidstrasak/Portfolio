@@ -44,8 +44,20 @@ export default {
 					"warning-content": "#001600",
 					error: "#ff0000",
 					"error-content": "#160000"
+				},
+				breeze: {
+					primary: "#6807f0",
+					secondary: "#6b21a8",
+					accent: "#db2777",
+					neutral: "#170824",
+					"base-100": "#f2f2f2",
+					info: "#2ac3de",
+					success: "#9ece6a",
+					warning: "#e0af68",
+					error: "#f7768e"
 				}
-			}
+			},
+			"lemonade"
 		]
 	},
 	plugins: [require("daisyui")]
