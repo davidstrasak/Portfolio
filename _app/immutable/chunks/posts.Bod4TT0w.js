@@ -1,4 +1,4 @@
-import{b as t}from"./paths.CT4QvHM9.js";const s=[{date:"12.06.2024",title:"How host a static SvelteKit website for free",description:`<p>As you might see, I've recently published a static SvelteKit website (this website).</p>
+import{b as t}from"./paths.DhQ02ruo.js";const s=[{date:"12.06.2024",title:"How host a static SvelteKit website for free",description:`<p>As you might see, I've recently published a static SvelteKit website (this website).</p>
 	<p>
 		Which is why I've decided to make this blog post - <span
 			>to document all the steps that you can take in order to have a nice little static SvelteKit
