@@ -4,6 +4,10 @@
 </script>
 
 {#key $page.url.pathname}
-	<a href="{base}/blog/navigation" class="text-accent block mb-8">Go back to navigation</a>
+	<a href="{base}/blog/navigation" class="text-accent block mb-8 text-center bg-accent-content"
+		>Go back to navigation</a
+	>
 {/key}
-<slot />
+<div class="px-4">
+	<slot />
+</div>

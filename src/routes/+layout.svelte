@@ -116,7 +116,7 @@
 </script>
 
 <div
-	class="flex flex-col min-h-screen container mx-auto w-4/5 lg:w-3/5 text-2xl font-cyberpunk selection:bg-secondary selection:text-black"
+	class="flex flex-col min-h-screen container mx-auto w-4/5 lg:w-3/5 text-2xl font-cyberpunk selection:bg-secondary selection:text-black bg-base-100"
 	style="height: {entireHeight};"
 >
 	<header

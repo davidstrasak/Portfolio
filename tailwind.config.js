@@ -34,9 +34,9 @@ export default {
 					"accent-content": "#001616",
 					neutral: "#111827",
 					"neutral-content": "#160016",
-					"base-100": "#0A100D",
-					"base-200": "#0d1320",
-					"base-300": "#090f1a",
+					"base-100": "#000000",
+					"base-200": "#000000",
+					"base-300": "#000000",
 					"base-content": "#00ff00",
 					info: "#e5e7eb",
 					"info-content": "#c6dbff",
@@ -46,6 +46,18 @@ export default {
 					"warning-content": "#001600",
 					error: "#ff0000",
 					"error-content": "#160000"
+				},
+				dark: {
+					"color-scheme": "dark",
+					primary: "oklch(65.69% 0.196 275.75)",
+					secondary: "oklch(74.8% 0.26 342.55)",
+					accent: "oklch(74.51% 0.167 183.61)",
+					neutral: "#2a323c",
+					"neutral-content": "#A6ADBB",
+					"base-100": "#1d232a",
+					"base-200": "#191e24",
+					"base-300": "#15191e",
+					"base-content": "#A6ADBB"
 				},
 				breeze: {
 					primary: "#6807f0",
@@ -58,8 +70,7 @@ export default {
 					warning: "#e0af68",
 					error: "#f7768e"
 				}
-			},
-			"forest"
+			}
 		]
 	},
 	plugins: [daisyui]
