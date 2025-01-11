@@ -59,7 +59,7 @@ export default {
 					error: "#f7768e"
 				}
 			},
-			"lemonade"
+			"forest"
 		]
 	},
 	plugins: [daisyui]

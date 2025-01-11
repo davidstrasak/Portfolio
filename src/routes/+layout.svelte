@@ -2,7 +2,7 @@
 	import "../app.css";
 	import { base } from "$app/paths";
 	import { afterUpdate, onMount } from "svelte";
-	import info from "./projects/info";
+	import info from "./(portfolio)/projects/info";
 	import { page } from "$app/stores";
 
 	// BLOCK 1 - Scroll to top button listener
