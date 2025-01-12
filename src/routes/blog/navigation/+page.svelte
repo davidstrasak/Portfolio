@@ -9,7 +9,7 @@
 		{#each posts as post}
 			<tr>
 				<td class="w-1/4 text-center">{post.date} -></td>
-				<td><a class="underline" href={post.href}>{post.title}</a></td>
+				<td><a class="underline text-accent" href={post.href}>{post.title}</a></td>
 			</tr>
 		{/each}
 	</tbody>

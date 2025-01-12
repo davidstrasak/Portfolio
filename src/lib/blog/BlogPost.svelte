@@ -17,7 +17,7 @@
 		<div class="mt-8 block">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				fill="#E0E722"
+				fill="#FFAB40"
 				width="24"
 				height="24"
 				viewBox="0 0 24 24"

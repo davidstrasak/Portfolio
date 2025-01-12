@@ -1,4 +1,5 @@
 import daisyui from "daisyui";
+import { readable } from "svelte/store";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,7 +7,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				cyberpunk: ['"Kode Mono"', "monospace"]
+				cyberpunk: ['"Kode Mono"', "monospace"],
+				readable: ['"Inter"', "sans-serif"]
 			},
 			margin: {
 				"10px": "10px"
@@ -47,17 +49,16 @@ export default {
 					error: "#ff0000",
 					"error-content": "#160000"
 				},
-				dark: {
-					"color-scheme": "dark",
-					primary: "oklch(65.69% 0.196 275.75)",
-					secondary: "oklch(74.8% 0.26 342.55)",
-					accent: "oklch(74.51% 0.167 183.61)",
+				readable: {
+					primary: "#A6ADBB",
+					secondary: "FFAB40",
+					accent: "#87CEEB",
 					neutral: "#2a323c",
-					"neutral-content": "#A6ADBB",
-					"base-100": "#1d232a",
+					"neutral-content": "#CCCCCC",
+					"base-100": "#1E1E1E",
 					"base-200": "#191e24",
-					"base-300": "#15191e",
-					"base-content": "#A6ADBB"
+					"base-300": "#121212",
+					"base-content": "#CCCCCC"
 				},
 				breeze: {
 					primary: "#6807f0",

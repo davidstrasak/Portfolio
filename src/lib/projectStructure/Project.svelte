@@ -15,9 +15,9 @@
 
 <div class="card w-96 bg-base-100 shadow-xl">
 	<figure>
-		<Label {id}>
-			<img src={image} alt={image} height="0px" width="400px" class="mb-5" />
-		</Label>
+		<!-- <Label {id}> -->
+		<img src={image} alt={image} height="0px" width="400px" class="mb-5" />
+		<!-- </Label> -->
 	</figure>
 	<div class="card-body p-0 text-center">
 		<h2 class="card-title text-3xl text-secondary">{@html title}</h2>

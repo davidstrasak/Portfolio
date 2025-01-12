@@ -2,7 +2,7 @@
 	import { onMount } from "svelte";
 
 	function setReadableTheme() {
-		document.documentElement.setAttribute("data-theme", "dark");
+		document.documentElement.setAttribute("data-theme", "readable");
 	}
 
 	onMount(() => {
@@ -10,4 +10,6 @@
 	});
 </script>
 
-<slot />
+<div class="font-readable">
+	<slot />
+</div>
