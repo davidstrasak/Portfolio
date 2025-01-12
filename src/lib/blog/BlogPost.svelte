@@ -10,7 +10,7 @@
 	</div>
 	<div class="flextext m-5 ml-4 flex-1 p-5">
 		<a {href} class="text-accent underline text-2xl font-bold">{title}</a>
-		<p class="mt-8 text-justify">
+		<p class="mt-8 text-justify text-xl">
 			{@html description}
 		</p>
 

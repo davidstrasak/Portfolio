@@ -13,16 +13,16 @@ export default {
 			margin: {
 				"10px": "10px"
 			}
+		},
+		fontSize: {
+			sm: "0.8rem",
+			base: "1rem",
+			xl: "1.25rem",
+			"2xl": "1.563rem",
+			"3xl": "1.953rem",
+			"4xl": "2.441rem",
+			"5xl": "3.052rem"
 		}
-		// fontSize: {
-		// 	sm: "0.8rem",
-		// 	base: "1rem",
-		// 	xl: "1.25rem",
-		// 	"2xl": "1.563rem",
-		// 	"3xl": "1.953rem",
-		// 	"4xl": "2.441rem",
-		// 	"5xl": "3.052rem"
-		// }
 	},
 	daisyui: {
 		themes: [
@@ -50,7 +50,7 @@ export default {
 					"error-content": "#160000"
 				},
 				readable: {
-					primary: "#A6ADBB",
+					primary: "#CCCCCC",
 					secondary: "FFAB40",
 					accent: "#87CEEB",
 					neutral: "#2a323c",

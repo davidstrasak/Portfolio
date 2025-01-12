@@ -10,6 +10,6 @@
 	});
 </script>
 
-<div class="font-readable">
+<div class="font-readable text-xl">
 	<slot />
 </div>
