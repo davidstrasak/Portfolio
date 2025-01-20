@@ -63,7 +63,7 @@
 		"}"
 	];
 
-	const code10 = ["`build`: `vite build && echo davidstrasak.eu > build/CNAME`,"];
+	const code10 = ["`build`: `vite build && echo davidstrasak.net > build/CNAME`,"];
 </script>
 
 <div>
@@ -189,7 +189,7 @@
 	</h2>
 	<p>
 		My website's domain is not <span>davidstrasak.github.io/Porfolio</span>, but rather
-		<span>davidstrasak.eu</span>.
+		<span>davidstrasak.net</span>.
 	</p>
 	<p>
 		I do not want to go into all the topics that go through adding a custom domain to a page hosted
