@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from "$app/paths";
+
 	let inputText =
 		"# Hello there\nSo you've stumbled on this page huh?\n## This is a page where I write my blogs.\n### Created mainly because I'd rather write in Markdown than HTML\n```\nyou can write code\n```\nOr other ==important things==.\nAnd this is the output to ==paste into the page:==";
 	let outputText = "";
@@ -35,7 +37,7 @@
 			} else if (line === "") {
 				line = `<br/>`;
 			} else {
-				let settings = `<p class="text-lg text-primary">`;
+				let settings = `<p class="">`;
 				line = settings + line + "</p>";
 			}
 
@@ -45,6 +47,12 @@
 
 			// Replace __underscores__ with <span> tags directly
 			line = line.replace(/==(.*?)==/g, '<span class="text-secondary">$1</span>');
+
+			// Replace **bold** with <strong> tags
+			line = line.replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+
+			// Replace *italic* with <em> tags
+			line = line.replace(/\*(.*?)\*/g, "<em>$1</em>");
 
 			htmlArray.push(line);
 		});
