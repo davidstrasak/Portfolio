@@ -259,14 +259,14 @@
 		</nav>
 	</footer>
 
-	{#each Object.values(info) as proj}
+	<!-- {#each Object.values(info) as proj}
 		<link rel="prefetch" href={proj.image} as="image" />
-	{/each}
-	<link rel="prefetch" href="{base}/CV_David_Strasak.jpg" as="image" />
+	{/each} -->
+	<!-- <link rel="prefetch" href="{base}/CV_David_Strasak.jpg" as="image" />
 	<link rel="prerender" href="{base}/" />
 	<link rel="prerender" href="{base}/projects" />
 	<link rel="prerender" href="{base}/CV" />
-	<link rel="prerender" href="{base}/blog" />
+	<link rel="prerender" href="{base}/blog" /> -->
 </div>
 
 <style>
