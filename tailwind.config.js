@@ -50,8 +50,8 @@ export default {
 					"error-content": "#160000"
 				},
 				readable: {
-					primary: "#CCCCCC",
-					secondary: "FFAB40",
+					primary: "#70FF70",
+					secondary: "FFCA85",
 					accent: "#87CEEB",
 					neutral: "#2a323c",
 					"neutral-content": "#CCCCCC",

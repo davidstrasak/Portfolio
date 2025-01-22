@@ -9,19 +9,24 @@
 		let htmlArray: string[] = [];
 		let splitText = inputText.split("\n");
 		let codeBlock = false;
+		let firstHeaderCounter = 0;
+		let secondHeaderCounter = 0;
 
 		splitText.forEach((line, index) => {
 			let settings = "";
 			if (line.startsWith("# ")) {
-				settings = `<h1 class="text-4xl text-secondary mb-6 font-bold">`;
+				settings = `<h1 class="text-4xl text-primary mb-6 font-bold">`;
 				line = line.replace("# ", settings);
 				line = line + "</h1>";
 			} else if (line.startsWith("## ")) {
-				settings = `<h2 class="text-secondary text-3xl mt-4">`;
+				secondHeaderCounter += 1;
+				firstHeaderCounter = 0;
+				settings = `<h2 class="text-primary text-3xl mt-4"> ${secondHeaderCounter}. `;
 				line = line.replace("## ", settings);
 				line = line + "</h2>";
 			} else if (line.startsWith("### ")) {
-				settings = `<h3 class="text-secondary text-2xl mt-3">`;
+				firstHeaderCounter += 1;
+				settings = `<h3 class="text-primary text-2xl mt-3"> ${secondHeaderCounter}.${firstHeaderCounter}. `;
 				line = line.replace("### ", settings);
 				line = line + "</h3>";
 			} else if (line.startsWith("```")) {
@@ -53,6 +58,12 @@
 
 			// Replace *italic* with <em> tags
 			line = line.replace(/\*(.*?)\*/g, "<em>$1</em>");
+
+			// Replace { with &#123; and } with &#125;
+			if (codeBlock) {
+				line = line.replace(/{/g, "&#123;");
+				line = line.replace(/}/g, "&#125;");
+			}
 
 			htmlArray.push(line);
 		});
