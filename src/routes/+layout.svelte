@@ -194,7 +194,7 @@
 	</div>
 
 	<button
-		class="fixed bottom-20 md:bottom-10 right-10 btn btn-primary btn-md z-0 hidden md:block fade-in"
+		class="fixed bottom-20 md:bottom-10 right-10 btn btn-primary btn-md z-0 hidden md:block fade-in font-cyberpunk"
 		class:invisible={scrollY === 0}
 		on:click={() => window.scrollTo({ top: 0, behavior: "smooth" })}
 	>

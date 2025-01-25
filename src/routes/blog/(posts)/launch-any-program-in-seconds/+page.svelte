@@ -16,10 +16,10 @@
 <br />
 <h2 class="text-primary text-3xl mt-4 font-cyberpunk">1. How to set this up:</h2>
 <p class="">
-	If you want a custom set up like what I did, <span class="font-bold"
-		><span class="text-secondary">Autohotkey</span></span
-	> will answer all your thoughts and prayers. This smaller programming language is actually really easy
-	to use, if you know how!
+	If you want a custom set up like what I did, <span class="text-secondary"
+		><strong>Autohotkey</strong></span
+	> <strong>will</strong> answer all your thoughts and prayers. This smaller programming language is
+	actually really easy to use, if you know how!
 </p>
 <h3 class="text-primary text-2xl mt-3 font-cyberpunk">1.1. Here are the steps:</h3>
 <p class="">
@@ -32,10 +32,7 @@
 <p class="">
 	- Create a new file called <em>script.ahk</em> and open it up with notepad or any text editor.
 </p>
-<p class="">
-	- Here is a sample script that runs excel when you press Win + E (or Ctrl+Alt+E if you are on the
-	US keyboard):
-</p>
+<p class="">- Here is a sample script that runs excel when you press Win + E:</p>
 <div class="mockup-code text-accent text-lg">
 	<pre data-prefix="$"><code>#Requires AutoHotkey v2.0</code></pre>
 	<pre data-prefix="$"><code></code></pre>
@@ -49,8 +46,8 @@
 </p>
 <p class="">
 	- Double click the script to run it and test it by pressing <span class="text-secondary"
-		>Win+E</span
-	> (or Ctrl+Alt+E if you are on the US keyboard)!
+		>Win + E</span
+	>!
 </p>
 <p class="">
 	- If it works, <span class="text-secondary"
@@ -73,6 +70,7 @@
 		alt="the shell:startup command in windows run utility"
 	/>
 </p>
+<p class=""></p>
 <p class="">
 	- <span class="text-secondary"
 		>This will ensure you always have these new shortcuts available</span
@@ -102,6 +100,13 @@
 </h3>
 <p class="">1. Press the windows key and search for the app you want to bind</p>
 <p class="">
+	2. Right click it and press "<strong>Open file location</strong>"
+	<img
+		src="{base}/images/blog/windows_file_location.png"
+		alt="describes where you can see the open file location button"
+	/>
+</p>
+<p class="">
 	3. Find the icon in the folder and right click it again - press "<strong>Copy as path</strong>"
 </p>
 <p class="">
@@ -123,7 +128,71 @@
 	3. How to use keys other than the windows key
 </h2>
 <p class="">Short AutoHotkey lesson incoming!</p>
-<br />
+<p class="">
+	If you wanted to create a script that runs when you press o, without any windows keys, <span
+		class="text-secondary">you would define it like so</span
+	>:
+</p>
+<div class="mockup-code text-accent text-lg">
+	<pre data-prefix="$"><code>o::</code></pre>
+	<pre data-prefix="$"><code>&#123;</code></pre>
+	<pre
+		data-prefix="$"><code> Run "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Obsidian.lnk"</code
+		></pre>
+	<pre data-prefix="$"><code>&#125;</code></pre>
+</div>
+<p class="">
+	But that would make it impossible for you to type anything on the keyboard - which is why I used
+	the # symbol which is a symbol for the windows key (Symbols like the windows key, Ctrl, Shift,
+	etc. are also called <strong>modifier keys</strong>).
+	<span class="text-secondary"
+		>There are other symbols that you can use for other modifier keys</span
+	> that need to be pressed with your letter on the keyboard.
+</p>
+<h3 class="text-primary text-2xl mt-3 font-cyberpunk">3.1. These are the modifier keys:</h3>
+<div class="mockup-code text-accent text-lg">
+	<pre data-prefix="$"><code>^o:: ; Runs the app when you press Ctrl + o</code></pre>
+	<pre data-prefix="$"><code>!o:: ; Alt + o</code></pre>
+	<pre data-prefix="$"><code>+o:: ; Shift + o</code></pre>
+	<pre data-prefix="$"><code>#o:: ; Win + o</code></pre>
+</div>
+<p class="">
+	That's not all the variations though, because you <span class="text-secondary"
+		>can also combine these modifier keys to be pressed together</span
+	>
+	- watch out though, because <strong>the order of the key presses matter</strong>!
+</p>
+<div class="mockup-code text-accent text-lg">
+	<pre data-prefix="$"><code>!^o:: ; Alt + Ctrl + o</code></pre>
+	<pre data-prefix="$"><code>^!o:: ; Ctrl + Alt + o</code></pre>
+</div>
+<p class="">
+	So all in all you can use these keys, or you can <span class="text-secondary"
+		>re-bind any special keys you do not use on your PC</span
+	>:
+</p>
+<h3 class="text-primary text-2xl mt-3 font-cyberpunk">3.2. Some special keys:</h3>
+<div class="mockup-code text-accent text-lg">
+	<pre data-prefix="$"><code>F1:: ; F1 key - you can use any of the numbered F keys</code></pre>
+	<pre data-prefix="$"><code>PrtScn:: ; Print Screen</code></pre>
+	<pre data-prefix="$"><code>Home:: ; Home key</code></pre>
+	<pre data-prefix="$"><code>End:: ; End key</code></pre>
+	<pre data-prefix="$"><code>PgUp:: ; Page Up key</code></pre>
+	<pre data-prefix="$"><code>PgDn:: ; Page Down key</code></pre>
+	<pre data-prefix="$"><code>Up::::</code></pre>
+	<pre data-prefix="$"><code>Down::</code></pre>
+	<pre data-prefix="$"><code>Left::</code></pre>
+	<pre data-prefix="$"><code>Right:: ; Those are the arrow keys</code></pre>
+</div>
+<p class="">
+	These are only some of the more useful keys you can bind scripts to. But hey - if you do not use
+	the Esc key (for some reason), you can rebind it as well.
+</p>
+<p class="">
+	My favorite of these special keys are <span class="text-secondary">the F1 keys</span>. One use for
+	them could be writing special characters - but I will explain writing characters in an another
+	blog post :D.
+</p>
 <h2 class="text-primary text-3xl mt-4 font-cyberpunk">
 	4. How to redefine windows keyboard shortcuts
 </h2>

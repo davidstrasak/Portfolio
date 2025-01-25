@@ -97,9 +97,7 @@
 				line = line.replace(/}/g, "&#125;");
 			}
 
-			if (line.match(/!\[\[.*?\]\]/)) {
-				return;
-			}
+			line = line.replace(/!\[\[.*?\]\]/, "");
 
 			htmlArray.push(line);
 		});
