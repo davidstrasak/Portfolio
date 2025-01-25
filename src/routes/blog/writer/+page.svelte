@@ -65,17 +65,27 @@
 				line = line.replace(/}/g, "&#125;");
 			}
 
+			if (line.match(/!\[\[.*?\]\]/)) {
+				return;
+			}
+
 			htmlArray.push(line);
 		});
 
 		let html = htmlArray.join("");
+
+		console.log(html);
 
 		return html;
 	}
 
 	$: {
 		inputText;
-		outputText = convertMDtoHTML();
+		outputText =
+			String(`[script lang="ts"]pramport { base } from "$app/paths";[/script]`)
+				.replace(/\[/g, "<")
+				.replace(/\]/g, ">")
+				.replace("pram", "im") + convertMDtoHTML();
 	}
 </script>
 

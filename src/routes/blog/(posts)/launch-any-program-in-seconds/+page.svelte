@@ -89,7 +89,7 @@
 	wrote shell:startup earlier).
 </p>
 <p class="">
-	-> For example, my note taking app is called obsidian, but <span class="text-secondary"
+	-> For example, my notetaking app is called obsidian, but <span class="text-secondary"
 		>if you try to write "obsidian", it will be unable to launch</span
 	>, since not all apps have this possibility.
 </p>
@@ -97,13 +97,6 @@
 	2.1. Let's fix that and look into how you can bind <em>any app you have installed</em>:
 </h3>
 <p class="">1. Press the windows key and search for the app you want to bind</p>
-<p class="">
-	2. Right click it and press "<strong>Open file location</strong>"
-	<img
-		src="{base}/images/blog/windows_file_location.png"
-		alt="describes where you can see the open file location button"
-	/>
-</p>
 <p class="">
 	3. Find the icon in the folder and right click it again - press "<strong>Copy as path</strong>"
 </p>
@@ -121,4 +114,10 @@
 		></pre>
 	<pre data-prefix="$"><code>&#125;</code></pre>
 </div>
-<div class="mb-40"><p class="">This is, for example, how I run the Obsidian app.</p></div>
+<p class="">This is, for example, how I run the Obsidian app.</p>
+<h2 class="text-primary text-3xl mt-4">3. How to use keys other than the windows key</h2>
+<p class="">Short AutoHotkey lesson incoming!</p>
+<br />
+<h2 class="text-primary text-3xl mt-4">4. How to redefine windows keyboard shortcuts</h2>
+<br /><br /><br />
+<div class="mb-40"><br /></div>
