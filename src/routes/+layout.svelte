@@ -116,11 +116,11 @@
 </script>
 
 <div
-	class="flex flex-col min-h-screen container mx-auto w-4/5 lg:w-3/5 text-2xl font-cyberpunk selection:bg-secondary selection:text-black md:bg-base-100"
+	class="flex flex-col min-h-screen container mx-auto w-4/5 lg:w-3/5 text-2xl font-readable selection:bg-secondary selection:text-black md:bg-base-100"
 	style="height: {entireHeight};"
 >
 	<header
-		class="fixed md:pt-10 pb-5 w-full md:w-4/5 lg:w-3/5 z-10 font-bold md:bg-base-100"
+		class="fixed md:pt-10 pb-5 w-full md:w-4/5 lg:w-3/5 z-10 font-bold md:bg-base-100 font-cyberpunk"
 		bind:this={headerObject}
 	>
 		<div class="flex flex-col md:flex-row justify-between items-left">
@@ -189,7 +189,7 @@
 		</div>
 	</header>
 
-	<div class="relative fade-in" bind:this={wallOfText} style="top: {headerHeight};">
+	<div class="relative fade-in px-4" bind:this={wallOfText} style="top: {headerHeight};">
 		<slot />
 	</div>
 
@@ -202,7 +202,7 @@
 	</button>
 
 	<footer
-		class="mt-auto order-1 footer items-center p-4 text-primary bg-base flex z-10 fade-in"
+		class="mt-auto order-1 footer items-center p-4 bg-base flex z-10 fade-in font-cyberpunk text-primary"
 		bind:this={footerObject}
 	>
 		<!-- mt-60 -->
@@ -224,7 +224,7 @@
 				></path> -->
 			</svg>
 			<p class="pl-10 text-center sm:text-justify">
-				<span class=" text-primary hidden sm:inline">Designed and developed by:</span>
+				<span class="hidden sm:inline">Designed and developed by:</span>
 				David Strasak ©{year}
 			</p>
 		</aside>

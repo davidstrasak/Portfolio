@@ -2,7 +2,7 @@
 	import { base } from "$app/paths";
 </script>
 
-<div>
+<div class="font-readable">
 	<div class="block items-center w-full">
 		<img
 			src="{base}/images/Vest_Gif.gif"
@@ -12,13 +12,13 @@
 			class="block m-auto"
 		/>
 		<a
-			class="text-accent block font-bold text-left"
+			class="text-accent block underline text-left"
 			href="https://github.com/davidstrasak/Cybertown_LEDs/"
 			target="_blank">Code here</a
 		>
 	</div>
 
-	<h2 class="text-secondary font-bold">Lessons learned:</h2>
+	<h2 class="text-primary font-cyberpunk">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Working with an arduino LED library.</li>
 		<li>My first big soldering project.</li>
@@ -26,7 +26,7 @@
 		<li>Next time I will solder the cables to the arduino. Not superglue them to the pins.</li>
 	</ol>
 
-	<h2 class="text-secondary font-bold">Description</h2>
+	<h2 class="text-primary font-cyberpunk">Description</h2>
 	<p>I've created this vest for the Cybertown event to look like a proper cyberpunk.</p>
 	<p>
 		I had no idea what I was doing - <span class="text-secondary"

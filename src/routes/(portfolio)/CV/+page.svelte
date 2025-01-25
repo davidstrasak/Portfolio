@@ -7,5 +7,5 @@
 	alt="CV"
 	height="90%"
 	width="90%"
-	class="m-auto border-secondary border-solid border-8"
+	class="m-auto border-primary border-solid border-8"
 />

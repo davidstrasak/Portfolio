@@ -2,22 +2,26 @@
 	import { base } from "$app/paths";
 </script>
 
-<h1 class="text-4xl text-primary mb-6 font-bold">
+<h1 class="text-4xl text-primary mb-6 font-cyberpunk">
 	How can I launch any program on my PC in seconds
 </h1>
 <p class="">
 	Ever since about 6 months ago I was able to run almost any program on my PC by using a keyboard
 	shortcut. That was the most efficient PC setup I've ever had and today I will share it with you.
 </p>
+<p class="">
+	The programming is as easy as it can be and it can be set up in less than 15 minutes, but it can
+	make your usage of the PC more effective and easier! :D
+</p>
 <br />
-<h2 class="text-primary text-3xl mt-4">1. How to set this up:</h2>
+<h2 class="text-primary text-3xl mt-4 font-cyberpunk">1. How to set this up:</h2>
 <p class="">
 	If you want a custom set up like what I did, <span class="font-bold"
 		><span class="text-secondary">Autohotkey</span></span
 	> will answer all your thoughts and prayers. This smaller programming language is actually really easy
 	to use, if you know how!
 </p>
-<p class=""><span class="text-secondary">Here are the steps:</span></p>
+<h3 class="text-primary text-2xl mt-3 font-cyberpunk">1.1. Here are the steps:</h3>
 <p class="">
 	- <span class="text-secondary"
 		><a href="https://www.autohotkey.com/" class="underline text-accent"
@@ -32,7 +36,7 @@
 	- Here is a sample script that runs excel when you press Win + E (or Ctrl+Alt+E if you are on the
 	US keyboard):
 </p>
-<div class="mockup-code text-info text-lg">
+<div class="mockup-code text-accent text-lg">
 	<pre data-prefix="$"><code>#Requires AutoHotkey v2.0</code></pre>
 	<pre data-prefix="$"><code></code></pre>
 	<pre data-prefix="$"><code>#e::</code></pre>
@@ -81,7 +85,7 @@
 	>
 </p>
 <br />
-<h2 class="text-primary text-3xl mt-4">2. How to truly run any app</h2>
+<h2 class="text-primary text-3xl mt-4 font-cyberpunk">2. How to run truly any app</h2>
 <p class="">
 	Running an app like excel is good, <span class="text-secondary">but not good enough</span>. It
 	requires the app you want to bind to some key combination to be an
@@ -93,7 +97,7 @@
 		>if you try to write "obsidian", it will be unable to launch</span
 	>, since not all apps have this possibility.
 </p>
-<h3 class="text-primary text-2xl mt-3">
+<h3 class="text-primary text-2xl mt-3 font-cyberpunk">
 	2.1. Let's fix that and look into how you can bind <em>any app you have installed</em>:
 </h3>
 <p class="">1. Press the windows key and search for the app you want to bind</p>
@@ -106,7 +110,7 @@
 	>!
 </p>
 <p class="">5. Write this path into your AutoHotkey script:</p>
-<div class="mockup-code text-info text-lg">
+<div class="mockup-code text-accent text-lg">
 	<pre data-prefix="$"><code>#o::</code></pre>
 	<pre data-prefix="$"><code>&#123;</code></pre>
 	<pre
@@ -115,9 +119,13 @@
 	<pre data-prefix="$"><code>&#125;</code></pre>
 </div>
 <p class="">This is, for example, how I run the Obsidian app.</p>
-<h2 class="text-primary text-3xl mt-4">3. How to use keys other than the windows key</h2>
+<h2 class="text-primary text-3xl mt-4 font-cyberpunk">
+	3. How to use keys other than the windows key
+</h2>
 <p class="">Short AutoHotkey lesson incoming!</p>
 <br />
-<h2 class="text-primary text-3xl mt-4">4. How to redefine windows keyboard shortcuts</h2>
+<h2 class="text-primary text-3xl mt-4 font-cyberpunk">
+	4. How to redefine windows keyboard shortcuts
+</h2>
 <br /><br /><br />
 <div class="mb-40"><br /></div>
