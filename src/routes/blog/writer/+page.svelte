@@ -2,20 +2,13 @@
 	import { base } from "$app/paths";
 	import { onMount } from "svelte";
 
+	let form: HTMLFormElement;
+
 	onMount(() => {
 		function handleKeyDown(event: KeyboardEvent) {
 			if (event.ctrlKey && event.key === "f") {
 				event.preventDefault(); // Prevent default 'Select All' behavior
-				const outputElement = document.getElementById("output");
-				if (outputElement) {
-					const range = document.createRange();
-					const selection = window.getSelection();
-					range.selectNodeContents(outputElement);
-					if (selection !== null) {
-						selection.removeAllRanges();
-						selection.addRange(range);
-					}
-				}
+				form.submit();
 			}
 		}
 
@@ -25,6 +18,11 @@
 			window.removeEventListener("keydown", handleKeyDown);
 		};
 	});
+
+	let currentBlog = {
+		title: "How can I launch any program on my PC in seconds",
+		path: "launch-any-program-in-seconds"
+	};
 
 	onMount(() => {
 		const textarea = document.querySelector("textarea");
@@ -115,6 +113,18 @@
 				.replace(/\]/g, ">") + convertMDtoHTML();
 	}
 </script>
+
+<form method="post" action="?/save" bind:this={form}>
+	<input type="hidden" name="html" value={outputText} />
+	<input type="hidden" name="path" value={currentBlog.path} />
+	<!-- <button class="btn btn-primary btn-lg text-center block w-full">send data</button> -->
+</form>
+
+<p>
+	Currently editing: <span class="text-primary font-cyberpunk">{currentBlog.title}</span>, on the
+	path
+	<span class="text-primary font-cyberpunk">{currentBlog.path}</span>
+</p>
 
 <textarea
 	class="w-full h-64 border rounded-md p-2"
