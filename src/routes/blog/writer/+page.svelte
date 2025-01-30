@@ -2,6 +2,8 @@
 	import { base } from "$app/paths";
 	import { onMount } from "svelte";
 
+	console.log(base);
+
 	let form: HTMLFormElement;
 
 	onMount(() => {
