@@ -2,7 +2,7 @@ import { json } from "@sveltejs/kit";
 import * as fs from "fs/promises";
 /** @type {import('./$types').RequestHandler} */
 
-export const prerender = process.env.NODE_ENV === "development" ? false : true;
+export const prerender = false;
 
 interface WriteFileRequest {
 	path: string;
