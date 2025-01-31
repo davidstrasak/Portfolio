@@ -8,7 +8,7 @@ export default {
 		extend: {
 			fontFamily: {
 				cyberpunk: ['"Kode Mono"', "monospace"],
-				readable: ['"Inter"', "sans-serif"]
+				readable: ['"Roboto"', "sans-serif"]
 			},
 			margin: {
 				"10px": "10px"
