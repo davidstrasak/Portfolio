@@ -45,18 +45,18 @@
 		splitText.forEach((line, index) => {
 			let settings = "";
 			if (line.startsWith("# ")) {
-				settings = `<h1 class="text-4xl text-primary mb-6 font-cyberpunk">`;
+				settings = `<h1 class="text-4xl text-primary mb-6 font-systemancer">`;
 				line = line.replace("# ", settings);
 				line = line + "</h1>";
 			} else if (line.startsWith("## ")) {
 				secondHeaderCounter += 1;
 				firstHeaderCounter = 0;
-				settings = `<h2 class="text-primary text-3xl mt-4 font-cyberpunk"> ${secondHeaderCounter}. `;
+				settings = `<h2 class="text-primary text-3xl mt-4 font-systemancer"> ${secondHeaderCounter}. `;
 				line = line.replace("## ", settings);
 				line = line + "</h2>";
 			} else if (line.startsWith("### ")) {
 				firstHeaderCounter += 1;
-				settings = `<h3 class="text-primary text-2xl mt-3 font-cyberpunk"> ${secondHeaderCounter}.${firstHeaderCounter}. `;
+				settings = `<h3 class="text-primary text-2xl mt-3 font-systemancer"> ${secondHeaderCounter}.${firstHeaderCounter}. `;
 				line = line.replace("### ", settings);
 				line = line + "</h3>";
 			} else if (line.startsWith("```")) {
@@ -76,9 +76,9 @@
 				line = settings + line + "</p>";
 			}
 
-			if (index === splitText.length - 1) {
-				line = `<div class="mb-40">` + line + `</div>`;
-			}
+			// if (index === splitText.length - 1) {
+			// 	line = `<div class="mb-40">` + line + `</div>`;
+			// }
 
 			// Replace __underscores__ with <span> tags directly
 			line = line.replace(/==(.*?)==/g, '<span class="text-secondary">$1</span>');
@@ -121,9 +121,9 @@
 </form>
 
 <p>
-	Currently editing: <span class="text-primary font-cyberpunk">{currentBlog.title}</span>, on the
+	Currently editing: <span class="text-primary font-systemancer">{currentBlog.title}</span>, on the
 	path
-	<span class="text-primary font-cyberpunk">{currentBlog.path}</span>
+	<span class="text-primary font-systemancer">{currentBlog.path}</span>
 </p>
 
 <textarea

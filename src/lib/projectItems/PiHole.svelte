@@ -10,13 +10,13 @@
 		alt="A graphical web interface of PiHole."
 	/>
 	<div class="font-readable">
-		<h2 class="font-cyberpunk text-primary">Lessons learned:</h2>
+		<h2 class="font-systemancer text-primary">Lessons learned:</h2>
 		<ol class="ml-10">
 			<li>Lots of debugging and installing operating systems.</li>
 			<li>Learned some networking.</li>
 			<li>Installing and using Armbian.</li>
 		</ol>
-		<h2 class="font-cyberpunk text-primary">Description:</h2>
+		<h2 class="font-systemancer text-primary">Description:</h2>
 		<p>
 			This was a summer 2023 project that involved setting up a <span class="text-secondary"
 				>Banana Pi to use PiHole on</span

@@ -4,8 +4,8 @@
 </script>
 
 <h1 class="text-5xl mb-5 text-center">
-	<p class="inline text-5xl text-primary font-cyberpunk">My recent projects</p>
-	<p class="text-3xl text-center font-cyberpunk mb-[5%]">... and the lessons learned from them</p>
+	<p class="inline text-5xl text-primary font-systemancer">My recent projects</p>
+	<p class="text-3xl text-center font-systemancer mb-[5%]">... and the lessons learned from them</p>
 </h1>
 
 <!-- Row one of items -->

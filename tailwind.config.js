@@ -7,11 +7,8 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				cyberpunk: ['"Kode Mono"', "monospace"],
-				readable: ['"Roboto"', "sans-serif"]
-			},
-			margin: {
-				"10px": "10px"
+				primary: ["Roboto", "sans-serif"],
+				systemancer: ["Kode mono", "serif"]
 			}
 		},
 		fontSize: {
@@ -27,29 +24,7 @@ export default {
 	daisyui: {
 		themes: [
 			{
-				darkcyberpunk: {
-					primary: "#00ff00",
-					"primary-content": "#0a1301",
-					secondary: "#E0E722",
-					"secondary-content": "#150f00",
-					accent: "#04D9FF",
-					"accent-content": "#001616",
-					neutral: "#111827",
-					"neutral-content": "#160016",
-					"base-100": "#000000",
-					"base-200": "#000000",
-					"base-300": "#000000",
-					"base-content": "#00ff00",
-					info: "#e5e7eb",
-					"info-content": "#c6dbff",
-					success: "#00ff00",
-					"success-content": "#001600",
-					warning: "#facc15",
-					"warning-content": "#001600",
-					error: "#ff0000",
-					"error-content": "#160000"
-				},
-				readable: {
+				systemancer: {
 					primary: "#00FF00",
 					secondary: "#ADFFAD",
 					accent: "#87CEEB",
@@ -59,20 +34,32 @@ export default {
 					"base-200": "#191e24",
 					"base-300": "#121212",
 					"base-content": "#CCCCCC"
-				},
-				breeze: {
-					primary: "#6807f0",
-					secondary: "#6b21a8",
-					accent: "#db2777",
-					neutral: "#170824",
-					"base-100": "#f2f2f2",
-					info: "#2ac3de",
-					success: "#9ece6a",
-					warning: "#e0af68",
-					error: "#f7768e"
 				}
+				// darkcyberpunk: {
+				//   primary: "#00ff00",
+				//   "primary-content": "#0a1301",
+				//   secondary: "#E0E722",
+				//   "secondary-content": "#150f00",
+				//   accent: "#04D9FF",
+				//   "accent-content": "#001616",
+				//   neutral: "#111827",
+				//   "neutral-content": "#160016",
+				//   "base-100": "#000000",
+				//   "base-200": "#000000",
+				//   "base-300": "#000000",
+				//   "base-content": "#00ff00",
+				//   info: "#e5e7eb",
+				//   "info-content": "#c6dbff",
+				//   success: "#00ff00",
+				//   "success-content": "#001600",
+				//   warning: "#facc15",
+				//   "warning-content": "#001600",
+				//   error: "#ff0000",
+				//   "error-content": "#160000",
+				// },
 			}
 		]
 	},
+
 	plugins: [daisyui]
 };

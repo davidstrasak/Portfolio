@@ -9,14 +9,14 @@
 	alt="A spreadsheet with information about stocks"
 />
 <div class="font-readable">
-	<h2 class="text-primary font-cyberpunk">Lessons learned:</h2>
+	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Pulling data from the web into excel using VBA.</li>
 		<li>Type checking and correcting numbers to the correct decimals.</li>
 		<li>Figuring out how to work with 1000 lines of excel data.</li>
 		<li>Some python data pulling, which went on unused.</li>
 	</ol>
-	<h2 class="text-primary font-cyberpunk">Description:</h2>
+	<h2 class="text-primary font-systemancer">Description:</h2>
 	<p style="display: block; width: 100%">
 		This was my summer 2023 project that involved taking lots of table data from a
 		<a class="text-accent underline" target="_blank" href="https://www.stockanalysis.com"

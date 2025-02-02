@@ -12,7 +12,7 @@
 	<a href="https://github.com/davidstrasak/PICvariety" target="_blank"
 		><h2 class="text-accent underline">Code here</h2></a
 	>
-	<h2 class="text-primary font-cyberpunk">Lessons learned:</h2>
+	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Working with the datasheet of a microcontroller unit</li>
 		<li>Setting and initialising a ton of bits and pins.</li>
@@ -21,7 +21,7 @@
 		</li>
 		<li>And also it was my first experience properly programming in C.</li>
 	</ol>
-	<h2 class="text-primary font-cyberpunk">Description:</h2>
+	<h2 class="text-primary font-systemancer">Description:</h2>
 	<p>
 		I've been able to take a course on working with embedded systems at school. The main curriculum
 		is <span class="text-secondary"

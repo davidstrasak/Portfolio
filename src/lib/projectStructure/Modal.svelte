@@ -26,8 +26,8 @@
 <Portal>
 	<input type="checkbox" id="my_modal_{id}" class="modal-toggle" />
 	<div class="modal modal-middle" role="dialog">
-		<div class="modal-box font-cyberpunk max-h-[80%] sm:max-h-[100%]" style="">
-			<h3 class="text-3xl text-primary font-cyberpunk">{@html title}</h3>
+		<div class="modal-box font-systemancer max-h-[80%] sm:max-h-[100%]" style="">
+			<h3 class="text-3xl text-primary font-systemancer">{@html title}</h3>
 
 			<p class="text-xl text-justify">
 				<!-- Importing the modal components had to be done so unintuitively, because otherwise it would throw me an SSR error. -->

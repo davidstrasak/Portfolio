@@ -18,7 +18,7 @@
 		>
 	</div>
 
-	<h2 class="text-primary font-cyberpunk">Lessons learned:</h2>
+	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Working with an arduino LED library.</li>
 		<li>My first big soldering project.</li>
@@ -26,7 +26,7 @@
 		<li>Next time I will solder the cables to the arduino. Not superglue them to the pins.</li>
 	</ol>
 
-	<h2 class="text-primary font-cyberpunk">Description</h2>
+	<h2 class="text-primary font-systemancer">Description</h2>
 	<p>I've created this vest for the Cybertown event to look like a proper cyberpunk.</p>
 	<p>
 		I had no idea what I was doing - <span class="text-secondary"

@@ -23,10 +23,8 @@
 			class="h-16 mr-7"
 			style="float: left;"
 		/>
-		<strong class="font-cyberpunk text-primary">Systemancer</strong>
+		<strong class="font-systemancer text-primary text-3xl">Systemancer</strong>
 		<p class="italic text-lg">/sis-tuh-man-ser/</p>
-
-		<p class="italic text-lg">noun</p>
 		<p class="text-2xl mx-8 text-left md:text-justify">
 			A determined and passionate engineer and tech enthusiast who likes to solve problems to help
 			people around. Sometimes in <span class="text-secondary">progressive or alternative ways</span

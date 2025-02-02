@@ -20,7 +20,7 @@
 		<!-- </Label> -->
 	</figure>
 	<div class="card-body p-0 text-center">
-		<h2 class="card-title text-2xl text-primary font-cyberpunk">{@html title}</h2>
+		<h2 class="card-title text-2xl text-primary font-systemancer">{@html title}</h2>
 		<p class="text-xl">{@html description}</p>
 		<div class="card-actions justify-center"><Modal {modal} {id} {title}></Modal></div>
 	</div>

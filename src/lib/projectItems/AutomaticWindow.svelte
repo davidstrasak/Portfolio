@@ -9,14 +9,14 @@
 	alt="A gif of a window opening and closing"
 />
 <div class="font-readable">
-	<h2 class="text-primary font-cyberpunk">Lessons learned:</h2>
+	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Powering motors through arduino.</li>
 		<li>My first larger project with lots of wires.</li>
 		<li>It's good to proactively lead school projects, because that means someone is leading.</li>
 	</ol>
 
-	<h2 class="text-primary font-cyberpunk">Description</h2>
+	<h2 class="text-primary font-systemancer">Description</h2>
 	<p>
 		This project was a school project we've completed as a <span class="text-secondary"
 			>4 person team</span

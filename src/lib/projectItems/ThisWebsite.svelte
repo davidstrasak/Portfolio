@@ -12,14 +12,14 @@
 	<a href="https://github.com/davidstrasak/portfolio" target="_blank"
 		><h2 class="text-accent underline">Code here</h2></a
 	>
-	<h2 class="text-primary font-cyberpunk">Lessons learned:</h2>
+	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Creating a multi-page website.</li>
 		<li>Developing the frontend user experience.</li>
 		<li>HTML, CSS, JS, Node.js, Typescript, SvelteKit, Tailwind, DaisyUI and GitHub.</li>
 		<li>Figured out some advanced TS syntax and worked with a lot of objects and components.</li>
 	</ol>
-	<h2 class="text-primary font-cyberpunk">Description:</h2>
+	<h2 class="text-primary font-systemancer">Description:</h2>
 	<p>
 		I have taken a <span class="text-secondary"
 			>full stack development and SvelteKit courses from Udemy</span
