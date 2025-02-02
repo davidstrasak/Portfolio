@@ -1,7 +1,6 @@
 <script lang="ts">
 	import "../app.css";
 	import { onMount, afterUpdate } from "svelte";
-	import { fly } from "svelte/transition";
 	import { base } from "$app/paths";
 	import { page } from "$app/state";
 
