@@ -29,6 +29,21 @@
     <loc>https://davidstrasak.net/blog/test-post</loc>
   </url>
   <url>
-    <loc>https://davidstrasak.net/projects/ArduinoVest</loc>
+    <loc>https://davidstrasak.net/projects/arduino-vest</loc>
+  </url>
+  <url>
+    <loc>https://davidstrasak.net/projects/automatic-window</loc>
+  </url>
+  <url>
+    <loc>https://davidstrasak.net/projects/pi-hole</loc>
+  </url>
+  <url>
+    <loc>https://davidstrasak.net/projects/picvariety</loc>
+  </url>
+  <url>
+    <loc>https://davidstrasak.net/projects/stockspreadsheet</loc>
+  </url>
+  <url>
+    <loc>https://davidstrasak.net/projects/this-website</loc>
   </url>
 </urlset>

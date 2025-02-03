@@ -1,0 +1,19 @@
+import{a as q,t as z}from"../chunks/CJtAxpIk.js";import{ax as O,R,i as V,p as F,ay as G,az as J,f as N,t as Q,a as U,s as i,a8 as $,g as p,c as m,r as l,aA as P}from"../chunks/DF4KzBg0.js";import{s as k}from"../chunks/CVHQHTXP.js";import{h as X}from"../chunks/CKfVhLUz.js";import{a as Y,r as M,b as Z,c as E}from"../chunks/CIHBsI8K.js";import{e as tt}from"../chunks/Bm61Aota.js";import{b as et}from"../chunks/BsZDrdaQ.js";import{i as at}from"../chunks/DDnmXXHL.js";import"../chunks/DzfDNVKv.js";import{o as W}from"../chunks/DstTT4U9.js";function rt(e,s,o,n=o){e.addEventListener(s,o);const a=e.__on_r;a?e.__on_r=()=>{a(),n()}:e.__on_r=n,Y()}function st(e,s,o=s){var n=O();rt(e,"input",()=>{var a=A(e)?D(e.value):e.value;o(a),n&&a!==(a=s())&&(e.value=a??"")}),R(()=>{var a=s();if(V&&e.defaultValue!==e.value){o(e.value);return}A(e)&&a===D(e.value)||e.type==="date"&&!a&&!e.value||a!==e.value&&(e.value=a??"")})}function A(e){var s=e.type;return s==="number"||s==="range"}function D(e){return e===""?null:+e}var ot=z(`<form method="post" action="?/save"><input type="hidden" name="html"> <input type="hidden" name="path"></form> <p>Currently editing: <span class="text-primary font-systemancer"> </span>, on the
+	path <span class="text-primary font-systemancer"> </span></p> <textarea class="w-full h-64 border rounded-md p-2"></textarea> <p><!></p> <hr> <p id="output"> </p>`,1);function yt(e,s){F(s,!1);let o=P();W(()=>{function r(f){f.ctrlKey&&f.key==="f"&&(f.preventDefault(),p(o).submit())}return window.addEventListener("keydown",r),()=>{window.removeEventListener("keydown",r)}});let n={title:"How can I launch any program on my PC in seconds",path:"launch-any-program-in-seconds"};W(()=>{const r=document.querySelector("textarea");r&&r.select()});let a=P(`# Hello there
+So you've stumbled on this page huh?
+## This is a page where I write my blogs.
+### Created mainly because I'd rather write in Markdown than HTML
+\`\`\`
+you can write code
+\`\`\`
+Or other ==important things==.
+And this is the output to ==paste into the page:==`),d=P("");function H(){let r=[],f=p(a).split(`
+`),u=!1,b=0,w=0;return r.push(`{#if currentPost}
+	<BlogPost post={currentPost} insidePost={true} />
+{/if}`),f.forEach((t,nt)=>{let c="";t.startsWith("# ")?(c='<h1 class="text-4xl text-primary mb-6 font-systemancer">',t=t.replace("# ",c),t=t+"</h1>"):t.startsWith("## ")?(w+=1,b=0,c=`<h2 class="text-primary text-3xl mt-4 font-systemancer"> ${w}. `,t=t.replace("## ",c),t=t+"</h2>"):t.startsWith("### ")?(b+=1,c=`<h3 class="text-primary text-2xl mt-3 font-systemancer"> ${w}.${b}. `,t=t.replace("### ",c),t=t+"</h3>"):t.startsWith("```")?(u=!u,u?t='<div class="mockup-code text-accent text-lg">':t="</div>"):u?(c='<pre data-prefix="$"><code>',t=c+t+"</code></pre>"):t===""?t="<br/>":t='<p class="">'+t+"</p>",t=t.replace(/==(.*?)==/g,'<span class="text-secondary">$1</span>'),t=t.replace(/\*\*(.*?)\*\*/g,"<strong>$1</strong>"),t=t.replace(/\*(.*?)\*/g,"<em>$1</em>"),u&&(t=t.replace(/{/g,"&#123;"),t=t.replace(/}/g,"&#125;")),t=t.replace(/!\[\[.*?\]\]/,""),r.push(t)}),r.join("")}G(()=>p(a),()=>{p(a),$(d,`[script lang="ts"]import { base } from "$app/paths";import { page } from "$app/state";
+	import BlogPost from "$lib/blog/BlogPost.svelte";
+	import posts from "../../posts";
+
+	let currentPost = posts.find(
+		(post) => post.href.split("/").pop() === page.url.pathname.split("/").pop()
+	);[/script]`.replace(/\[/g,"<").replace(/\]/g,">")+H())}),J(),at();var T=ot(),h=N(T);et(h,r=>$(o,r),()=>p(o));var _=m(h);M(_);var B=i(_,2);M(B),l(h);var g=i(h,2),y=i(m(g)),I=m(y);l(y);var C=i(y,2),S=m(C);l(C),l(g);var v=i(g,2);Z(v);var x=i(v,2),K=m(x);X(K,()=>p(d)),l(x);var L=i(x,4),j=m(L);l(L),Q(()=>{E(_,p(d)),E(B,n.path),k(I,n.title),k(S,n.path),k(j,p(d))}),st(v,()=>p(a),r=>$(a,r)),tt("change",v,H),q(e,T),U()}export{yt as component};
