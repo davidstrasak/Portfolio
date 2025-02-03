@@ -1,4 +1,4 @@
-import{b as e}from"./CChD0Dj3.js";const a=[{date:"03.02.2025",title:"How I launch any program on my PC in seconds",description:`<p class="">
+import{b as e}from"./BkSqY2uz.js";const a=[{date:"03.02.2025",title:"How I launch any program on my PC in seconds",description:`<p class="">
 	Ever since about 6 months ago I was able to run almost any program on my PC by using a keyboard
 	shortcut. That was the most efficient PC setup I've ever had and today I will share it with you.
 </p>
