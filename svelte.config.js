@@ -8,7 +8,10 @@ const config = {
 	kit: {
 		adapter: adapter({ strict: false }),
 		paths: {
-			base: process.env.NODE_ENV === `production` ? `/Portfolio` : ``
+			base:
+				process.env.NODE_ENV === "production" && process.env.DEPLOY_TARGET === "gh-pages"
+					? "/Portfolio"
+					: ""
 		}
 	}
 };
