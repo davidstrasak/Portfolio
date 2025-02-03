@@ -1,0 +1,1 @@
+import{a as t,t as o}from"../chunks/DJ3QXRNf.js";import{s as e}from"../chunks/-r09BiCL.js";import{b as s}from"../chunks/B1agalQA.js";var i=o('<img alt="CV" height="90%" width="90%" class="m-auto border-primary border-solid border-8">');function b(a){var r=i();e(r,"src",`${s}/CV_David_Strasak.jpg`),t(a,r)}export{b as component};
