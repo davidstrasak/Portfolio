@@ -1,5 +1,5 @@
 import { base } from "$app/paths";
-// ...existing code...
+
 interface Project {
 	completionDate: string;
 	projectTitle: string;
@@ -15,7 +15,7 @@ const projects: Project[] = [
 		projectTitle: "Arduino - Vest with LEDs",
 		overview: `My favourite hardware project. It included six LEDs soldered to cables
             connected to one Arduino Uno, powered by a 9V battery.`,
-		thumbnail: `${base}/images/projects/Vest_with_LEDs.jpg`,
+		thumbnail: `/images/projects/Vest_with_LEDs.jpg`,
 		demoLink: `${base}/projects/arduino-vest`,
 		technologies: []
 	},
