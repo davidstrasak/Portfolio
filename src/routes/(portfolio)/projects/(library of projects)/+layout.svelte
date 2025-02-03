@@ -4,9 +4,11 @@
 </script>
 
 {#key page.url.pathname}
-	<a href={`${base}/projects`} class="text-accent block mb-8 text-center underline">
-		Go back to the projects library
-	</a>
+	<a href="{base}/projects" class="btn btn-ghost text-accent text-xl underline m-0"
+		>Go back to all projects</a
+	>
 {/key}
 
-<slot />
+<div class="text-xl">
+	<slot />
+</div>

@@ -1,5 +1,5 @@
 <script>
-	import Project from "$lib/projectStructure/Project.svelte";
+	import Project from "$lib/projects/Project.svelte";
 	import { base } from "$app/paths";
 </script>
 
@@ -11,7 +11,11 @@
 	</div>
 
 	<div class="flex gap-10 flex-col md:flex-row justify-center items-center md:items-start mb-14">
-		<a href="https://www.linkedin.com/in/davidstrasak/" target="_blank" class="my-auto"
+		<a
+			href="https://www.linkedin.com/in/davidstrasak/"
+			target="_blank"
+			class="my-auto"
+			aria-label="LinkedIn logo"
 			><svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="48"

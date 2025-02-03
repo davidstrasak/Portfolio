@@ -1,6 +1,15 @@
 <script>
 	import { base } from "$app/paths";
+	import { page } from "$app/state";
+	import Project from "$lib/projects/Project.svelte";
+	import projects from "../../projects";
+
+	let currentProject = projects.find(
+		(proj) => proj.demoLink.split("/").pop() === page.url.pathname.split("/").pop()
+	);
 </script>
+
+<Project project={currentProject} insideProject={true} />
 
 <img
 	src="{base}/images/projects/Window_gif.gif"

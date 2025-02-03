@@ -115,11 +115,6 @@
 			String(`[script lang="ts"]import { base } from "$app/paths";import { page } from "$app/state";
 	import BlogPost from "$lib/blog/BlogPost.svelte";
 	import posts from "../../posts";
-	import { onMount } from "svelte";
-
-	onMount(() => {
-		console.log(page.params.page);
-	});
 
 	let currentPost = posts.find(
 		(post) => post.href.split("/").pop() === page.url.pathname.split("/").pop()
