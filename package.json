@@ -8,7 +8,7 @@
 		"dev": "vite dev",
 		"build": "vite build && npm run build-CNAME && npm run build-robots",
 		"build-CNAME": "echo davidstrasak.net > build/CNAME",
-		"build-robots": "echo User-agent: * > build/robots.txt && echo Sitemap: https://www.davidstrasak.net/sitemap.xml >> build/robots.txt && echo >> build/robots.txt && echo # Allow all bots by default >> build/robots.txt && echo User-agent: * >> build/robots.txt && echo Allow: / >> build/robots.txt",
+		"build-robots": "echo User-agent: * > build/robots.txt && echo Sitemap: https://www.davidstrasak.net/sitemap.xml >> build/robots.txt && echo. >> build/robots.txt && echo # Allow all bots by default >> build/robots.txt && echo User-agent: * >> build/robots.txt && echo Allow: / >> build/robots.txt",
 		"postbuild": "npx svelte-sitemap --domain https://davidstrasak.net",
 		"predeploy": "npm run build",
 		"deploy": "npx gh-pages -d build -t true",
