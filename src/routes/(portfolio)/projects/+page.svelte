@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Project from "$lib/projectStructure/Project.svelte";
-	import info from "./info";
+	import projects from "./projects";
 </script>
 
 <h1 class="text-5xl mb-5 text-center">
@@ -10,14 +10,14 @@
 
 <!-- Row one of items -->
 <div class="flex gap-10 flex-col md:flex-row justify-between items-center md:items-start mb-14">
-	<Project project={info.automaticWindow} />
-	<Project project={info.PICvariety} />
-	<Project project={info.thisWebsite} />
+	<Project project={projects.automaticWindow} />
+	<Project project={projects.PICvariety} />
+	<Project project={projects.thisWebsite} />
 </div>
 
 <!-- Row two of items -->
 <div class="flex gap-10 flex-col md:flex-row justify-between items-center md:items-start">
-	<Project project={info.stockSS} />
-	<Project project={info.PiHole} />
-	<Project project={info.arduinoVest} />
+	<Project project={projects.stockSS} />
+	<Project project={projects.PiHole} />
+	<Project project={projects.arduinoVest} />
 </div>

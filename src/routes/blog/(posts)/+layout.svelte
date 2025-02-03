@@ -9,6 +9,6 @@
 	>
 {/key} -->
 
-<div class="">
+<div class="text-xl">
 	<slot />
 </div>

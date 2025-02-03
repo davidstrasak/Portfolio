@@ -4,7 +4,7 @@
 
 <div class="main project">
 	<img
-		src="{base}/images/Showcase_PiHole.jpg"
+		src="{base}/images/projects/Showcase_PiHole.jpg"
 		width="100%"
 		height="100%"
 		alt="A graphical web interface of PiHole."

@@ -3,7 +3,7 @@
 </script>
 
 <img
-	src="{base}/images/Embedded_System.jpeg"
+	src="{base}/images/projects/Embedded_System.jpeg"
 	width="100%"
 	height="100%"
 	alt="A board with a bunch of electrical parts "

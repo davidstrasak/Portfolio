@@ -75,17 +75,14 @@
 	<h1 class="text-4xl mb-6 font-bold text-secondary">
 		Publish a static SvelteKit app to a custom domain on GitHub pages
 	</h1>
-	<p>As you might see, I've recently published a static SvelteKit website (this website).</p>
+	<p>Because of this website I now have lots of experience with static SvelteKit webpages.</p>
 	<p>
-		Which is why I've decided to make this blog post - <span
-			>to document all the steps that you can take in order to have a nice little static SvelteKit
-			website</span
-		>.
+		And that is why I want to teach you how you too can create a nice static SvelteKit website (just
+		like this one!) :).
 	</p>
 	<p>
 		For this tutorial you will need <span>Node.js and npm</span>. You will also need a GitHub
-		account, for the GitHub pages hosting service.
-		<span>You can host this static website for free over there</span>.
+		account, for the free hosting it provides to static websites.
 	</p>
 	<br />
 	<h2 class="text-secondary mt-4 text-3xl">But first for the unitiated: What is SvelteKit?</h2>

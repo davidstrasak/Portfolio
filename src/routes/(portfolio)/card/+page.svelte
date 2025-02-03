@@ -6,7 +6,7 @@
 <div class="text-center justify-center items-center">
 	<div class="avatar">
 		<div class="w-48 rounded-full relative z-10">
-			<img src="{base}/images/me.jpg" alt="img" />
+			<img src="{base}/images/projects/me.jpg" alt="img" />
 		</div>
 	</div>
 

@@ -1,14 +1,5 @@
 <script>
 	import { base } from "$app/paths";
-	import { onMount } from "svelte";
-
-	function setCoolTheme() {
-		document.documentElement.setAttribute("data-theme", "readable");
-	}
-
-	onMount(() => {
-		setCoolTheme();
-	});
 </script>
 
 <noscript> Please enable JavaScript to view the this page. </noscript>

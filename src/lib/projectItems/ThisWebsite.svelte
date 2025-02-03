@@ -3,7 +3,7 @@
 </script>
 
 <img
-	src="{base}/images/2nd_This_Website.jpg"
+	src="{base}/images/projects/2nd_This_Website.jpg"
 	width="100%"
 	height="100%"
 	alt="Code of the website"

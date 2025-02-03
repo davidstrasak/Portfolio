@@ -11,7 +11,7 @@ interface proj {
 
 let ArduinoVest: proj = {
 	id: id++,
-	image: `${base}/images/Vest_with_LEDs.jpg`,
+	image: `${base}/images/projects/Vest_with_LEDs.jpg`,
 	title: `Arduino - Vest with LEDs`,
 	description: `My favourite hardware project. It included six LEDs soldered to cables connected to one Arduino
             Uno, powered by a 9V battery.`,
@@ -20,7 +20,7 @@ let ArduinoVest: proj = {
 
 let AutomaticWindow: proj = {
 	id: id++,
-	image: `${base}/images/Automatic_Window.jpeg`,
+	image: `${base}/images/projects/Automatic_Window.jpeg`,
 	title: `Arduino - Automatic window`,
 	description: `This window prototype <span class="text-secondary">opens and closes</span> based on
 			weather forecasts, temperature or if it is time to ventilate
@@ -30,7 +30,7 @@ let AutomaticWindow: proj = {
 
 let PICvariety: proj = {
 	id: id++,
-	image: `${base}/images/PICVariety.jpg`,
+	image: `${base}/images/projects/PICVariety.jpg`,
 	title: `C - Various PIC projects`,
 	description: `In this school project I was programming <span class="text-secondary">five projects and a menu</span> using the PIC18F46K22 microcontroller in C.`,
 	modal: "PICvariety"
@@ -38,7 +38,7 @@ let PICvariety: proj = {
 
 let ThisWebsite: proj = {
 	id: id++,
-	image: `${base}/images/This_Website.jpg`,
+	image: `${base}/images/projects/This_Website.jpg`,
 	title: `SvelteKit - This website`,
 	description: `I wrote this website myself using sveltekit. It is a <span class="text-secondary">static single page application</span> that makes use of a lot of <span class="text-secondary">web-dev frameworks and github pages</span>.`,
 	modal: "ThisWebsite"
@@ -46,7 +46,7 @@ let ThisWebsite: proj = {
 
 let StockSS: proj = {
 	id: id++,
-	image: `${base}/images/Stock_analysis.jpg`,
+	image: `${base}/images/projects/Stock_analysis.jpg`,
 	title: `Excel VBA - Stock spreadsheet`,
 	description: `This spreadsheet imports 8 tables of financial data about a given
 			stock into one worksheet and <span class="text-secondary">uses functions to calculate value
@@ -56,7 +56,7 @@ let StockSS: proj = {
 
 let PiHole: proj = {
 	id: id++,
-	image: `${base}/images/PiHole.jpg`,
+	image: `${base}/images/projects/PiHole.jpg`,
 	title: `Linux - PiHole application`,
 	description: `This is a network-wide ad blocker that uses a Raspberry Pi clone to <span class="text-secondary">block ads and malicious links </span> on all devices connected to my home network.`,
 	modal: "PiHole"

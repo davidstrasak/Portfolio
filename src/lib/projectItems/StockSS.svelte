@@ -3,7 +3,7 @@
 </script>
 
 <img
-	src="{base}/images/Showcase_Stock_analysis.jpg"
+	src="{base}/images/projects/Showcase_Stock_analysis.jpg"
 	width="100%"
 	height="100%"
 	alt="A spreadsheet with information about stocks"

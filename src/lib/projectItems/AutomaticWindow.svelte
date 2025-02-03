@@ -3,7 +3,7 @@
 </script>
 
 <img
-	src="{base}/images/Window_gif.gif"
+	src="{base}/images/projects/Window_gif.gif"
 	width="100%"
 	height="100%"
 	alt="A gif of a window opening and closing"

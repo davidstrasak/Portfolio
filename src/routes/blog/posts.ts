@@ -13,12 +13,11 @@ const posts: post[] = [
 	{
 		date: "12.06.2024",
 		title: "How host a static SvelteKit website for free",
-		description: `<p>As you might see, I've recently published a static SvelteKit website (this website).</p>
+		description: `<p>Because of this website I now have lots of experience with static SvelteKit webpages.</p>
+		 <p>And that is why I want to teach you how you too can create a nice static SvelteKit website (just like this one!) :).</p>
 	<p>
-		Which is why I've decided to make this blog post - <span
-			>to document all the steps that you can take in order to have a nice little static SvelteKit
-			website</span
-		>.
+		For this tutorial you will need <span>Node.js and npm</span>. You will also need a GitHub
+		account, for the free hosting it provides to static websites.
 	</p>`,
 		image:
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1RzTzQFA_9h3qbValKOs0mjsATDkHwMOTA&s",
