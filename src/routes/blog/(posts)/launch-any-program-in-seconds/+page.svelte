@@ -7,10 +7,11 @@
 	let currentPost = posts.find(
 		(post) => post.href.split("/").pop() === page.url.pathname.split("/").pop()
 	);
+	let title = "Systemancer - " + currentPost?.title;
 </script>
 
 <svelte:head>
-	<meta property="og:title" content={currentPost?.title} />
+	<meta property="og:title" content={title} />
 	<meta name="description" property="og:description" content={currentPost?.cleanDescription} />
 	<meta
 		name="keywords"

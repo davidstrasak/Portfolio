@@ -44,7 +44,7 @@
 
 		// Pushing SEO meta tags and the BlogPost component at the beginning
 		htmlArray.push(`<svelte:head>
-	<meta property="og:title" content={currentPost?.title} />
+	<meta property="og:title" content={title} />
 	<meta name="description" property="og:description" content={currentPost?.cleanDescription} />
 	<meta
 		name="keywords"
@@ -129,7 +129,9 @@
 
 	let currentPost = posts.find(
 		(post) => post.href.split("/").pop() === page.url.pathname.split("/").pop()
-	);[/script]`)
+	);
+		let title = "Systemancer - " + currentPost?.title;
+[/script]`)
 				.replace(/\[/g, "<")
 				.replace(/\]/g, ">") + convertMDtoHTML();
 	}
