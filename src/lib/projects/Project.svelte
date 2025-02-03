@@ -1,13 +1,16 @@
 <script>
+	import { base } from "$app/paths";
 	export let project;
 	export let reverse = false;
 	export let insideProject = false;
+
+	let systemancerRoute = `${base}/systemancer.svg`;
 
 	const { completionDate, projectTitle, overview, thumbnail, demoLink, technologies } = project;
 </script>
 
 <div
-	class="flex md:flex-row flex-col flex-nowrap mt-4 items-center {insideProject
+	class="flex md:flex-row flex-col flex-nowrap my-2 items-center py-0 {insideProject
 		? 'bg-white bg-opacity-5 rounded-xl'
 		: 'hover:bg-white hover:bg-opacity-5 hover:rounded-xl'}  p-2"
 	class:md:flex-row-reverse={reverse}
@@ -27,5 +30,15 @@
 		<p class="text-xl">
 			{@html overview}
 		</p>
+		<div class="flex flex-row space-x-2">
+			<img
+				src={systemancerRoute}
+				alt="systemancer logo"
+				height="20px"
+				width="20px"
+				style="filter: hue-rotate(120deg) brightness(2);"
+			/>
+			<p class="m-0"><span class="font-bold">Tech:</span> {technologies.join(", ")}</p>
+		</div>
 	</div>
 </div>

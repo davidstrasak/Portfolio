@@ -15,9 +15,9 @@
 	<img
 		src="{base}/images/projects/Vest_Gif.gif"
 		alt="a vest with LEDs powered by an arduino"
-		width="50%"
-		height="50%"
-		class="block m-auto"
+		width="30%"
+		height="30%"
+		class="block m-auto float-right"
 	/>
 	<a
 		class="text-accent block underline text-left"
