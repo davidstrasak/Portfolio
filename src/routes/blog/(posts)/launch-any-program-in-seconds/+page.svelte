@@ -10,12 +10,8 @@
 </script>
 
 <svelte:head>
-	<meta property="og:title" content="Systemancer - Articles" />
-	<meta
-		name="description"
-		property="og:description"
-		content="A collection of articles made for tech enthusiasts and non-developers who want to be more effective while using the PC and learn about interesting technical projects."
-	/>
+	<meta property="og:title" content={currentPost?.title} />
+	<meta name="description" property="og:description" content={currentPost?.cleanDescription} />
 	<meta
 		name="keywords"
 		property="og:keywords"

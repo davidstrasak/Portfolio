@@ -73,6 +73,17 @@
 	const code10 = ["`build`: `vite build && echo davidstrasak.net > build/CNAME`,"];
 </script>
 
+<svelte:head>
+	<meta property="og:title" content={currentPost?.title} />
+	<meta name="description" property="og:description" content={currentPost?.cleanDescription} />
+	<meta
+		name="keywords"
+		property="og:keywords"
+		content="Systemancer, Blog, Articles, Systems Engineering, Engineering"
+	/>
+	<meta property="og:url" content={page.url.href} />
+</svelte:head>
+
 <div>
 	<BlogPost post={currentPost} insidePost={true} />
 
