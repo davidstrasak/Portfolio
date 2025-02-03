@@ -19,7 +19,6 @@
 	/>
 	<meta property="og:url" content={page.url.href} />
 </svelte:head>
-
 {#if currentPost}
 	<BlogPost post={currentPost} insidePost={true} />
 {/if}

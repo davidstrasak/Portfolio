@@ -42,7 +42,18 @@
 		let firstHeaderCounter = 0;
 		let secondHeaderCounter = 0;
 
-		htmlArray.push(`{#if currentPost}
+		// Pushing SEO meta tags and the BlogPost component at the beginning
+		htmlArray.push(`<svelte:head>
+	<meta property="og:title" content={currentPost?.title} />
+	<meta name="description" property="og:description" content={currentPost?.cleanDescription} />
+	<meta
+		name="keywords"
+		property="og:keywords"
+		content="Systemancer, Blog, Articles, Systems Engineering, Engineering"
+	/>
+	<meta property="og:url" content={page.url.href} />
+</svelte:head>
+		{#if currentPost}
 	<BlogPost post={currentPost} insidePost={true} />
 {/if}`);
 
