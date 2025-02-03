@@ -1,5 +1,17 @@
 <script>
 	import Code from "$lib/blog/Code.svelte";
+	import { page } from "$app/state";
+	import BlogPost from "$lib/blog/BlogPost.svelte";
+	import posts from "../../posts";
+	import { onMount } from "svelte";
+
+	onMount(() => {
+		console.log(page.params.page);
+	});
+
+	let currentPost = posts.find(
+		(post) => post.href.split("/").pop() === page.url.pathname.split("/").pop()
+	);
 
 	const code1 = [
 		"npx create-vite@latest my-sveltekit-project",
@@ -67,24 +79,8 @@
 </script>
 
 <div>
-	<img
-		src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1RzTzQFA_9h3qbValKOs0mjsATDkHwMOTA&s"
-		class="float-right rounded-xl m-4"
-		alt="SvelteKit logo"
-	/>
-	<h1 class="text-4xl mb-6 font-bold text-secondary">
-		Publish a static SvelteKit app to a custom domain on GitHub pages
-	</h1>
-	<p>Because of this website I now have lots of experience with static SvelteKit webpages.</p>
-	<p>
-		And that is why I want to teach you how you too can create a nice static SvelteKit website (just
-		like this one!) :).
-	</p>
-	<p>
-		For this tutorial you will need <span>Node.js and npm</span>. You will also need a GitHub
-		account, for the free hosting it provides to static websites.
-	</p>
-	<br />
+	<BlogPost post={currentPost} insidePost={true} />
+
 	<h2 class="text-secondary mt-4 text-3xl">But first for the unitiated: What is SvelteKit?</h2>
 	<p>
 		It's a web building framework. It allows you to follow a structure to have websites that are

@@ -9,6 +9,6 @@
 	<a href="{base}/blog/navigation" class="text-xl text-accent underline">See all blog posts here</a>
 </h1>
 
-{#each posts as post}
-	<BlogPost {post} />
+{#each posts as post, index}
+	<BlogPost {post} reverse={index % 2 === 0} />
 {/each}

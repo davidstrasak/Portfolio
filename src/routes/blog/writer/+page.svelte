@@ -42,6 +42,10 @@
 		let firstHeaderCounter = 0;
 		let secondHeaderCounter = 0;
 
+		htmlArray.push(`{#if currentPost}
+	<BlogPost post={currentPost} insidePost={true} />
+{/if}`);
+
 		splitText.forEach((line, index) => {
 			let settings = "";
 			if (line.startsWith("# ")) {
@@ -108,7 +112,18 @@
 	$: {
 		inputText;
 		outputText =
-			String(`[script lang="ts"]import { base } from "$app/paths";[/script]`)
+			String(`[script lang="ts"]import { base } from "$app/paths";import { page } from "$app/state";
+	import BlogPost from "$lib/blog/BlogPost.svelte";
+	import posts from "../../posts";
+	import { onMount } from "svelte";
+
+	onMount(() => {
+		console.log(page.params.page);
+	});
+
+	let currentPost = posts.find(
+		(post) => post.href.split("/").pop() === page.url.pathname.split("/").pop()
+	);[/script]`)
 				.replace(/\[/g, "<")
 				.replace(/\]/g, ">") + convertMDtoHTML();
 	}

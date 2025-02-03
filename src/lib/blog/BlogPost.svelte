@@ -1,26 +1,34 @@
 <script>
 	export let post;
 	export let reverse = false;
+	export let insidePost = false;
 
 	const { date, title, description, image, href, tags } = post;
 </script>
 
 <div
-	class="flex md:flex-row flex-col flex-nowrap mt-8 items-center hover:bg-white hover:bg-opacity-5 hover:rounded-xl"
+	class="flex md:flex-row flex-col flex-nowrap mt-8 items-center {insidePost
+		? 'bg-white bg-opacity-5 rounded-xl'
+		: 'hover:bg-white hover:bg-opacity-5 hover:rounded-xl'}  p-2"
 	class:md:flex-row-reverse={reverse}
 	class:md:flex-row={!reverse}
 	role="article"
 >
-	<div class="m-0 sm:m-12">
+	<div class="m-0 sm:m-10">
 		<img src={image} width="200px" height="200px" alt="text" class="rounded-xl" />
 	</div>
-	<div class="flextext m-5 ml-4 flex-1 p-5">
-		<a {href} class="text-accent underline text-2xl font-bold">{title}</a>
+	<div class="flex-1 p-2">
+		<a
+			{href}
+			class="{insidePost
+				? 'text-primary font-systemancer pointer-events-none'
+				: 'text-accent underline font-bold'} text-2xl">{title}</a
+		>
 		<p class="text-xl">
 			{@html description}
 		</p>
 
-		<div class="block">
+		<div class="block" class:hidden={insidePost}>
 			<div class="flex flex-col md:flex-row md:space-x-4">
 				<div>
 					<svg
