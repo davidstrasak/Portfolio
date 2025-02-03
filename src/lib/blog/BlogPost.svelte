@@ -7,7 +7,7 @@
 </script>
 
 <div
-	class="flex md:flex-row flex-col flex-nowrap mt-8 items-center {insidePost
+	class="flex md:flex-row flex-col flex-nowrap mt-4 items-center {insidePost
 		? 'bg-white bg-opacity-5 rounded-xl'
 		: 'hover:bg-white hover:bg-opacity-5 hover:rounded-xl'}  p-2"
 	class:md:flex-row-reverse={reverse}
