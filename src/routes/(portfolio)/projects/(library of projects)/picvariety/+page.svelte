@@ -13,14 +13,17 @@
 
 <img
 	src="{base}/images/projects/Embedded_System.jpeg"
-	width="100%"
-	height="100%"
+	width="40%"
+	height="40%"
+	class="float-right"
 	alt="A board with a bunch of electrical parts "
 />
+
+<a href="https://github.com/davidstrasak/PICvariety" target="_blank"
+	><h2 class="text-accent underline">Code here</h2></a
+>
+
 <div class="font-readable">
-	<a href="https://github.com/davidstrasak/PICvariety" target="_blank"
-		><h2 class="text-accent underline">Code here</h2></a
-	>
 	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
 		<li>Working with the datasheet of a microcontroller unit</li>
