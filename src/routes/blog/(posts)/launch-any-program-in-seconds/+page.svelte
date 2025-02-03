@@ -9,6 +9,21 @@
 	);
 </script>
 
+<svelte:head>
+	<meta property="og:title" content="Systemancer - Articles" />
+	<meta
+		name="description"
+		property="og:description"
+		content="A collection of articles made for tech enthusiasts and non-developers who want to be more effective while using the PC and learn about interesting technical projects."
+	/>
+	<meta
+		name="keywords"
+		property="og:keywords"
+		content="Systemancer, Blog, Articles, Systems Engineering, Engineering"
+	/>
+	<meta property="og:url" content={page.url.href} />
+</svelte:head>
+
 {#if currentPost}
 	<BlogPost post={currentPost} insidePost={true} />
 {/if}
