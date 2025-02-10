@@ -1,4 +1,4 @@
-import{b as e}from"./IfccOLBH.js";const s=[{date:"03.02.2025",title:"How I launch any program on my PC in seconds",description:`<p class="">
+import{b as e}from"./BP509RVc.js";const s=[{date:"03.02.2025",title:"How I launch any program on my PC in seconds",description:`<p class="">
 	Ever since about 6 months ago I started experimenting with setting keyboard shortcuts on Windows.
 	That leads up to today when I have my most efficient PC setup I've ever had and today I will share
 	how to set it up with you.
