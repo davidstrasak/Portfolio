@@ -15,12 +15,13 @@ const posts: post[] = [
 		date: "03.02.2025",
 		title: "How I launch any program on my PC in seconds",
 		description: `<p class="">
-	Ever since about 6 months ago I was able to run almost any program on my PC by using a keyboard
-	shortcut. That was the most efficient PC setup I've ever had and today I will share it with you.
+	Ever since about 6 months ago I started experimenting with setting keyboard shortcuts on Windows.
+	That leads up to today when I have my most efficient PC setup I've ever had and today I will share
+	how to set it up with you.
 </p>
 <p class="">
-	The setup is as easy as it can be and it can be set up in less than 15 minutes, but it can
-	make your usage of the PC more effective and easier! :D
+	The setup is as easy as it can be and it can be set up in <strong>less than 15 minutes</strong>,
+	but it can make your usage of the PC more effective and easier forever! :D
 </p>`,
 		cleanDescription:
 			"Ever since about 6 months ago I was able to run almost any program on my PC by using a keyboard shortcut. That was the most efficient PC setup I've ever had and today I will share it with you. The setup is as easy as it can be and it can be set up in less than 15 minutes, but it can make your usage of the PC more effective and easier! :D",
