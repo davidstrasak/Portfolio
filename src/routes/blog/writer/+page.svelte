@@ -20,8 +20,8 @@
 	});
 
 	let currentBlog = {
-		title: "How can I launch any program on my PC in seconds",
-		path: "launch-any-program-in-seconds"
+		title: "Less is More: How to Actually Improve at Your Hobbies",
+		path: "less-hobbies-is-more"
 	};
 
 	onMount(() => {

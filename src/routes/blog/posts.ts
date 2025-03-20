@@ -12,6 +12,17 @@ interface post {
 
 const posts: post[] = [
 	{
+		date: "20.03.2025",
+		title: "Less is More: How to Actually Improve at Your Hobbies",
+		description:
+			"<p>So, I was chatting with a buddy of mine today, another guitar player, about how our playing's going. He's telling me he just can't find the time – he gets super hyped, plays for a week, then drops it for a month, rinse and repeat. Sound familiar?</p>",
+		cleanDescription:
+			"So, I was chatting with a buddy of mine today, another guitar player, about how our playing's going. He's telling me he just can't find the time – he gets super hyped, plays for a week, then drops it for a month, rinse and repeat. Sound familiar?",
+		image: `${base}/images/blog/less-hobbies-is-more.jpeg`,
+		href: `${base}/blog/less-hobbies-is-more`,
+		tags: ["Hobbies", "Expertise"]
+	},
+	{
 		date: "03.02.2025",
 		title: "How I launch any program on my PC in seconds",
 		description: `<p class="">
