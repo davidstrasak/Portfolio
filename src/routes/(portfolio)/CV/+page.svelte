@@ -3,7 +3,7 @@
 </script>
 
 <img
-	src={`${base}/CV_David_Strasak.png`}
+	src={`${base}/David_Strasak_CV.png`}
 	alt="CV"
 	height="90%"
 	width="90%"
