@@ -8,33 +8,33 @@ interface Project {
 	demoLink: string;
 	technologies: string[];
 }
-// const vestWithLEDs: Project = {
-// 	completionDate: "01.01.2020",
-// 	projectTitle: "Vest with LEDs",
-// 	overview: `My favourite hardware project. It included six LEDs soldered to cables
-// 		connected to one Arduino Uno, powered by a 9V battery.`,
-// 	thumbnail: `${base}/images/projects/Vest_with_LEDs.jpg`,
-// 	demoLink: `${base}/projects/arduino-vest`,
-// 	technologies: ["Arduino"]
-// };
-// const automaticWindow: Project = {
-// 	completionDate: "02.01.2020",
-// 	projectTitle: "Automatic window",
-// 	overview: `This window prototype <span class="text-secondary">opens and closes</span> based on
-// 		weather forecasts, temperature or if it is time to ventilate your room.`,
-// 	thumbnail: `${base}/images/projects/Automatic_Window.jpeg`,
-// 	demoLink: `${base}/projects/automatic-window`,
-// 	technologies: ["Arduino", "Motor control shield"]
-// };
-// const stockSpreadsheet: Project = {
-// 	completionDate: "05.01.2020",
-// 	projectTitle: "Stock spreadsheet",
-// 	overview: `This spreadsheet imports 8 tables of financial data about a given stock into one worksheet and
-// 		<span class="text-secondary">uses functions to calculate value investing criteria</span>.`,
-// 	thumbnail: `${base}/images/projects/Stock_analysis.jpg`,
-// 	demoLink: `${base}/projects/stockspreadsheet`,
-// 	technologies: ["Excel VBA"]
-// };
+const vestWithLEDs: Project = {
+	completionDate: "01.01.2020",
+	projectTitle: "Vest with LEDs",
+	overview: `My favourite hardware project. It included six LEDs soldered to cables
+		connected to one Arduino Uno, powered by a 9V battery.`,
+	thumbnail: `${base}/images/projects/Vest_with_LEDs.jpg`,
+	demoLink: `${base}/projects/arduino-vest`,
+	technologies: ["Arduino"]
+};
+const automaticWindow: Project = {
+	completionDate: "02.01.2020",
+	projectTitle: "Automatic window",
+	overview: `This window prototype <span class="text-secondary">opens and closes</span> based on
+		weather forecasts, temperature or if it is time to ventilate your room.`,
+	thumbnail: `${base}/images/projects/Automatic_Window.jpeg`,
+	demoLink: `${base}/projects/automatic-window`,
+	technologies: ["Arduino", "Motor control shield"]
+};
+const stockSpreadsheet: Project = {
+	completionDate: "05.01.2020",
+	projectTitle: "Stock spreadsheet",
+	overview: `This spreadsheet imports 8 tables of financial data about a given stock into one worksheet and
+		<span class="text-secondary">uses functions to calculate value investing criteria</span>.`,
+	thumbnail: `${base}/images/projects/Stock_analysis.jpg`,
+	demoLink: `${base}/projects/stockspreadsheet`,
+	technologies: ["Excel VBA"]
+};
 
 const picProjects: Project = {
 	projectTitle: "Various PIC projects",
@@ -76,10 +76,10 @@ const projects: Project[] = [
 	ConveyorController,
 	picProjects,
 	portfolio,
-	piHole
-	// stockSpreadsheet,
-	// vestWithLEDs,
-	// automaticWindow
+	piHole,
+	stockSpreadsheet,
+	vestWithLEDs,
+	automaticWindow
 ];
 
 export default projects;
