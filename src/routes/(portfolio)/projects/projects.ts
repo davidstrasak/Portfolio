@@ -1,6 +1,7 @@
 import { base } from "$app/paths";
 
 interface Project {
+	completionDate?: string;
 	projectTitle: string;
 	overview: string;
 	thumbnail: string;
