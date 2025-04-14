@@ -33,7 +33,6 @@
 		<li>
 			Getting to know timers, interrupts, UART, ADC, DAC, sleep modes and how microcontrollers work.
 		</li>
-		<li>And also it was my first experience properly programming in C.</li>
 	</ol>
 	<h2 class="text-primary font-systemancer">Description:</h2>
 	<p>

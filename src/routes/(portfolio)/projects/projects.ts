@@ -68,8 +68,17 @@ const ConveyorController: Project = {
 	technologies: ["PCB Design", "Arduino", "Mobile application", "NodeMCU"]
 };
 
+const quadcopterSim: Project = {
+	projectTitle: "Quadcopter simulation",
+	overview: `As a school project me and my team received a mathematical model depicting a quadcopter, we designed a <span class="text-secondary">full state observer regulation</span> and I programmed it in a <span class="text-secondary">MATLAB simulation</span> including a visualisation of the path it took through the predetermined points.`,
+	thumbnail: `${base}/images/projects/Quadcopter.jpeg`,
+	demoLink: `${base}/projects/quadcopter-regulation`,
+	technologies: ["MATLAB", "State Regulation"]
+};
+
 const projects: Project[] = [
 	ConveyorController,
+	quadcopterSim,
 	picProjects,
 	portfolio,
 	piHole

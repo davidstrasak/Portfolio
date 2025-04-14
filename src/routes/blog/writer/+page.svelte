@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base } from "$app/paths";
+	import path from "path";
 	import { onMount } from "svelte";
 
 	let form: HTMLFormElement;
@@ -20,8 +21,8 @@
 	});
 
 	let currentBlog = {
-		title: "Less is More: How to Actually Improve at Your Hobbies",
-		path: "less-hobbies-is-more"
+		title: "project insert",
+		path: "temp"
 	};
 
 	onMount(() => {
@@ -146,7 +147,8 @@
 <p>
 	Currently editing: <span class="text-primary font-systemancer">{currentBlog.title}</span>, on the
 	path
-	<span class="text-primary font-systemancer">{currentBlog.path}</span>
+	<span class="text-primary font-systemancer">{currentBlog.path}</span> -
+	<a class="text-accent underline" href="{base}/blog/{currentBlog.path}">Here</a>
 </p>
 
 <textarea

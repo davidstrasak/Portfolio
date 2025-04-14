@@ -31,15 +31,16 @@
 		<p>
 			This was a summer 2023 project that involved setting up a <span class="text-secondary"
 				>Banana Pi to use PiHole on</span
-			>.
+			>. The banana Pi uses a debian linux operating system called
+			<span class="text-secondary">Armbian</span>.
 		</p>
 		<p>
 			<a class="underline text-accent" href="https://pi-hole.net/" target="_blank">PiHole</a> is an
-			application that
+			open source application that I did not make that
 			<span class="text-secondary"
 				>monitors internet traffic and blocks trackers, advertisements or anything else you want
 				blocked</span
-			>. After installation it acts as a server and is online 24/7.
+			>. After installation it acts as a DNS server and is online 24/7.
 		</p>
 	</div>
 </div>

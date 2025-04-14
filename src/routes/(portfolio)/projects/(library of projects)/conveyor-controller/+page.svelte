@@ -14,78 +14,73 @@
 {/if}
 
 <img
-	src="{base}/images/projects/Embedded_System.jpeg"
+	src="{base}/images/projects/ConveyorController_Physical.png"
 	width="40%"
 	height="40%"
 	class="float-right"
-	alt="A board with a bunch of electrical parts "
+	alt="A box with some buttons and a display on it, which is used to control the conveyor"
 />
 
-<h2 class="text-primary font-systemancer">Github Links:</h2>
-<a href="https://github.com/davidstrasak/Bachelors_code" target="_blank" class="text-accent"
-	>Microcontroller Code</a
+<h2 class="text-primary font-systemancer">Links:</h2>
+<a
+	href="https://github.com/davidstrasak/Bachelors_code"
+	target="_blank"
+	class="text-accent underline">Arduino Code</a
 >
 <br />
-<a href="https://github.com/davidstrasak/Bachelors_PhoneApp" target="_blank" class="text-accent"
-	>Phone app Code</a
+<a
+	href="https://github.com/davidstrasak/Bachelors_PhoneApp"
+	target="_blank"
+	class="text-accent underline">Phone app Code</a
 >
 <br />
-<a href="https://github.com/davidstrasak/Bachelors_PCB" target="_blank" class="text-accent"
-	>PCB Design files</a
+<a
+	href="https://github.com/davidstrasak/Bachelors_PCB"
+	target="_blank"
+	class="text-accent underline">PCB Design files</a
 >
 
 <div class="font-readable">
-	<!-- <h2 class="text-primary font-systemancer">Lessons learned:</h2>
+	<h2 class="text-primary font-systemancer">Lessons learned:</h2>
 	<ol class="ml-10">
-		<li>Found a passion for designing PCBs</li>
-		<li>Setting and initialising a ton of bits and pins.</li>
-		<li>
-			Getting to know timers, interrupts, UART, ADC, DAC, sleep modes and how microcontrollers work.
-		</li>
-		<li>And also it was my first experience properly programming in C.</li>
+		<li>Found my passion for electronics and PCB design</li>
+		<li>Creating mobile applications</li>
+		<li>Got way better at soldering</li>
+		<li>Learned to host a nodeMCU server and control the microcontroller through it</li>
+		<li>Learned the importance of state diagrams</li>
 	</ol>
 	<h2 class="text-primary font-systemancer">Description:</h2>
 	<p>
-		I've been able to take a course on working with embedded systems at school. The main curriculum
-		is <span class="text-secondary"
-			>programming in the C language and programming the PIC18F46K22 processor
-		</span> by MicroChip.
+		This project is my Bachelor's thesis where I was tasked with designing an intuitive device which
+		controls the movement of conveyors through a mobile app, so mechanical engineers have an easier
+		time when commissioning conveyor installation quality (specifically when they are looking if the
+		conveyor runs smoothly).
 	</p>
 	<p>
-		The whole concept of low level programming is interesting to me and I will be doing some more
-		when possible.
+		I made my own PCB, added in a <span class="text-secondary">WEMOS D1 Mini development board</span
+		>
+		with an <span class="text-secondary">ESP8266 microcontroller</span>
+		unit, wired everything with relays so I am able to switch the control panel inputs to the frequency
+		drive and I created the app through which it can all be controlled thanks to a shared WiFi hotspot
+		that all the devices are connected to.
 	</p>
 	<p>
-		The final project of this course was <span class="text-secondary font-bold"
-			>creating 5 tasks:</span
+		A cool thing about this project is that <span class="text-secondary"
+			>the mobile app not only enables me to control the conveyor</span
+		>, but it can have all the instructions for setup and troubleshooting the device and parts of
+		the system. And since it's on mobile you do not need any additional devices :D.
+	</p>
+	<p>
+		This was a really interesting challenge with lots of different systems that intertwine into each
+		other and it was <span class="text-secondary"
+			>my hardest challenge where I was solving the most issues :D.</span
 		>
 	</p>
-	<ul class="ml-10">
-		<li>UART - the processor takes an input and sends it back reversed</li>
-		<li>PWM - increment the brightness of an LED</li>
-		<li>ADC - display the values of the two potentiometers</li>
-		<li>DAC - generate three signals that I can display on an osciloscope on the PC</li>
-		<li>
-			GAME - program a game where you try to match a random number with the potentiometer value
-		</li>
-		<li class="text-secondary">
-			Menu - program an interface and navigation so that I can switch through the tasks
-		</li>
-	</ul>
-
-	<p>
-		This was probably the biggest coding project I have done in regards to <span
-			class="text-secondary">tracking state inside a project</span
-		>. So if you want to see how I did it, you can check out the code on my GitHub.
-	</p> -->
 </div>
 
 <style>
 	ol {
-		list-style-type: decimal; /* Remove default list styling */
-	}
-	ul {
-		list-style-type: initial; /* Remove default list styling */
+		list-style-type: decimal;
 	}
 	p {
 		margin-top: 5%;

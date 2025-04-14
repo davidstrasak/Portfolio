@@ -27,7 +27,10 @@
 	<ol class="ml-10">
 		<li>Creating a multi-page website.</li>
 		<li>Developing the frontend user experience.</li>
-		<li>HTML, CSS, JS, Node.js, Typescript, SvelteKit, Tailwind, DaisyUI and GitHub.</li>
+		<li>
+			These technologies: HTML, CSS, JS, Node.js, Typescript, SvelteKit, Tailwind, DaisyUI and
+			GitHub.
+		</li>
 		<li>Figured out some advanced TS syntax and worked with a lot of objects and components.</li>
 	</ol>
 	<h2 class="text-primary font-systemancer">Description:</h2>
