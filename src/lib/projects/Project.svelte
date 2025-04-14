@@ -1,6 +1,5 @@
 <script>
 	import { base } from "$app/paths";
-	import { createCipheriv } from "crypto";
 	export let project;
 	export let reverse = false;
 	export let insideProject = false;

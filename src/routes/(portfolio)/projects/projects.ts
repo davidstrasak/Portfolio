@@ -1,7 +1,6 @@
 import { base } from "$app/paths";
 
 interface Project {
-	completionDate?: string;
 	projectTitle: string;
 	overview: string;
 	thumbnail: string;
@@ -9,7 +8,6 @@ interface Project {
 	technologies: string[];
 }
 const vestWithLEDs: Project = {
-	completionDate: "01.01.2020",
 	projectTitle: "Vest with LEDs",
 	overview: `My favourite hardware project. It included six LEDs soldered to cables
 		connected to one Arduino Uno, powered by a 9V battery.`,
@@ -18,7 +16,6 @@ const vestWithLEDs: Project = {
 	technologies: ["Arduino"]
 };
 const automaticWindow: Project = {
-	completionDate: "02.01.2020",
 	projectTitle: "Automatic window",
 	overview: `This window prototype <span class="text-secondary">opens and closes</span> based on
 		weather forecasts, temperature or if it is time to ventilate your room.`,
@@ -27,7 +24,6 @@ const automaticWindow: Project = {
 	technologies: ["Arduino", "Motor control shield"]
 };
 const stockSpreadsheet: Project = {
-	completionDate: "05.01.2020",
 	projectTitle: "Stock spreadsheet",
 	overview: `This spreadsheet imports 8 tables of financial data about a given stock into one worksheet and
 		<span class="text-secondary">uses functions to calculate value investing criteria</span>.`,
