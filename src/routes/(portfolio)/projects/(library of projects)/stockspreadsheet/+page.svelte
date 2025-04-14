@@ -9,7 +9,9 @@
 	);
 </script>
 
-<Project project={currentProject} insideProject={true} />
+{#if currentProject}
+	<Project project={currentProject} insideProject={true} />
+{/if}
 
 <img
 	src="{base}/images/projects/Showcase_Stock_analysis.jpg"

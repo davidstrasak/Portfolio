@@ -72,10 +72,10 @@ const projects: Project[] = [
 	ConveyorController,
 	picProjects,
 	portfolio,
-	piHole,
-	stockSpreadsheet,
-	vestWithLEDs,
-	automaticWindow
+	piHole
+	// stockSpreadsheet,
+	// vestWithLEDs,
+	// automaticWindow
 ];
 
 export default projects;
