@@ -6,7 +6,7 @@
 
 	let systemancerRoute = `${base}/systemancer.svg`;
 
-	const { completionDate, projectTitle, overview, thumbnail, demoLink, technologies } = project;
+	const { projectTitle, overview, thumbnail, demoLink, technologies } = project;
 </script>
 
 <div
