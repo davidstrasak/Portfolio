@@ -12,6 +12,15 @@ interface post {
 
 const posts: post[] = [
 	{
+		date: "05.08.2025",
+		title: "AI made me appreciate using my brain",
+		description: `<p class="">AI has been here for a while. It changed how we work and how we think. So many people use it everyday, but at what cost?</p><p class="">Are we losing our own opinions? And what about cognitive thought?</p><p class=""><strong>Today I am writing about using AI less and the benefits of it.</strong></p>`,
+		cleanDescription: `AI has been here for a while. It changed how we work and how we think. So many people use it everyday, but at what cost? Are we losing our own opinions? And what about cognitive thought? Today I am writing about using AI less and the benefits of it.`,
+		image: `${base}/images/blog/not-using-ai.jpg`,
+		href: `${base}/blog/not-using-ai`,
+		tags: ["AI", "Thinking"]
+	},
+	{
 		date: "20.03.2025",
 		title: "Less is More: How to Actually Improve at Your Hobbies",
 		description:

@@ -21,8 +21,8 @@
 	});
 
 	let currentBlog = {
-		title: "project insert",
-		path: "temp"
+		title: "AI made me appreciate using my brain",
+		path: "not-using-ai"
 	};
 
 	onMount(() => {
