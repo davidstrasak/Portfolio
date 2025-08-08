@@ -23,8 +23,6 @@
 {#if currentPost}
 	<BlogPost post={currentPost} insidePost={true} />
 {/if}
-<h1 class="text-4xl text-primary mb-6 font-systemancer">AI made me appreciate using my brain</h1>
-<br />
 <p class="">
 	You see, before AI <span class="text-secondary">I took thinking for granted</span> - I had no choice
 	to delegate it somewhere, so I just did it.
@@ -37,12 +35,14 @@
 	I don't do it so much anymore and that is why today I wanna write about using AI less and feeling
 	good because of it.
 </p>
-<h2 class="text-primary text-3xl mt-4 font-systemancer">1. So how to feel good by using AI less</h2>
+<h2 class="text-primary text-3xl mt-4 font-systemancer">
+	1. So how to feel good by using AI less?
+</h2>
 <p class="">
 	Let's talk about <span class="text-secondary">writing an email</span>, for example. You can use AI
 	to write a good enough email in seconds. That does not take any effort, but your task gets done.
 	You can feel good it's done, but in reality
-	<span class="text-secondary">it is a hollow victory</span>.
+	<span class="text-secondary">it is a shallow victory</span>.
 </p>
 <p class="">
 	You <strong>did not get better at writing emails</strong> - you just delegated the problem and something
@@ -57,7 +57,7 @@
 <p class="">
 	<span class="text-secondary"
 		>Thanks to AI you have a chance to experience discomfort whenever you want just by choosing not
-		to use AI to solve problem for you.</span
+		to use AI to solve the problem for you.</span
 	>
 </p>
 <h2 class="text-primary text-3xl mt-4 font-systemancer">
@@ -69,10 +69,9 @@
 	> when it can be done in an instant in a good enough manner?
 </p>
 <p class="">
-	Let me give you a different example to show why voluntary discomfort is an amazing tool. A holy
-	grail of all self-help gurus on the internet that will definitely solve all your problems :D - <span
-		class="text-secondary">cold showers</span
-	>.
+	Let me give you a different example to show why voluntary discomfort is an amazing tool. The
+	example is a holy grail of all self-help gurus on the internet that will definitely solve all your
+	problems :D - <span class="text-secondary">cold showers</span>.
 </p>
 <p class="">
 	Let's say you are taking a cold shower every day for a few months. You are putting yourself into
@@ -87,49 +86,61 @@
 </p>
 <p class="">
 	<span class="text-secondary">See the value in voluntarily doing things that are hard?</span> Taking
-	a cold shower when you are forced to will be easier for you and it is the same when you are used to
-	doing hard things and then you are forced into doing something really hard.
+	a cold shower when you are forced to will be easier for you if you're used to it.
+</p>
+<h3 class="text-primary text-2xl mt-3 font-systemancer">2.1. This works in general though.</h3>
+<p class="">
+	If you're used to do hard things, you will become better at doing <span class="text-secondary"
+		>any hard thing</span
+	>. The opposite also applies. If you are not used to doing any hard things, it will progressively
+	become harder and harder to do them until basically everything is out of your comfort zone.
 </p>
 <p class="">
-	<span class="text-secondary"
-		>The point in using AI less is to learn to think again. It teaches you to do hard things in
-		general - either when it is voluntary or when it is actually needed.</span
-	>
+	If a person uses AI all the time, they are not getting better at doing the things they use it for,
+	but they are also losing the ability to use their brains. Becoming dependent (addicted) - which is
+	a dangerous position to be in.
 </p>
 <h2 class="text-primary text-3xl mt-4 font-systemancer">
-	3. But it's not just about using your brain more
+	3. But it's not just about using your brain more.
 </h2>
 <p class="">
 	Yes - using your brain is a benefit. But <span class="text-secondary"
 		>what if the option to solve things with AI suddenly disappeared?</span
-	> <strong>Then it becomes a failsafe against the technology itself.</strong>
+	> <strong>Then this benefit becomes a failsafe against the technology itself.</strong>
 </p>
-<p class="">That is why I want to talk about AI becoming worse over time.</p>
-<br />
+<p class="">That is why I also want to talk about AI becoming worse over time.</p>
 <p class="">
 	Right now <span class="text-secondary">AI is not profitable</span>. It is burning investors' money
 	and showing some income, but definitely no profits for the biggest companies - OpenAI, Google,
 	Meta and X. The way that AI from these companies works right now is not sustainable.
 </p>
-<p class=""><strong>AI will have to start making money at some point.</strong></p>
+<p class="">
+	<strong>AI will have to start making money at some point.</strong> Let's talk about how:
+</p>
 <h3 class="text-primary text-2xl mt-3 font-systemancer">3.1. How could AI make money?</h3>
 <p class="">For me there are two ideas that first come to mind: Advertising and Data collection.</p>
 <p class="">
-	<span class="text-secondary">Advertising:</span> Let 's say you are looking for a frying pan and you
+	<span class="text-secondary">Advertising:</span> Let's say you are looking for a frying pan and you
 	naturally go to ChatGPT to do your market research. Let's say Tescoma is paying OpenAI some money for
 	advertising spots. Naturally the best way to advertise using AI would be to answer the prompt with
-	"These are some good frying pan companies, but the best choice for you is this frying pan by Tescoma!"
+	"These are some good frying pan companies, but the best choice for you is this frying pan by Tescoma!".
+	This is a hypothetical scenario, but I feel undisclosed advertising could be a real threat from AI.
 </p>
 <p class="">
 	<span class="text-secondary">Data collection:</span> Then there is the data collection and this is
-	just a problem of security online overall - if you talk with AI about stuff, it might eventually keep
-	tabs on you and know your occupation, problems, what are you looking for, etc. Let's hope the EU will
-	be here to protect us from this excessive data collection when it will matter.
+	just a problem of security online overall - if you talk with AI about personal stuff, it might eventually
+	keep tabs on you and know your occupation, problems, what are you looking for, etc. Let's hope the
+	EU will be here to protect us from this excessive data collection when it will matter, but this is
+	also a threat from AI.
 </p>
 <p class="">
 	<span class="text-secondary"><strong>Would you use an AI that does this?</strong></span>
 </p>
-<h2 class="text-primary text-3xl mt-4 font-systemancer">4. Closing thoughts</h2>
+<p class="">
+	Or is it better to have a failsafe in the form of a brain that can do anything without delegation
+	to AI? :D
+</p>
+<h2 class="text-primary text-3xl mt-4 font-systemancer">4. Closing thoughts:</h2>
 <p class="">
 	<span class="text-secondary">I'm not trying to scare you (or myself).</span> I wanted to show that
 	not using AI is not only good for you, but also
@@ -145,11 +156,8 @@
 		>It also makes me feel good to know I could have done it in an easier way</span
 	>, but chose to think for myself - in a way it challenges me to do something hard just because.
 </p>
-<p class="">I will still use AI in some cases:</p>
+<p class="">I still use AI in some cases:</p>
 <p class="">- Programming basic parts of applications is faster</p>
-<p class="">
-	- To help writing emails when I really don't feel like thinking (but as a conscious decision)
-</p>
 <p class="">- To use as a better Google for searching to answers for questions</p>
 <p class="">
 	But as the time flies by, I have realized something. <span class="text-secondary"
