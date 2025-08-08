@@ -56,8 +56,8 @@
 <p class="">That is what I like to call <strong>"voluntary discomfort"</strong>.</p>
 <p class="">
 	<span class="text-secondary"
-		>Thanks to AI you have a chance to experience discomfort whenever you want just by choosing not
-		to use AI to solve the problem for you.</span
+		>Thanks to AI you have a chance to experience discomfort whenever you want just by choosing to
+		not use AI to solve the problem for you.</span
 	>
 </p>
 <h2 class="text-primary text-3xl mt-4 font-systemancer">
@@ -93,7 +93,7 @@
 	If you're used to do hard things, you will become better at doing <span class="text-secondary"
 		>any hard thing</span
 	>. The opposite also applies. If you are not used to doing any hard things, it will progressively
-	become harder and harder to do them until basically everything is out of your comfort zone.
+	become harder and harder to do them, until basically everything is out of your comfort zone.
 </p>
 <p class="">
 	If a person uses AI all the time, they are not getting better at doing the things they use it for,
@@ -122,21 +122,25 @@
 <p class="">
 	<span class="text-secondary">Advertising:</span> Let's say you are looking for a frying pan and you
 	naturally go to ChatGPT to do your market research. Let's say Tescoma is paying OpenAI some money for
-	advertising spots. Naturally the best way to advertise using AI would be to answer the prompt with
-	"These are some good frying pan companies, but the best choice for you is this frying pan by Tescoma!".
-	This is a hypothetical scenario, but I feel undisclosed advertising could be a real threat from AI.
+	advertising spots. It makes sense that the best way to advertise using AI would be to answer the prompt
+	with "These are some good frying pans, but the best choice for you is this frying pan by Tescoma!".
+</p>
+<p>
+	This is a hypothetical scenario, but I feel undisclosed advertising could be a real threat from
+	AI.
 </p>
 <p class="">
-	<span class="text-secondary">Data collection:</span> Then there is the data collection and this is
-	just a problem of security online overall - if you talk with AI about personal stuff, it might eventually
-	keep tabs on you and know your occupation, problems, what are you looking for, etc. Let's hope the
-	EU will be here to protect us from this excessive data collection when it will matter, but this is
-	also a threat from AI.
+	<span class="text-secondary">Data collection:</span> Then there is data collection and this is a problem
+	of security online overall - if you talk with AI about personal stuff, it might eventually keep tabs
+	on you and know your occupation, problems, what are you looking for, etc.
+</p>
+<p>
+	Let's hope the EU will be here to protect us from this excessive data collection when it will
+	matter, but this is also a threat from AI.
 </p>
 <p class="">
 	<span class="text-secondary"><strong>Would you use an AI that does this?</strong></span>
-</p>
-<p class="">
+
 	Or is it better to have a failsafe in the form of a brain that can do anything without delegation
 	to AI? :D
 </p>
