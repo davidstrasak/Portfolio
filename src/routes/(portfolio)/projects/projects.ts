@@ -44,8 +44,7 @@ const picProjects: Project = {
 const portfolio: Project = {
 	projectTitle: "This website",
 	overview: `I wrote this website myself using sveltekit. It is a <span class="text-secondary">static
-		single page application</span> that makes use of a lot of
-		web development frameworks and GitHub Pages.`,
+		single page application</span> that makes use of a lot of web development frameworks and GitHub Pages.`,
 	thumbnail: `${base}/images/projects/This_Website.jpg`,
 	demoLink: `${base}/projects/this-website`,
 	technologies: ["SvelteKit", "GitHub Pages"]
@@ -62,10 +61,13 @@ const piHole: Project = {
 
 const ConveyorController: Project = {
 	projectTitle: "Conveyor controller",
-	overview: `This is a system I designed to make it as easy as possible to check quality of conveyor installation as a Bachelor's thesis. In this project I designed a <span class="text-secondary">PCB with a microcontroller</span>, a <span class="text-secondary">mobile application</span> and I made them communicate through <span class="text-secondary>nodeMCU</span>.`,
+	overview: `This is a system I designed to make it as easy as possible to check quality of conveyor installation as a 
+	Bachelor's thesis. In this project I designed a <span class="text-secondary">PCB with a microcontroller</span>, a 
+	<span class="text-secondary">mobile application</span> and I made them communicate through a
+	<span class="text-secondary">WebServer</span>.`,
 	thumbnail: `${base}/images/projects/Conveyor_Controller.jpg`,
 	demoLink: `${base}/projects/conveyor-controller`,
-	technologies: ["PCB Design", "Arduino", "Mobile application", "NodeMCU"]
+	technologies: ["PCB Design", "Arduino", "Mobile application", "WebServer"]
 };
 
 const quadcopterSim: Project = {
