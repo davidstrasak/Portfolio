@@ -46,7 +46,7 @@
 		<li>Found my passion for electronics and PCB design</li>
 		<li>Creating mobile applications</li>
 		<li>Got way better at soldering</li>
-		<li>Learned to host a nodeMCU server and control the microcontroller through it</li>
+		<li>Learned to host a ESP8266 WebServer and control the microcontroller through it</li>
 		<li>Learned the importance of state diagrams</li>
 	</ol>
 	<h2 class="text-primary font-systemancer">Description:</h2>
