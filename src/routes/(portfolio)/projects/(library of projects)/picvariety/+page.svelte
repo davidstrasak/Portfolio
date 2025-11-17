@@ -78,7 +78,7 @@
 		list-style-type: initial; /* Remove default list styling */
 	}
 	p {
-		margin-top: 5%;
+		margin-top: 3%;
 	}
 	h2 {
 		margin-top: 5%;

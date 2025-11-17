@@ -63,7 +63,7 @@
 		list-style-type: decimal;
 	}
 	p {
-		margin-top: 5%;
+		margin-top: 3%;
 	}
 	h2 {
 		margin-top: 5%;

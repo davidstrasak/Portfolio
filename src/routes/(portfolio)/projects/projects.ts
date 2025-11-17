@@ -43,7 +43,7 @@ const picProjects: Project = {
 
 const portfolio: Project = {
 	projectTitle: "This website",
-	overview: `I wrote this website myself using sveltekit. It is a <span class="text-secondary">static
+	overview: `I wrote this website myself using SvelteKit. It is a <span class="text-secondary">static
 		single page application</span> that makes use of a lot of web development frameworks and GitHub Pages.`,
 	thumbnail: `${base}/images/projects/This_Website.jpg`,
 	demoLink: `${base}/projects/this-website`,
@@ -72,13 +72,25 @@ const ConveyorController: Project = {
 
 const quadcopterSim: Project = {
 	projectTitle: "Quadcopter simulation",
-	overview: `As a school project me and my team received a mathematical model depicting a quadcopter, we designed a <span class="text-secondary">full state observer regulation</span> and I programmed it in a <span class="text-secondary">MATLAB simulation</span> including a visualisation of the path it took through the predetermined points.`,
+	overview: `As a school project me and my team received a mathematical model depicting a quadcopter, we designed a 
+	<span class="text-secondary">full state observer regulation</span> and I programmed it in a <span class="text-secondary">
+	MATLAB simulation</span> including a visualisation of the path it took through the predetermined points.`,
 	thumbnail: `${base}/images/projects/Quadcopter.jpeg`,
 	demoLink: `${base}/projects/quadcopter-regulation`,
 	technologies: ["MATLAB", "State Regulation"]
 };
 
+const SpiderBot: Project = {
+	projectTitle: "SPIDERBOT",
+	overview: `This robot uses an <span class="text-secondary">Arduino Pro</span> and runs off a 12.6V Li-Ion battery. It has 12 servos
+	in it's legs which allow it to move, wave it's little hand and dance!`,
+	thumbnail: `${base}/images/projects/spiderbot.png`,
+	demoLink: `${base}/projects/spiderbot`,
+	technologies: ["Embedded systems", "Arduino", "Li-Ion battery"]
+};
+
 const projects: Project[] = [
+	SpiderBot,
 	ConveyorController,
 	quadcopterSim,
 	picProjects,
