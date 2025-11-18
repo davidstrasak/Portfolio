@@ -63,7 +63,8 @@
 			I am currently working on a custom PCB with the <span class="text-secondary"
 				>STM32L412KBT6 microcontroller</span
 			>
-			- just to make it even quicker and special :). And to learn how to make PCBs with microcontrollers.
+			- just to make it even quicker with a higher quality MCU :). It's also good because I'll learn
+			how to make PCBs with microcontrollers.
 		</li>
 		<li>Programming it with using a Real Time Operating System.</li>
 		<li>
